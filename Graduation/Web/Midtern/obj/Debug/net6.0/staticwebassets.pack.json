@@ -1,0 +1,165 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Midtern.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Midtern.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\wwwroot\\cookie-policy.html",
+      "PackagePath": "staticwebassets\\cookie-policy.html"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\wwwroot\\css\\webflow-style.css",
+      "PackagePath": "staticwebassets\\css\\webflow-style.css"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\wwwroot\\images\\amanda.webp",
+      "PackagePath": "staticwebassets\\images\\amanda.webp"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\wwwroot\\images\\app-icon.png",
+      "PackagePath": "staticwebassets\\images\\app-icon.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\wwwroot\\images\\arrow-20next.svg",
+      "PackagePath": "staticwebassets\\images\\arrow-20next.svg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\wwwroot\\images\\arrow.svg",
+      "PackagePath": "staticwebassets\\images\\arrow.svg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\wwwroot\\images\\check.svg",
+      "PackagePath": "staticwebassets\\images\\check.svg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\wwwroot\\images\\communication_wireless_connect_wifi_internet_icon.svg",
+      "PackagePath": "staticwebassets\\images\\communication_wireless_connect_wifi_internet_icon.svg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\wwwroot\\images\\cross.svg",
+      "PackagePath": "staticwebassets\\images\\cross.svg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\wwwroot\\images\\delivery_shipping_weight_large_limit_icon-20-1-.svg",
+      "PackagePath": "staticwebassets\\images\\delivery_shipping_weight_large_limit_icon-20-1-.svg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\wwwroot\\images\\delivery_shipping_weight_large_limit_icon-201-p-500.png",
+      "PackagePath": "staticwebassets\\images\\delivery_shipping_weight_large_limit_icon-201-p-500.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\wwwroot\\images\\delivery_shipping_weight_large_limit_icon-201.webp",
+      "PackagePath": "staticwebassets\\images\\delivery_shipping_weight_large_limit_icon-201.webp"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\wwwroot\\images\\facebook.svg",
+      "PackagePath": "staticwebassets\\images\\facebook.svg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\wwwroot\\images\\favicon.png",
+      "PackagePath": "staticwebassets\\images\\favicon.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\wwwroot\\images\\icon-20for-20slider-201.svg",
+      "PackagePath": "staticwebassets\\images\\icon-20for-20slider-201.svg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\wwwroot\\images\\icon-20for-20slider-202.svg",
+      "PackagePath": "staticwebassets\\images\\icon-20for-20slider-202.svg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\wwwroot\\images\\icon-20for-20slider-203.svg",
+      "PackagePath": "staticwebassets\\images\\icon-20for-20slider-203.svg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\wwwroot\\images\\instagram.svg",
+      "PackagePath": "staticwebassets\\images\\instagram.svg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\wwwroot\\images\\jullia.webp",
+      "PackagePath": "staticwebassets\\images\\jullia.webp"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\wwwroot\\images\\logo.svg",
+      "PackagePath": "staticwebassets\\images\\logo.svg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\wwwroot\\images\\mark.webp",
+      "PackagePath": "staticwebassets\\images\\mark.webp"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\wwwroot\\images\\menu-right.svg",
+      "PackagePath": "staticwebassets\\images\\menu-right.svg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\wwwroot\\images\\messages_paper_airplane_aeroplane_memo_icon.svg",
+      "PackagePath": "staticwebassets\\images\\messages_paper_airplane_aeroplane_memo_icon.svg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\wwwroot\\images\\search_delivery_find_track_order_icon-201.webp",
+      "PackagePath": "staticwebassets\\images\\search_delivery_find_track_order_icon-201.webp"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\wwwroot\\images\\search_delivery_find_track_order_icon.svg",
+      "PackagePath": "staticwebassets\\images\\search_delivery_find_track_order_icon.svg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\wwwroot\\images\\star.svg",
+      "PackagePath": "staticwebassets\\images\\star.svg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\wwwroot\\images\\twitter.svg",
+      "PackagePath": "staticwebassets\\images\\twitter.svg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\wwwroot\\images\\webflow-badge-icon.f67cd735e3.svg",
+      "PackagePath": "staticwebassets\\images\\webflow-badge-icon.f67cd735e3.svg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\wwwroot\\js\\jquery.js",
+      "PackagePath": "staticwebassets\\js\\jquery.js"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\wwwroot\\js\\webflow-script.js",
+      "PackagePath": "staticwebassets\\js\\webflow-script.js"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\wwwroot\\privacy-policy.html",
+      "PackagePath": "staticwebassets\\privacy-policy.html"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\wwwroot\\template-info\\licenses.html",
+      "PackagePath": "staticwebassets\\template-info\\licenses.html"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Midtern.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Midtern.props",
+      "PackagePath": "build\\Midtern.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Midtern.props",
+      "PackagePath": "buildMultiTargeting\\Midtern.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Midtern.props",
+      "PackagePath": "buildTransitive\\Midtern.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

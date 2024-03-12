@@ -3,18 +3,26 @@
   "WorkspaceRootPath": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{37B60DBF-2F3D-4324-BACF-3767D102541E}|Midtern.csproj|c:\\tests2\\graduation-project\\graduation\\web\\midtern\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37B60DBF-2F3D-4324-BACF-3767D102541E}|Midtern.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37B60DBF-2F3D-4324-BACF-3767D102541E}|Midtern.csproj|c:\\tests2\\graduation-project\\graduation\\web\\midtern\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37B60DBF-2F3D-4324-BACF-3767D102541E}|Midtern.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37B60DBF-2F3D-4324-BACF-3767D102541E}|Midtern.csproj|c:\\tests2\\graduation-project\\graduation\\web\\midtern\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{37B60DBF-2F3D-4324-BACF-3767D102541E}|Midtern.csproj|solutionrelative:wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37B60DBF-2F3D-4324-BACF-3767D102541E}|Midtern.csproj|c:\\tests2\\graduation-project\\graduation\\web\\midtern\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37B60DBF-2F3D-4324-BACF-3767D102541E}|Midtern.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37B60DBF-2F3D-4324-BACF-3767D102541E}|Midtern.csproj|c:\\tests2\\graduation-project\\graduation\\web\\midtern\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37B60DBF-2F3D-4324-BACF-3767D102541E}|Midtern.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 256,
+      "VerticalTabListWidth": 216,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
@@ -27,19 +35,43 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\Models\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
-              "ToolTip": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\Models\\ErrorViewModel.cs",
-              "RelativeToolTip": "Models\\ErrorViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAuAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T15:01:01.561Z",
+              "WhenOpened": "2024-03-12T19:19:41.357Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "wwwroot\\index.html",
+              "ToolTip": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\wwwroot\\index.html",
+              "RelativeToolTip": "wwwroot\\index.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-03-12T19:14:35.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T15:01:01.561Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\Midtern\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -47,8 +79,7 @@
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T15:00:58.049Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-10T15:00:58.049Z"
             }
           ]
         }
