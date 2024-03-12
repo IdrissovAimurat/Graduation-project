@@ -1,0 +1,1089 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\WebApp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\WebApp.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\404.html",
+      "PackagePath": "staticwebassets\\404.html"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\_cf44d5dd_page=2.html",
+      "PackagePath": "staticwebassets\\_cf44d5dd_page=2.html"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\_f59ca0c0_page=2.html",
+      "PackagePath": "staticwebassets\\_f59ca0c0_page=2.html"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\about-us.html",
+      "PackagePath": "staticwebassets\\about-us.html"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\blog.html",
+      "PackagePath": "staticwebassets\\blog.html"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\brand-guidelines\\changelog.html",
+      "PackagePath": "staticwebassets\\brand-guidelines\\changelog.html"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\brand-guidelines\\licenses.html",
+      "PackagePath": "staticwebassets\\brand-guidelines\\licenses.html"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\brand-guidelines\\style-guide.html",
+      "PackagePath": "staticwebassets\\brand-guidelines\\style-guide.html"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\contact-us.html",
+      "PackagePath": "staticwebassets\\contact-us.html"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\css\\webflow-style.css",
+      "PackagePath": "staticwebassets\\css\\webflow-style.css"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\home-2.html",
+      "PackagePath": "staticwebassets\\home-2.html"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-1.png",
+      "PackagePath": "staticwebassets\\images\\1-1.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-10.png",
+      "PackagePath": "staticwebassets\\images\\1-10.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-11.png",
+      "PackagePath": "staticwebassets\\images\\1-11.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-12.png",
+      "PackagePath": "staticwebassets\\images\\1-12.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-13.png",
+      "PackagePath": "staticwebassets\\images\\1-13.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-14.png",
+      "PackagePath": "staticwebassets\\images\\1-14.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-15.png",
+      "PackagePath": "staticwebassets\\images\\1-15.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-16.png",
+      "PackagePath": "staticwebassets\\images\\1-16.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-17.png",
+      "PackagePath": "staticwebassets\\images\\1-17.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-18.png",
+      "PackagePath": "staticwebassets\\images\\1-18.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-19.png",
+      "PackagePath": "staticwebassets\\images\\1-19.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-2.png",
+      "PackagePath": "staticwebassets\\images\\1-2.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-20.png",
+      "PackagePath": "staticwebassets\\images\\1-20.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-21.png",
+      "PackagePath": "staticwebassets\\images\\1-21.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-22.png",
+      "PackagePath": "staticwebassets\\images\\1-22.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-23.png",
+      "PackagePath": "staticwebassets\\images\\1-23.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-24.png",
+      "PackagePath": "staticwebassets\\images\\1-24.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-25.png",
+      "PackagePath": "staticwebassets\\images\\1-25.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-26.png",
+      "PackagePath": "staticwebassets\\images\\1-26.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-27.png",
+      "PackagePath": "staticwebassets\\images\\1-27.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-3.png",
+      "PackagePath": "staticwebassets\\images\\1-3.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-4.png",
+      "PackagePath": "staticwebassets\\images\\1-4.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-5.png",
+      "PackagePath": "staticwebassets\\images\\1-5.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-6.png",
+      "PackagePath": "staticwebassets\\images\\1-6.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-7.png",
+      "PackagePath": "staticwebassets\\images\\1-7.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-8.png",
+      "PackagePath": "staticwebassets\\images\\1-8.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-9.png",
+      "PackagePath": "staticwebassets\\images\\1-9.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-p-1080-1.png",
+      "PackagePath": "staticwebassets\\images\\1-p-1080-1.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-p-1080-2.png",
+      "PackagePath": "staticwebassets\\images\\1-p-1080-2.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-p-1080-3.png",
+      "PackagePath": "staticwebassets\\images\\1-p-1080-3.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-p-1080-4.png",
+      "PackagePath": "staticwebassets\\images\\1-p-1080-4.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-p-1080.png",
+      "PackagePath": "staticwebassets\\images\\1-p-1080.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-p-1600.png",
+      "PackagePath": "staticwebassets\\images\\1-p-1600.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-p-2000.png",
+      "PackagePath": "staticwebassets\\images\\1-p-2000.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-p-2600.png",
+      "PackagePath": "staticwebassets\\images\\1-p-2600.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-p-500-1.png",
+      "PackagePath": "staticwebassets\\images\\1-p-500-1.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-p-500-10.png",
+      "PackagePath": "staticwebassets\\images\\1-p-500-10.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-p-500-11.png",
+      "PackagePath": "staticwebassets\\images\\1-p-500-11.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-p-500-12.png",
+      "PackagePath": "staticwebassets\\images\\1-p-500-12.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-p-500-2.png",
+      "PackagePath": "staticwebassets\\images\\1-p-500-2.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-p-500-3.png",
+      "PackagePath": "staticwebassets\\images\\1-p-500-3.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-p-500-4.png",
+      "PackagePath": "staticwebassets\\images\\1-p-500-4.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-p-500-5.png",
+      "PackagePath": "staticwebassets\\images\\1-p-500-5.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-p-500-6.png",
+      "PackagePath": "staticwebassets\\images\\1-p-500-6.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-p-500-7.png",
+      "PackagePath": "staticwebassets\\images\\1-p-500-7.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-p-500-8.png",
+      "PackagePath": "staticwebassets\\images\\1-p-500-8.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-p-500-9.png",
+      "PackagePath": "staticwebassets\\images\\1-p-500-9.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-p-500.jpg",
+      "PackagePath": "staticwebassets\\images\\1-p-500.jpg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-p-500.png",
+      "PackagePath": "staticwebassets\\images\\1-p-500.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-p-800-1.png",
+      "PackagePath": "staticwebassets\\images\\1-p-800-1.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-p-800-2.png",
+      "PackagePath": "staticwebassets\\images\\1-p-800-2.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-p-800-3.png",
+      "PackagePath": "staticwebassets\\images\\1-p-800-3.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-p-800-4.png",
+      "PackagePath": "staticwebassets\\images\\1-p-800-4.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-p-800-5.png",
+      "PackagePath": "staticwebassets\\images\\1-p-800-5.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-p-800-6.png",
+      "PackagePath": "staticwebassets\\images\\1-p-800-6.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-p-800-7.png",
+      "PackagePath": "staticwebassets\\images\\1-p-800-7.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1-p-800.png",
+      "PackagePath": "staticwebassets\\images\\1-p-800.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\1.jpg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\1.png",
+      "PackagePath": "staticwebassets\\images\\1.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\2-1.png",
+      "PackagePath": "staticwebassets\\images\\2-1.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\2-10.png",
+      "PackagePath": "staticwebassets\\images\\2-10.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\2-11.png",
+      "PackagePath": "staticwebassets\\images\\2-11.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\2-12.png",
+      "PackagePath": "staticwebassets\\images\\2-12.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\2-13.png",
+      "PackagePath": "staticwebassets\\images\\2-13.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\2-14.png",
+      "PackagePath": "staticwebassets\\images\\2-14.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\2-15.png",
+      "PackagePath": "staticwebassets\\images\\2-15.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\2-16.png",
+      "PackagePath": "staticwebassets\\images\\2-16.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\2-17.png",
+      "PackagePath": "staticwebassets\\images\\2-17.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\2-18.png",
+      "PackagePath": "staticwebassets\\images\\2-18.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\2-2.png",
+      "PackagePath": "staticwebassets\\images\\2-2.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\2-3.png",
+      "PackagePath": "staticwebassets\\images\\2-3.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\2-4.png",
+      "PackagePath": "staticwebassets\\images\\2-4.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\2-5.png",
+      "PackagePath": "staticwebassets\\images\\2-5.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\2-6.png",
+      "PackagePath": "staticwebassets\\images\\2-6.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\2-7.png",
+      "PackagePath": "staticwebassets\\images\\2-7.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\2-8.png",
+      "PackagePath": "staticwebassets\\images\\2-8.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\2-9.png",
+      "PackagePath": "staticwebassets\\images\\2-9.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\2-p-1080-1.png",
+      "PackagePath": "staticwebassets\\images\\2-p-1080-1.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\2-p-1080.png",
+      "PackagePath": "staticwebassets\\images\\2-p-1080.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\2-p-500-1.png",
+      "PackagePath": "staticwebassets\\images\\2-p-500-1.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\2-p-500-2.png",
+      "PackagePath": "staticwebassets\\images\\2-p-500-2.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\2-p-500-3.png",
+      "PackagePath": "staticwebassets\\images\\2-p-500-3.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\2-p-500-4.png",
+      "PackagePath": "staticwebassets\\images\\2-p-500-4.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\2-p-500-5.png",
+      "PackagePath": "staticwebassets\\images\\2-p-500-5.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\2-p-500-6.png",
+      "PackagePath": "staticwebassets\\images\\2-p-500-6.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\2-p-500-7.png",
+      "PackagePath": "staticwebassets\\images\\2-p-500-7.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\2-p-500.jpg",
+      "PackagePath": "staticwebassets\\images\\2-p-500.jpg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\2-p-500.png",
+      "PackagePath": "staticwebassets\\images\\2-p-500.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\2-p-800-1.png",
+      "PackagePath": "staticwebassets\\images\\2-p-800-1.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\2-p-800-2.png",
+      "PackagePath": "staticwebassets\\images\\2-p-800-2.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\2-p-800-3.png",
+      "PackagePath": "staticwebassets\\images\\2-p-800-3.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\2-p-800.png",
+      "PackagePath": "staticwebassets\\images\\2-p-800.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\2.jpg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\2.png",
+      "PackagePath": "staticwebassets\\images\\2.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\3-1.png",
+      "PackagePath": "staticwebassets\\images\\3-1.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\3-10.png",
+      "PackagePath": "staticwebassets\\images\\3-10.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\3-11.png",
+      "PackagePath": "staticwebassets\\images\\3-11.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\3-12.png",
+      "PackagePath": "staticwebassets\\images\\3-12.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\3-13.png",
+      "PackagePath": "staticwebassets\\images\\3-13.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\3-2.png",
+      "PackagePath": "staticwebassets\\images\\3-2.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\3-3.png",
+      "PackagePath": "staticwebassets\\images\\3-3.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\3-4.png",
+      "PackagePath": "staticwebassets\\images\\3-4.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\3-5.png",
+      "PackagePath": "staticwebassets\\images\\3-5.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\3-6.png",
+      "PackagePath": "staticwebassets\\images\\3-6.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\3-7.png",
+      "PackagePath": "staticwebassets\\images\\3-7.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\3-8.png",
+      "PackagePath": "staticwebassets\\images\\3-8.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\3-9.png",
+      "PackagePath": "staticwebassets\\images\\3-9.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\3-p-1080.png",
+      "PackagePath": "staticwebassets\\images\\3-p-1080.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\3-p-500-1.png",
+      "PackagePath": "staticwebassets\\images\\3-p-500-1.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\3-p-500-2.png",
+      "PackagePath": "staticwebassets\\images\\3-p-500-2.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\3-p-500-3.png",
+      "PackagePath": "staticwebassets\\images\\3-p-500-3.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\3-p-500-4.png",
+      "PackagePath": "staticwebassets\\images\\3-p-500-4.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\3-p-500-5.png",
+      "PackagePath": "staticwebassets\\images\\3-p-500-5.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\3-p-500.jpg",
+      "PackagePath": "staticwebassets\\images\\3-p-500.jpg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\3-p-500.png",
+      "PackagePath": "staticwebassets\\images\\3-p-500.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\3-p-800-1.png",
+      "PackagePath": "staticwebassets\\images\\3-p-800-1.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\3-p-800.png",
+      "PackagePath": "staticwebassets\\images\\3-p-800.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\3.jpg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\3.png",
+      "PackagePath": "staticwebassets\\images\\3.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\4-1.png",
+      "PackagePath": "staticwebassets\\images\\4-1.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\4-10.png",
+      "PackagePath": "staticwebassets\\images\\4-10.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\4-11.png",
+      "PackagePath": "staticwebassets\\images\\4-11.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\4-2.png",
+      "PackagePath": "staticwebassets\\images\\4-2.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\4-3.png",
+      "PackagePath": "staticwebassets\\images\\4-3.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\4-4.png",
+      "PackagePath": "staticwebassets\\images\\4-4.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\4-5.png",
+      "PackagePath": "staticwebassets\\images\\4-5.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\4-6.png",
+      "PackagePath": "staticwebassets\\images\\4-6.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\4-7.png",
+      "PackagePath": "staticwebassets\\images\\4-7.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\4-8.png",
+      "PackagePath": "staticwebassets\\images\\4-8.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\4-9.png",
+      "PackagePath": "staticwebassets\\images\\4-9.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\4-p-1080-1.png",
+      "PackagePath": "staticwebassets\\images\\4-p-1080-1.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\4-p-1080.png",
+      "PackagePath": "staticwebassets\\images\\4-p-1080.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\4-p-500-1.png",
+      "PackagePath": "staticwebassets\\images\\4-p-500-1.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\4-p-500-2.png",
+      "PackagePath": "staticwebassets\\images\\4-p-500-2.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\4-p-500-3.png",
+      "PackagePath": "staticwebassets\\images\\4-p-500-3.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\4-p-500-4.png",
+      "PackagePath": "staticwebassets\\images\\4-p-500-4.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\4-p-500.jpg",
+      "PackagePath": "staticwebassets\\images\\4-p-500.jpg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\4-p-500.png",
+      "PackagePath": "staticwebassets\\images\\4-p-500.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\4-p-800-1.png",
+      "PackagePath": "staticwebassets\\images\\4-p-800-1.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\4-p-800-2.png",
+      "PackagePath": "staticwebassets\\images\\4-p-800-2.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\4-p-800.png",
+      "PackagePath": "staticwebassets\\images\\4-p-800.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\4.jpg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\4.png",
+      "PackagePath": "staticwebassets\\images\\4.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\5-1.png",
+      "PackagePath": "staticwebassets\\images\\5-1.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\5-2.png",
+      "PackagePath": "staticwebassets\\images\\5-2.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\5-3.png",
+      "PackagePath": "staticwebassets\\images\\5-3.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\5-4.png",
+      "PackagePath": "staticwebassets\\images\\5-4.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\5-5.png",
+      "PackagePath": "staticwebassets\\images\\5-5.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\5-6.png",
+      "PackagePath": "staticwebassets\\images\\5-6.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\5-p-1080-1.png",
+      "PackagePath": "staticwebassets\\images\\5-p-1080-1.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\5-p-1080.png",
+      "PackagePath": "staticwebassets\\images\\5-p-1080.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\5-p-500-1.png",
+      "PackagePath": "staticwebassets\\images\\5-p-500-1.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\5-p-500-2.png",
+      "PackagePath": "staticwebassets\\images\\5-p-500-2.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\5-p-500.jpg",
+      "PackagePath": "staticwebassets\\images\\5-p-500.jpg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\5-p-500.png",
+      "PackagePath": "staticwebassets\\images\\5-p-500.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\5-p-800-1.png",
+      "PackagePath": "staticwebassets\\images\\5-p-800-1.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\5-p-800.png",
+      "PackagePath": "staticwebassets\\images\\5-p-800.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\5.jpg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\5.png",
+      "PackagePath": "staticwebassets\\images\\5.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\6-1.png",
+      "PackagePath": "staticwebassets\\images\\6-1.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\6-2.png",
+      "PackagePath": "staticwebassets\\images\\6-2.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\6-3.png",
+      "PackagePath": "staticwebassets\\images\\6-3.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\6-4.png",
+      "PackagePath": "staticwebassets\\images\\6-4.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\6-p-500-1.png",
+      "PackagePath": "staticwebassets\\images\\6-p-500-1.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\6-p-500.png",
+      "PackagePath": "staticwebassets\\images\\6-p-500.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\6-p-800-1.png",
+      "PackagePath": "staticwebassets\\images\\6-p-800-1.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\6-p-800.png",
+      "PackagePath": "staticwebassets\\images\\6-p-800.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\6.png",
+      "PackagePath": "staticwebassets\\images\\6.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\7-1.png",
+      "PackagePath": "staticwebassets\\images\\7-1.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\7-2.png",
+      "PackagePath": "staticwebassets\\images\\7-2.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\7-3.png",
+      "PackagePath": "staticwebassets\\images\\7-3.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\7-4.png",
+      "PackagePath": "staticwebassets\\images\\7-4.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\7-5.png",
+      "PackagePath": "staticwebassets\\images\\7-5.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\7-p-500-1.png",
+      "PackagePath": "staticwebassets\\images\\7-p-500-1.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\7-p-500.png",
+      "PackagePath": "staticwebassets\\images\\7-p-500.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\7-p-800-1.png",
+      "PackagePath": "staticwebassets\\images\\7-p-800-1.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\7-p-800.png",
+      "PackagePath": "staticwebassets\\images\\7-p-800.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\7.png",
+      "PackagePath": "staticwebassets\\images\\7.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\8-1.jpg",
+      "PackagePath": "staticwebassets\\images\\8-1.jpg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\8-1.png",
+      "PackagePath": "staticwebassets\\images\\8-1.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\8-2.png",
+      "PackagePath": "staticwebassets\\images\\8-2.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\8-p-1080-1.jpg",
+      "PackagePath": "staticwebassets\\images\\8-p-1080-1.jpg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\8-p-1080.jpg",
+      "PackagePath": "staticwebassets\\images\\8-p-1080.jpg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\8-p-500-1.jpg",
+      "PackagePath": "staticwebassets\\images\\8-p-500-1.jpg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\8-p-500.jpg",
+      "PackagePath": "staticwebassets\\images\\8-p-500.jpg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\8-p-800-1.jpg",
+      "PackagePath": "staticwebassets\\images\\8-p-800-1.jpg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\8-p-800.jpg",
+      "PackagePath": "staticwebassets\\images\\8-p-800.jpg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\8.jpg",
+      "PackagePath": "staticwebassets\\images\\8.jpg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\8.png",
+      "PackagePath": "staticwebassets\\images\\8.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\9-1.jpg",
+      "PackagePath": "staticwebassets\\images\\9-1.jpg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\9-1.png",
+      "PackagePath": "staticwebassets\\images\\9-1.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\9-p-1080-1.jpg",
+      "PackagePath": "staticwebassets\\images\\9-p-1080-1.jpg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\9-p-1080.jpg",
+      "PackagePath": "staticwebassets\\images\\9-p-1080.jpg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\9-p-500-1.jpg",
+      "PackagePath": "staticwebassets\\images\\9-p-500-1.jpg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\9-p-500.jpg",
+      "PackagePath": "staticwebassets\\images\\9-p-500.jpg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\9-p-800-1.jpg",
+      "PackagePath": "staticwebassets\\images\\9-p-800-1.jpg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\9-p-800.jpg",
+      "PackagePath": "staticwebassets\\images\\9-p-800.jpg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\9.jpg",
+      "PackagePath": "staticwebassets\\images\\9.jpg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\9.png",
+      "PackagePath": "staticwebassets\\images\\9.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\app-icon.png",
+      "PackagePath": "staticwebassets\\images\\app-icon.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\check.svg",
+      "PackagePath": "staticwebassets\\images\\check.svg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\chevron-down.svg",
+      "PackagePath": "staticwebassets\\images\\chevron-down.svg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\custom-checkbox-checkmark.589d534424.svg",
+      "PackagePath": "staticwebassets\\images\\custom-checkbox-checkmark.589d534424.svg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\draw-20house-p-500.png",
+      "PackagePath": "staticwebassets\\images\\draw-20house-p-500.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\draw-20house-p-800.png",
+      "PackagePath": "staticwebassets\\images\\draw-20house-p-800.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\draw-20house.png",
+      "PackagePath": "staticwebassets\\images\\draw-20house.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\images\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\images\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\images\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\fa-v4compatibility.woff2",
+      "PackagePath": "staticwebassets\\images\\fa-v4compatibility.woff2"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\favicon.png",
+      "PackagePath": "staticwebassets\\images\\favicon.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\radio-active.svg",
+      "PackagePath": "staticwebassets\\images\\radio-active.svg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\rectangle-20264-p-1080.png",
+      "PackagePath": "staticwebassets\\images\\rectangle-20264-p-1080.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\rectangle-20264-p-500.png",
+      "PackagePath": "staticwebassets\\images\\rectangle-20264-p-500.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\rectangle-20264-p-800.png",
+      "PackagePath": "staticwebassets\\images\\rectangle-20264-p-800.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\rectangle-20264.png",
+      "PackagePath": "staticwebassets\\images\\rectangle-20264.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\rectangle-20265-p-500.png",
+      "PackagePath": "staticwebassets\\images\\rectangle-20265-p-500.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\rectangle-20265.png",
+      "PackagePath": "staticwebassets\\images\\rectangle-20265.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\text-201.png",
+      "PackagePath": "staticwebassets\\images\\text-201.png"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\webflow-badge-icon-d2.89e12c322e.svg",
+      "PackagePath": "staticwebassets\\images\\webflow-badge-icon-d2.89e12c322e.svg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\images\\webflow-badge-text-d2.c82cec3b78.svg",
+      "PackagePath": "staticwebassets\\images\\webflow-badge-text-d2.c82cec3b78.svg"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\js\\jquery.js",
+      "PackagePath": "staticwebassets\\js\\jquery.js"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\js\\webflow-script.js",
+      "PackagePath": "staticwebassets\\js\\webflow-script.js"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\portfolio.html",
+      "PackagePath": "staticwebassets\\portfolio.html"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\post\\concrete-innovations.html",
+      "PackagePath": "staticwebassets\\post\\concrete-innovations.html"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\post\\construction-mastery-pro-insights.html",
+      "PackagePath": "staticwebassets\\post\\construction-mastery-pro-insights.html"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\post\\green-build-practices.html",
+      "PackagePath": "staticwebassets\\post\\green-build-practices.html"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\post\\stories-behind-hard-hats.html",
+      "PackagePath": "staticwebassets\\post\\stories-behind-hard-hats.html"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\post\\tomorrows-trends-in-building.html",
+      "PackagePath": "staticwebassets\\post\\tomorrows-trends-in-building.html"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\pricing-plan.html",
+      "PackagePath": "staticwebassets\\pricing-plan.html"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\project\\foundation-heights.html",
+      "PackagePath": "staticwebassets\\project\\foundation-heights.html"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\project\\greenscape-estates.html",
+      "PackagePath": "staticwebassets\\project\\greenscape-estates.html"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\project\\harbor-view-residences.html",
+      "PackagePath": "staticwebassets\\project\\harbor-view-residences.html"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\project\\heritage-revival.html",
+      "PackagePath": "staticwebassets\\project\\heritage-revival.html"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\project\\industrial-innovation.html",
+      "PackagePath": "staticwebassets\\project\\industrial-innovation.html"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\project\\metropolis-towers.html",
+      "PackagePath": "staticwebassets\\project\\metropolis-towers.html"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\project\\rural-retreat.html",
+      "PackagePath": "staticwebassets\\project\\rural-retreat.html"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\project\\skyline-horizons.html",
+      "PackagePath": "staticwebassets\\project\\skyline-horizons.html"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\project\\urban-oasis.html",
+      "PackagePath": "staticwebassets\\project\\urban-oasis.html"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\services.html",
+      "PackagePath": "staticwebassets\\services.html"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\services\\design-build-services.html",
+      "PackagePath": "staticwebassets\\services\\design-build-services.html"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\services\\facade-and-exterior-finishes.html",
+      "PackagePath": "staticwebassets\\services\\facade-and-exterior-finishes.html"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\services\\general-contracting.html",
+      "PackagePath": "staticwebassets\\services\\general-contracting.html"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\services\\interior-fit-outs.html",
+      "PackagePath": "staticwebassets\\services\\interior-fit-outs.html"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\services\\landscaping-and-site-development.html",
+      "PackagePath": "staticwebassets\\services\\landscaping-and-site-development.html"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\services\\pre-construction-planning.html",
+      "PackagePath": "staticwebassets\\services\\pre-construction-planning.html"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\services\\project-management-and-consultation.html",
+      "PackagePath": "staticwebassets\\services\\project-management-and-consultation.html"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\services\\renovation-and-remodeling.html",
+      "PackagePath": "staticwebassets\\services\\renovation-and-remodeling.html"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\services\\structural-repair-and-restoration.html",
+      "PackagePath": "staticwebassets\\services\\structural-repair-and-restoration.html"
+    },
+    {
+      "Id": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\team.html",
+      "PackagePath": "staticwebassets\\team.html"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.WebApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.WebApp.props",
+      "PackagePath": "build\\WebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.WebApp.props",
+      "PackagePath": "buildMultiTargeting\\WebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.WebApp.props",
+      "PackagePath": "buildTransitive\\WebApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
