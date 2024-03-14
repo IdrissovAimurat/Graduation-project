@@ -1,0 +1,86 @@
+﻿@using Microsoft.AspNetCore.Builder
+@using Microsoft.AspNetCore.Localization
+@using Microsoft.Extensions.Options
+@using System.Globalization
+@using Microsoft.AspNetCore.Mvc.Localization
+
+@{
+    var cultureList = locOptions.Value.SupportedUICultures;
+}
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor _httpContext
+@inject IOptions<RequestLocalizationOptions> locOptions
+@inject IViewLocalizer _lang
+
+<div class="navbar-wrap">
+    <a href="/" aria-current="page" class="brand w-nav-brand w--current">
+        <img src="~/images/logo.png" loading="lazy" width="243.5" alt="Header Logo"
+             class="header-logo" />
+    </a>
+    <nav role="navigation" class="nav-menu w-nav-menu">
+        <a asp-action="Index" asp-controller="Home" aria-current="page" class="nav-link w-nav-link w--current">@_lang["Home"]</a>
+        <a asp-action="About_us" asp-controller="Home" class="nav-link w-nav-link">@_lang["About Us"]</a>
+        <div data-hover="true" data-delay="0" class="dropdown w-dropdown">
+            <div class="nav-link w-dropdown-toggle">
+                <div class="dropdown-toggle-icon w-icon-dropdown-toggle"></div>
+                <div class="dropdown-text">Pages</div>
+            </div>
+            <nav class="dropdown-list w-dropdown-list">
+                <a href="/home-2" class="dropdown-link w-dropdown-link">Home 2</a>
+                <a href="/portfolio" class="dropdown-link w-dropdown-link">Projects</a>
+                <a href="/team" class="dropdown-link w-dropdown-link">Team</a>
+                <a href="/pricing-plan" class="dropdown-link w-dropdown-link">Pricing Plan</a>
+                <a href="https://buildazo.webflow.io/404" class="dropdown-link w-dropdown-link">404</a>
+            </nav>
+        </div>
+        <a asp-action="Services" asp-controller="Home" class="nav-link w-nav-link">@_lang["Services"]</a>
+        <a asp-action="Blog" asp-controller="Home" class="nav-link w-nav-link">@_lang["Blog"]</a>
+        @*zamena*@
+        <form asp-action="Index" id="cultureForm" class="nav-link w-nav-link">
+            <select onchange="SetCulture(this.value);">
+                <option selected value="">@_lang["Language"]</option>
+                @foreach (CultureInfo item in cultureList)
+                {
+                    <option value="@item.Name">@item.Name | @item.DisplayName</option>
+                }
+            </select>
+        </form>
+    </nav>
+
+
+    <div id="w-node-_31368c8d-2f6a-a1b0-d48d-ca8cb8c8ee25-b8c8ee07" class="navbar-right-side">
+
+        @if (User.Identity.IsAuthenticated)
+        {
+            <a asp-action="Logout" asp-controller="Home" class="button-primary header-button w-inline-block">
+                <div class="button-text">
+                    @_lang["Logout"]
+                </div>
+            </a>
+        }
+        else
+        {
+            <a asp-action="Login" asp-controller="Home" class="button-primary header-button w-inline-block">
+                <div class="button-text">
+                    @_lang["Login"]
+                </div>
+            </a>
+        }
+
+
+    </div>
+    <div class="menu-button w-nav-button">
+        <div class="icon">
+            
+        </div>
+    </div>
+</div>
+
+
+
+    <script>
+        function SetCulture(selectedCulture) {
+            var culture = "/?culture=" + selectedCulture + "&cultureIU=" + selectedCulture;
+            document.getElementById("cultureForm").action = culture;
+            document.getElementById("cultureForm").submit();
+        }
+    </script>

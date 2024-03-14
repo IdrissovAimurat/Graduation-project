@@ -1,0 +1,945 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAEzOkz6K5xEyoaqammkIE6wAAAAACAAAAAAAQZgAAAAEAACAAAACNXjYdT1s4zS9fdO+a/a5EK8uAWR8E8NUeChB/i/EhcQAAAAAOgAAAAAIAACAAAABsPys+b9cpR9S4EPvdAMQ4aWjZTs+25LNdanEfuDRDmSAAAACQwnk28W+i7KIDImuypCBlUV0gVSYAUc9sIhDQJlWseUAAAACngLZB3ilpaM9SosFCB7Y4PC8Od2Pwkdu3gVCeQMC0aBIS7cNy6IrdVnFKk+SzmC+Y7NsaIH7Pewjqbkcm3Ed8</EncryptedPassword>
+    <_PublishTargetUrl>ftp://178.89.186.221</_PublishTargetUrl>
+    <History>True|2024-03-14T04:10:24.9764731Z;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="appsettings.Development.json">
+      <publishTime>03/13/2024 01:47:05</publishTime>
+    </File>
+    <File Include="appsettings.json">
+      <publishTime>03/14/2024 01:10:45</publishTime>
+    </File>
+    <File Include="en/WebApp.resources.dll">
+      <publishTime>03/14/2024 09:01:00</publishTime>
+    </File>
+    <File Include="kk/WebApp.resources.dll">
+      <publishTime>03/14/2024 09:01:01</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Configuration.Abstractions.dll">
+      <publishTime>10/31/2023 20:02:56</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Configuration.Binder.dll">
+      <publishTime>10/31/2023 20:09:22</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Configuration.dll">
+      <publishTime>10/31/2023 20:09:22</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.DependencyInjection.Abstractions.dll">
+      <publishTime>10/31/2023 20:05:34</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.DependencyInjection.dll">
+      <publishTime>10/31/2023 20:07:08</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.DependencyModel.dll">
+      <publishTime>10/31/2023 20:07:04</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Diagnostics.Abstractions.dll">
+      <publishTime>10/31/2023 20:07:36</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.FileProviders.Abstractions.dll">
+      <publishTime>10/31/2023 20:04:02</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Hosting.Abstractions.dll">
+      <publishTime>10/31/2023 20:08:04</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Logging.Abstractions.dll">
+      <publishTime>10/31/2023 20:06:32</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Logging.Configuration.dll">
+      <publishTime>10/31/2023 20:10:00</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Logging.dll">
+      <publishTime>10/31/2023 20:08:04</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Options.ConfigurationExtensions.dll">
+      <publishTime>10/31/2023 20:09:32</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Options.dll">
+      <publishTime>10/31/2023 20:06:46</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Primitives.dll">
+      <publishTime>10/31/2023 20:00:16</publishTime>
+    </File>
+    <File Include="ru/WebApp.resources.dll">
+      <publishTime>03/14/2024 09:01:01</publishTime>
+    </File>
+    <File Include="runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll">
+      <publishTime>10/31/2023 20:01:16</publishTime>
+    </File>
+    <File Include="Seq.Extensions.Logging.dll">
+      <publishTime>01/29/2024 04:35:36</publishTime>
+    </File>
+    <File Include="Serilog.AspNetCore.dll">
+      <publishTime>01/19/2024 08:32:32</publishTime>
+    </File>
+    <File Include="Serilog.dll">
+      <publishTime>11/10/2023 17:41:58</publishTime>
+    </File>
+    <File Include="Serilog.Extensions.Hosting.dll">
+      <publishTime>11/15/2023 07:04:24</publishTime>
+    </File>
+    <File Include="Serilog.Extensions.Logging.dll">
+      <publishTime>11/15/2023 03:47:44</publishTime>
+    </File>
+    <File Include="Serilog.Formatting.Compact.dll">
+      <publishTime>11/09/2023 11:54:54</publishTime>
+    </File>
+    <File Include="Serilog.Settings.Configuration.dll">
+      <publishTime>11/15/2023 06:17:36</publishTime>
+    </File>
+    <File Include="Serilog.Sinks.Console.dll">
+      <publishTime>11/09/2023 11:50:28</publishTime>
+    </File>
+    <File Include="Serilog.Sinks.Debug.dll">
+      <publishTime>02/14/2021 12:47:26</publishTime>
+    </File>
+    <File Include="Serilog.Sinks.File.dll">
+      <publishTime>06/25/2021 13:00:48</publishTime>
+    </File>
+    <File Include="Serilog.Sinks.PeriodicBatching.dll">
+      <publishTime>02/22/2024 05:08:58</publishTime>
+    </File>
+    <File Include="Serilog.Sinks.Seq.dll">
+      <publishTime>03/07/2024 03:25:12</publishTime>
+    </File>
+    <File Include="System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>10/31/2023 20:03:22</publishTime>
+    </File>
+    <File Include="System.Text.Encodings.Web.dll">
+      <publishTime>10/31/2023 20:00:54</publishTime>
+    </File>
+    <File Include="System.Text.Json.dll">
+      <publishTime>10/31/2023 20:05:48</publishTime>
+    </File>
+    <File Include="System.Threading.Channels.dll">
+      <publishTime>10/31/2023 20:09:30</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>03/14/2024 09:01:07</publishTime>
+    </File>
+    <File Include="WebApp.deps.json">
+      <publishTime>03/14/2024 09:01:01</publishTime>
+    </File>
+    <File Include="WebApp.dll">
+      <publishTime>03/14/2024 09:01:00</publishTime>
+    </File>
+    <File Include="WebApp.exe">
+      <publishTime>03/14/2024 09:01:00</publishTime>
+    </File>
+    <File Include="WebApp.pdb">
+      <publishTime>03/14/2024 09:01:00</publishTime>
+    </File>
+    <File Include="WebApp.runtimeconfig.json">
+      <publishTime>03/14/2024 09:01:01</publishTime>
+    </File>
+    <File Include="wwwroot/404.html">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/about-us.html">
+      <publishTime>03/13/2024 22:47:44</publishTime>
+    </File>
+    <File Include="wwwroot/blog.html">
+      <publishTime>03/14/2024 06:59:11</publishTime>
+    </File>
+    <File Include="wwwroot/brand-guidelines/changelog.html">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/brand-guidelines/licenses.html">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/brand-guidelines/style-guide.html">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/contact-us.html">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/css/style.css">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/css/webflow-style.css">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/favicon.ico">
+      <publishTime>03/13/2024 01:47:05</publishTime>
+    </File>
+    <File Include="wwwroot/home-2.html">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-1.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-10.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-11.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-12.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-13.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-14.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-15.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-16.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-17.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-18.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-19.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-2.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-20.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-21.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-22.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-23.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-24.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-25.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-26.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-27.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-3.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-4.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-5.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-6.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-7.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-8.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-9.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-p-1080-1.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-p-1080-2.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-p-1080-3.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-p-1080-4.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-p-1080.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-p-1600.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-p-2000.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-p-2600.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-p-500-1.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-p-500-10.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-p-500-11.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-p-500-12.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-p-500-2.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-p-500-3.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-p-500-4.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-p-500-5.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-p-500-6.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-p-500-7.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-p-500-8.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-p-500-9.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-p-500.jpg">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-p-500.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-p-800-1.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-p-800-2.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-p-800-3.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-p-800-4.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-p-800-5.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-p-800-6.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-p-800-7.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1-p-800.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1.jpg">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/1.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/2-1.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/2-10.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/2-11.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/2-12.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/2-13.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/2-14.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/2-15.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/2-16.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/2-17.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/2-18.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/2-2.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/2-3.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/2-4.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/2-5.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/2-6.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/2-7.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/2-8.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/2-9.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/2-p-1080-1.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/2-p-1080.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/2-p-500-1.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/2-p-500-2.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/2-p-500-3.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/2-p-500-4.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/2-p-500-5.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/2-p-500-6.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/2-p-500-7.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/2-p-500.jpg">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/2-p-500.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/2-p-800-1.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/2-p-800-2.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/2-p-800-3.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/2-p-800.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/2.jpg">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/2.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/3-1.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/3-10.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/3-11.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/3-12.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/3-13.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/3-2.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/3-3.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/3-4.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/3-5.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/3-6.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/3-7.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/3-8.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/3-9.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/3-p-1080.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/3-p-500-1.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/3-p-500-2.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/3-p-500-3.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/3-p-500-4.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/3-p-500-5.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/3-p-500.jpg">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/3-p-500.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/3-p-800-1.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/3-p-800.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/3.jpg">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/3.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/4-1.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/4-10.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/4-11.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/4-2.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/4-3.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/4-4.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/4-5.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/4-6.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/4-7.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/4-8.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/4-9.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/4-p-1080-1.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/4-p-1080.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/4-p-500-1.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/4-p-500-2.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/4-p-500-3.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/4-p-500-4.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/4-p-500.jpg">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/4-p-500.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/4-p-800-1.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/4-p-800-2.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/4-p-800.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/4.jpg">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/4.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/5-1.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/5-2.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/5-3.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/5-4.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/5-5.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/5-6.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/5-p-1080-1.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/5-p-1080.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/5-p-500-1.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/5-p-500-2.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/5-p-500.jpg">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/5-p-500.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/5-p-800-1.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/5-p-800.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/5.jpg">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/5.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/6-1.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/6-2.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/6-3.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/6-4.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/6-p-500-1.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/6-p-500.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/6-p-800-1.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/6-p-800.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/6.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/7-1.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/7-2.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/7-3.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/7-4.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/7-5.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/7-p-500-1.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/7-p-500.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/7-p-800-1.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/7-p-800.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/7.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/8-1.jpg">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/8-1.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/8-2.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/8-p-1080-1.jpg">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/8-p-1080.jpg">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/8-p-500-1.jpg">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/8-p-500.jpg">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/8-p-800-1.jpg">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/8-p-800.jpg">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/8.jpg">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/8.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/9-1.jpg">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/9-1.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/9-p-1080-1.jpg">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/9-p-1080.jpg">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/9-p-500-1.jpg">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/9-p-500.jpg">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/9-p-800-1.jpg">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/9-p-800.jpg">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/9.jpg">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/9.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/app-icon.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/check.svg">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/chevron-down.svg">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/custom-checkbox-checkmark.589d534424.svg">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/draw-20house-p-500.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/draw-20house-p-800.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/draw-20house.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/fa-brands-400.woff2">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/fa-regular-400.woff2">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/fa-solid-900.woff2">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/fa-v4compatibility.woff2">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/favicon.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/logo.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/radio-active.svg">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/rectangle-20264-p-1080.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/rectangle-20264-p-500.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/rectangle-20264-p-800.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/rectangle-20264.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/rectangle-20265-p-500.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/rectangle-20265.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/text-201.png">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/webflow-badge-icon-d2.89e12c322e.svg">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/images/webflow-badge-text-d2.c82cec3b78.svg">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/index.html">
+      <publishTime>03/13/2024 22:56:02</publishTime>
+    </File>
+    <File Include="wwwroot/js/jquery.js">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/js/script.js">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/js/webflow-script.js">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/portfolio.html">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/post/concrete-innovations.html">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/post/construction-mastery-pro-insights.html">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/post/green-build-practices.html">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/post/stories-behind-hard-hats.html">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/post/tomorrows-trends-in-building.html">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/pricing-plan.html">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/project/foundation-heights.html">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/project/greenscape-estates.html">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/project/harbor-view-residences.html">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/project/heritage-revival.html">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/project/industrial-innovation.html">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/project/metropolis-towers.html">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/project/rural-retreat.html">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/project/skyline-horizons.html">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/project/urban-oasis.html">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/services.html">
+      <publishTime>03/14/2024 01:28:23</publishTime>
+    </File>
+    <File Include="wwwroot/services/design-build-services.html">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/services/facade-and-exterior-finishes.html">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/services/general-contracting.html">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/services/interior-fit-outs.html">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/services/landscaping-and-site-development.html">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/services/pre-construction-planning.html">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/services/project-management-and-consultation.html">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/services/renovation-and-remodeling.html">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/services/structural-repair-and-restoration.html">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/team.html">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/WebApp.styles.css">
+      <publishTime>03/14/2024 09:01:01</publishTime>
+    </File>
+    <File Include="wwwroot/_cf44d5dd_page=2.html">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+    <File Include="wwwroot/_f59ca0c0_page=2.html">
+      <publishTime>03/12/2024 19:14:32</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
