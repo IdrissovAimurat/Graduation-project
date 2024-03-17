@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:graduation/Registration/registration_page.dart'; // Импортируем страницу регистрации
-import 'package:graduation/rounded_button.dart'; // Импортируем страницу авторизации
+import 'package:graduation/rounded_button.dart';
+
+import 'Authorization/login_page.dart'; // Импортируем страницу авторизации
 
 class ChooseActionPage extends StatelessWidget {
-  void _navigateToRegistration(BuildContext context){
+  void _navigateToLoginPage(BuildContext context){
     Navigator.of(context).push(
-      MaterialPageRoute(builder: (context) => RegistrationPage()),
+      MaterialPageRoute(builder: (context) => LoginPage()),
+      //MaterialPageRoute(builder: (context) => RegistrationPage()),
     );
   }
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -31,13 +31,13 @@ class ChooseActionPage extends StatelessWidget {
             ),
             RoundedButton(
               title: 'Регистрация',
-              color: Colors.pink,
-              onPressed: () => _navigateToRegistration(context), // Изменение обработчика события
+              color: Theme.of(context).primaryColor, // Использование primaryColor из темы
+              onPressed: () => _navigateToLoginPage(context), // Изменение обработчика события
             ),
             SizedBox(height: 20), // Отступ между кнопками
             RoundedButton(
               title: 'Авторизация',
-              color: Colors.pink,
+              color: Theme.of(context).primaryColor, // Использование primaryColor из темы
               onPressed: () {
                 // Обработчик события для кнопки Клиент
                 print('Кнопка Клиент нажата');

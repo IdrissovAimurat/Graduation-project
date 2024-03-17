@@ -10,17 +10,22 @@ class RegistrationPage extends StatefulWidget {
 }
 
 class _RegistrationPageState extends State<RegistrationPage> {
-  final TextEditingController _fullNameController = TextEditingController();
+  final TextEditingController _surnameController = TextEditingController();
+  final TextEditingController _nameController = TextEditingController();
+  final TextEditingController _patronymicController = TextEditingController(); //отечественная война
   String? _selectedJob;
   final TextEditingController _addressController = TextEditingController();
-  final TextEditingController _emailController = TextEditingController();
   final TextEditingController _phoneNumberController = TextEditingController();
+
+  // Создаем переменную для управления отступом
+  final double fieldSpacing = 16.0;
 
   @override
   void dispose() {
-    _fullNameController.dispose();
+    _surnameController.dispose();
+    _nameController.dispose();
+    _patronymicController.dispose();
     _addressController.dispose();
-    _emailController.dispose();
     _phoneNumberController.dispose();
 
     super.dispose();
@@ -30,7 +35,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-//        title: Text('Регистрация'),
+        title: Text('Заполните данные'),
         centerTitle: true,
       ),
       body: Center(
@@ -39,10 +44,19 @@ class _RegistrationPageState extends State<RegistrationPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              Image.asset('путь/к/вашему/изображению.png'), // Используйте Image.network если картинка из интернета
-              SizedBox(height: 16.0),
-              NameField(controller: _fullNameController),
-              SizedBox(height: 16.0),
+              SizedBox(height: fieldSpacing), // Отступ перед изображением
+              Image.asset(
+                'assets/images/ui-design.png',
+                height: 120,
+              ), // Используйте Image.network если картинка из интернета
+              SizedBox(height: fieldSpacing), // Отступ после изображения
+              SurnameField(controller: _surnameController),
+              SizedBox(height: fieldSpacing), // Отступ после изображения
+              NameField(controller: _nameController),
+              SizedBox(height: fieldSpacing), // Отступ после изображения
+              PatronymicField(controller: _patronymicController),
+
+              SizedBox(height: fieldSpacing),
               JobDropdown(
                 value: _selectedJob,
                 onChanged: (newValue) {
@@ -51,13 +65,11 @@ class _RegistrationPageState extends State<RegistrationPage> {
                   });
                 },
               ),
-              SizedBox(height: 16.0),
+              SizedBox(height: fieldSpacing),
               AddressField(controller: _addressController),
-              SizedBox(height: 16.0),
-              EmailField(controller: _emailController),
-              SizedBox(height: 16.0),
+              SizedBox(height: fieldSpacing),
               PhoneNumberField(controller: _phoneNumberController),
-              SizedBox(height: 16.0), // добавим дополнительный отступ
+              SizedBox(height: fieldSpacing), // добавим дополнительный отступ
 
               RegisterButton(
                 onPressed: () {
@@ -73,24 +85,28 @@ class _RegistrationPageState extends State<RegistrationPage> {
 
   void _registerWorker() {
     // В этом методе вы можете собирать данные с полей ввода и отправлять на сервер или сохранять локально
-    String fullName = _fullNameController.text;
+    String surname = _surnameController.text;
+    String name = _nameController.text;
+    String patronymic = _patronymicController.text;
     String job = _selectedJob ?? 'Не выбрано';
     String address = _addressController.text;
-    String email = _emailController.text;
     String phoneNumber = _phoneNumberController.text;
 
     // Вывод полученных данных в консоль (для проверки)
-    print('ФИО: $fullName');
+    print('Фамилия: $surname');
+    print('Имя: $name');
+    print('Отчество: $patronymic');
     print('Тип работы: $job');
     print('Адрес: $address');
-    print('Почта: $email');
+    //print('Почта: $email');
     print('Номер телефона: $phoneNumber');
 
     // Очистка полей после регистрации (если необходимо)
-    _fullNameController.clear();
+    _surnameController.clear();
+    _nameController.clear();
+    _patronymicController.clear();
     _selectedJob = null;
     _addressController.clear();
-    _emailController.clear();
     _phoneNumberController.clear();
 
     // Переход на другую страницу или выполнение других действий после регистрации

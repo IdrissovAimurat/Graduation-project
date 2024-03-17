@@ -50,7 +50,7 @@ namespace WebApp.Controllers
 
             return View();
         }
-        public IActionResult Index(string culture, string cultureIU)
+        public IActionResult Index(string culture, string cultureUI)
         {
             if(!string.IsNullOrEmpty(culture))
             {

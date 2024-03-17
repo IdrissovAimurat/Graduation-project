@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:graduation/rounded_button.dart';
-import 'package:graduation/choose_action_page.dart';
-import 'package:graduation/Registration/register_button.dart';
+import '../Registration/registration_page.dart';
 
 class LoginPage extends StatelessWidget {
-  TextEditingController _loginController = TextEditingController();
+  TextEditingController _emailController = TextEditingController();
   TextEditingController _passwordController = TextEditingController();
+  void _navigateToRegistration(BuildContext context){
+    Navigator.of(context).push(
+      MaterialPageRoute(builder: (context) => RegistrationPage()),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -21,16 +25,16 @@ class LoginPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(bottom: 20.0),
               child: Text(
-                'Введите Ваши логин и пароль, пожалуйста',
+                'Введите Ваши почту и пароль, пожалуйста',
                 style: TextStyle(fontSize: 18.0),
               ),
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20.0),
               child: TextField(
-                controller: _loginController,
+                controller: _emailController,
                 decoration: InputDecoration(
-                  labelText: 'Логин',
+                  labelText: 'Почта',
                   border: OutlineInputBorder(),
                 ),
               ),
@@ -50,13 +54,8 @@ class LoginPage extends StatelessWidget {
             SizedBox(height: 20), // Отступ между полем ввода пароля и кнопкой
             RoundedButton(
               title: 'Войти',
-              color: Colors.pink,
-              onPressed: () {
-                String login = _loginController.text;
-                String password = _passwordController.text;
-                // Дальнейшие действия при нажатии на кнопку входа
-                print('Логин: $login, Пароль: $password');
-              },
+              color: Theme.of(context).primaryColor, // Использование primaryColor из темы
+              onPressed: () => _navigateToRegistration(context),
             ),
           ],
         ),

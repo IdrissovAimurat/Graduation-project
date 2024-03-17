@@ -29,13 +29,15 @@ class AuthorizationPage extends StatelessWidget {
             ),
             RoundedButton(
               title: 'Работник',
-              color: Colors.pink,
+              color: Theme.of(context).primaryColor, // Использование primaryColor из темы
+              //color: Colors.pink,
               onPressed: () => _navigateToRegistration(context), // Изменение обработчика события
             ),
             SizedBox(height: 20), // Отступ между кнопками
             RoundedButton(
               title: 'Клиент',
-              color: Colors.pink,
+              //color: Colors.pink,
+              color: Theme.of(context).primaryColor, // Использование primaryColor из темы
               onPressed: () {
                 // Обработчик события для кнопки Клиент
                 print('Кнопка Клиент нажата');

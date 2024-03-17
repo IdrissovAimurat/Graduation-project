@@ -7,6 +7,42 @@
       "RelativeMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|solutionrelative:webapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|c:\\tests2\\graduation-project\\graduation\\web\\webapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|c:\\tests2\\graduation-project\\graduation\\web\\webapp\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|solutionrelative:views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|c:\\tests2\\graduation-project\\graduation\\web\\webapp\\views\\home\\about_us.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|solutionrelative:views\\home\\about_us.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|c:\\tests2\\graduation-project\\graduation\\web\\webapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|c:\\tests2\\graduation-project\\graduation\\web\\webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\resources\\views\\shared\\_header.en.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|solutionrelative:resources\\views\\shared\\_header.en.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\resources\\views\\home\\index.kk.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|solutionrelative:resources\\views\\home\\index.kk.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\resources\\views\\home\\index.en.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|solutionrelative:resources\\views\\home\\index.en.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|c:\\tests2\\graduation-project\\graduation\\web\\webapp\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|solutionrelative:startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|c:\\tests2\\graduation-project\\graduation\\web\\webapp\\models\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|solutionrelative:models\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,60 +55,24 @@
       "RelativeMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|c:\\tests2\\graduation-project\\graduation\\web\\webapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|c:\\tests2\\graduation-project\\graduation\\web\\webapp\\controllers\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|solutionrelative:controllers\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|c:\\tests2\\graduation-project\\graduation\\web\\webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|c:\\tests2\\graduation-project\\graduation\\web\\webapp\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|solutionrelative:startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|c:\\tests2\\graduation-project\\graduation\\web\\webapp\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|solutionrelative:views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|c:\\tests2\\graduation-project\\graduation\\web\\webapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|c:\\tests2\\graduation-project\\graduation\\web\\webapp\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|solutionrelative:views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|c:\\tests2\\graduation-project\\graduation\\web\\webapp\\resources\\views\\shared\\_header.kk.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "AbsoluteMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\resources\\views\\shared\\_header.kk.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
       "RelativeMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|solutionrelative:resources\\views\\shared\\_header.kk.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|c:\\tests2\\graduation-project\\graduation\\web\\webapp\\resources\\views\\shared\\_header.ru.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "AbsoluteMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\resources\\views\\shared\\_header.ru.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
       "RelativeMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|solutionrelative:resources\\views\\shared\\_header.ru.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|c:\\tests2\\graduation-project\\graduation\\web\\webapp\\resources\\views\\shared\\_header.en.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
-      "RelativeMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|solutionrelative:resources\\views\\shared\\_header.en.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|c:\\tests2\\graduation-project\\graduation\\web\\webapp\\resources\\views\\home\\index.en.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
-      "RelativeMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|solutionrelative:resources\\views\\home\\index.en.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|c:\\tests2\\graduation-project\\graduation\\web\\webapp\\resources\\views\\home\\index.kk.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
-      "RelativeMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|solutionrelative:resources\\views\\home\\index.kk.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|c:\\tests2\\graduation-project\\graduation\\web\\webapp\\views\\home\\blog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|solutionrelative:views\\home\\blog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|c:\\tests2\\graduation-project\\graduation\\web\\webapp\\views\\home\\about_us.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|solutionrelative:views\\home\\about_us.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|c:\\tests2\\graduation-project\\graduation\\web\\webapp\\wwwroot\\blog.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -89,10 +89,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|c:\\tests2\\graduation-project\\graduation\\web\\webapp\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|solutionrelative:views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\resourses\\views\\home\\index.ru.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
-      "RelativeMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|solutionrelative:resourses\\views\\home\\index.ru.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|c:\\tests2\\graduation-project\\graduation\\web\\webapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -136,6 +132,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|c:\\tests2\\graduation-project\\graduation\\web\\webapp\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{55ADE8B0-03E7-4142-965C-AC45CA9E4913}|WebApp.csproj|solutionrelative:views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\resourses\\views\\home\\index.ru.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:resourses\\views\\home\\index.ru.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     }
   ],
   "DocumentGroupContainers": [
@@ -145,25 +145,24 @@
       "DocumentGroups": [
         {
           "DockedHeight": 371,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAD8AAAAdAAAA",
+              "ViewState": "AQIAAH4AAAAAAAAAAAAAABcAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-03-13T17:11:11.055Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 27,
               "Title": "Pages.cshtml",
               "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Views\\Home\\Pages.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Pages.cshtml",
@@ -189,17 +188,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
               "ToolTip": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAAwHIAAAAJAAAA",
+              "ViewState": "AQIAADEAAAAAAAAAAAAEwBkAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-13T17:44:59.638Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -207,55 +205,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "Models\\Product.cs",
-              "ToolTip": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Models\\Product.cs",
-              "RelativeToolTip": "Models\\Product.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T20:07:16.439Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Models\\IRepository.cs",
-              "RelativeDocumentMoniker": "Models\\IRepository.cs",
-              "ToolTip": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Models\\IRepository.cs",
-              "RelativeToolTip": "Models\\IRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T20:07:08.959Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T18:50:52.264Z",
-              "EditorCaption": ""
+              "DocumentIndex": 3,
+              "Title": "About_us.cshtml",
+              "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Views\\Home\\About_us.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\About_us.cshtml",
+              "ToolTip": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Views\\Home\\About_us.cshtml",
+              "RelativeToolTip": "Views\\Home\\About_us.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-14T01:57:58.758Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Startup.cs",
-              "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Startup.cs",
-              "RelativeDocumentMoniker": "Startup.cs",
-              "ToolTip": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Startup.cs",
-              "RelativeToolTip": "Startup.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAgwDYAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T19:11:17.337Z",
-              "EditorCaption": ""
+              "Title": "Index.kk.resx",
+              "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Resources\\Views\\Home\\Index.kk.resx",
+              "RelativeDocumentMoniker": "Resources\\Views\\Home\\Index.kk.resx",
+              "ToolTip": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Resources\\Views\\Home\\Index.kk.resx",
+              "RelativeToolTip": "Resources\\Views\\Home\\Index.kk.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-03-14T00:40:51.018Z"
             },
             {
               "$type": "Document",
@@ -272,7 +241,89 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
+              "Title": "_Header.cshtml",
+              "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Views\\Shared\\_Header.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Header.cshtml",
+              "ToolTip": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Views\\Shared\\_Header.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Header.cshtml",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAABQAAABpAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-14T01:20:15.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T18:50:52.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Header.en.resx",
+              "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Resources\\Views\\Shared\\_Header.en.resx",
+              "RelativeDocumentMoniker": "Resources\\Views\\Shared\\_Header.en.resx",
+              "ToolTip": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Resources\\Views\\Shared\\_Header.en.resx",
+              "RelativeToolTip": "Resources\\Views\\Shared\\_Header.en.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-03-14T01:26:58.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.en.resx",
+              "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Resources\\Views\\Home\\Index.en.resx",
+              "RelativeDocumentMoniker": "Resources\\Views\\Home\\Index.en.resx",
+              "ToolTip": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Resources\\Views\\Home\\Index.en.resx",
+              "RelativeToolTip": "Resources\\Views\\Home\\Index.en.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-03-14T00:23:15.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Startup.cs",
+              "RelativeDocumentMoniker": "Startup.cs",
+              "ToolTip": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Startup.cs",
+              "RelativeToolTip": "Startup.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAWwDEAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T19:11:17.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Models\\IRepository.cs",
+              "RelativeDocumentMoniker": "Models\\IRepository.cs",
+              "ToolTip": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Models\\IRepository.cs",
+              "RelativeToolTip": "Models\\IRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T20:07:08.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Models\\Product.cs",
+              "ToolTip": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Models\\Product.cs",
+              "RelativeToolTip": "Models\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T20:07:16.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
@@ -280,12 +331,11 @@
               "RelativeToolTip": "Models\\User.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T20:07:31.029Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-13T20:07:31.029Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 13,
               "Title": "Request.cs",
               "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Controllers\\Request.cs",
               "RelativeDocumentMoniker": "Controllers\\Request.cs",
@@ -293,25 +343,11 @@
               "RelativeToolTip": "Controllers\\Request.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-14T00:07:03.531Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-14T00:07:03.531Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "_Header.cshtml",
-              "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Views\\Shared\\_Header.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Header.cshtml",
-              "ToolTip": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Views\\Shared\\_Header.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Header.cshtml",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAAFYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-14T01:20:15.682Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "_ValidationScriptsPartial.cshtml",
               "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
@@ -319,72 +355,33 @@
               "RelativeToolTip": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-13T18:24:31.024Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-13T18:24:31.024Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "_Header.ru.resx",
               "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Resources\\Views\\Shared\\_Header.ru.resx",
               "RelativeDocumentMoniker": "Resources\\Views\\Shared\\_Header.ru.resx",
               "ToolTip": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Resources\\Views\\Shared\\_Header.ru.resx",
               "RelativeToolTip": "Resources\\Views\\Shared\\_Header.ru.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-03-14T01:13:16.645Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-14T01:13:16.645Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "_Header.kk.resx",
               "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Resources\\Views\\Shared\\_Header.kk.resx",
               "RelativeDocumentMoniker": "Resources\\Views\\Shared\\_Header.kk.resx",
               "ToolTip": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Resources\\Views\\Shared\\_Header.kk.resx",
               "RelativeToolTip": "Resources\\Views\\Shared\\_Header.kk.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-03-14T01:12:56.105Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-14T01:12:56.105Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "_Header.en.resx",
-              "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Resources\\Views\\Shared\\_Header.en.resx",
-              "RelativeDocumentMoniker": "Resources\\Views\\Shared\\_Header.en.resx",
-              "ToolTip": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Resources\\Views\\Shared\\_Header.en.resx",
-              "RelativeToolTip": "Resources\\Views\\Shared\\_Header.en.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-03-14T01:26:58.446Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Index.en.resx",
-              "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Resources\\Views\\Home\\Index.en.resx",
-              "RelativeDocumentMoniker": "Resources\\Views\\Home\\Index.en.resx",
-              "ToolTip": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Resources\\Views\\Home\\Index.en.resx",
-              "RelativeToolTip": "Resources\\Views\\Home\\Index.en.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-03-14T00:23:15.404Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Index.kk.resx",
-              "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Resources\\Views\\Home\\Index.kk.resx",
-              "RelativeDocumentMoniker": "Resources\\Views\\Home\\Index.kk.resx",
-              "ToolTip": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Resources\\Views\\Home\\Index.kk.resx",
-              "RelativeToolTip": "Resources\\Views\\Home\\Index.kk.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-03-14T00:40:51.018Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Blog.cshtml",
               "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Views\\Home\\Blog.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Blog.cshtml",
@@ -392,20 +389,7 @@
               "RelativeToolTip": "Views\\Home\\Blog.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-14T01:57:52.602Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "About_us.cshtml",
-              "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Views\\Home\\About_us.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\About_us.cshtml",
-              "ToolTip": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Views\\Home\\About_us.cshtml",
-              "RelativeToolTip": "Views\\Home\\About_us.cshtml",
-              "ViewState": "AQIAADAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-14T01:57:58.758Z"
+              "WhenOpened": "2024-03-14T01:57:52.602Z"
             },
             {
               "$type": "Document",
@@ -433,7 +417,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 33,
               "Title": "Index.ru.resx",
               "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Resourses\\Views\\Home\\Index.ru.resx",
               "RelativeDocumentMoniker": "Resourses\\Views\\Home\\Index.ru.resx",
@@ -456,7 +440,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 22,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
@@ -468,7 +452,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 23,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
@@ -480,7 +464,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 24,
               "Title": "ProductSum.cs",
               "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Models\\ProductSum.cs",
               "RelativeDocumentMoniker": "Models\\ProductSum.cs",
@@ -492,7 +476,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 25,
               "Title": "Repository.cs",
               "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Models\\Repository.cs",
               "RelativeDocumentMoniker": "Models\\Repository.cs",
@@ -504,7 +488,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 26,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
@@ -516,7 +500,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 28,
               "Title": "contact-us.html",
               "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\contact-us.html",
               "RelativeDocumentMoniker": "wwwroot\\contact-us.html",
@@ -528,7 +512,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 29,
               "Title": "about-us.html",
               "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\wwwroot\\about-us.html",
               "RelativeDocumentMoniker": "wwwroot\\about-us.html",
@@ -540,7 +524,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 30,
               "Title": "Views_Home_About_us_cshtml.g.cs",
               "DocumentMoniker": "C:\\Users\\aimur\\AppData\\Local\\Temp\\.vsdbgsrc\\54a44a8334ac60ce45d75e11260a18c0429f3439\\Views_Home_About_us_cshtml.g.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Users\\aimur\\AppData\\Local\\Temp\\.vsdbgsrc\\54a44a8334ac60ce45d75e11260a18c0429f3439\\Views_Home_About_us_cshtml.g.cs",
@@ -553,7 +537,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 31,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -565,7 +549,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 32,
               "Title": "Error.cshtml",
               "DocumentMoniker": "C:\\tests2\\Graduation-project\\Graduation\\Web\\WebApp\\Views\\Shared\\Error.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\Error.cshtml",

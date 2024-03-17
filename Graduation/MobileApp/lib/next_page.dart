@@ -14,7 +14,7 @@ class NextPage extends StatelessWidget {
           children: <Widget>[
             RoundedButton(
               title: 'Регистрация',
-              color: Colors.pinkAccent,
+              color: Theme.of(context).primaryColor, // Использование primaryColor из темы
               onPressed: () {
                 // Действие при нажатии на кнопку Регистрация
                 print('Кнопка Регистрация нажата');
@@ -23,7 +23,7 @@ class NextPage extends StatelessWidget {
             SizedBox(height: 20), // Отступ между кнопками
             RoundedButton(
               title: 'Авторизация',
-              color: Colors.pinkAccent,
+              color: Theme.of(context).primaryColor, // Использование primaryColor из темы
               onPressed: () {
                 // Действие при нажатии на кнопку Авторизация
                 print('Кнопка Авторизация нажата');

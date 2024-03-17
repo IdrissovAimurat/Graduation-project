@@ -1,4 +1,4 @@
-#Sun Mar 10 17:02:14 ALMT 2024
-base.0=C\:\\graduation\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+#Sun Mar 17 19:26:37 GMT+05:00 2024
+base.0=C\:\\tests2\\Graduation-project\\Graduation\\MobileApp\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

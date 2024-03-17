@@ -7,8 +7,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       //title: 'Authorization Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
+        primarySwatch: Colors.red,
+        appBarTheme: AppBarTheme(
+          color: Colors.red.shade700, // Цвет AppBar
+        ),
+        // visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: AuthorizationPage(),
     );
