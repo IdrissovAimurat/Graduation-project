@@ -7,8 +7,11 @@ namespace WebApp.Models
 {
     public class User
     {
-        public int phoneNumber { get; }
-        public string email { get; set; }
-        public string name { get; set; }
+        public int Id { get; set; }
+        public string? Name { get; set; }
+        public string Description { get; set; }
+
+//        public decimal Price { get; set; }
+        public string? PathToImage { get; set; }
     }
 }

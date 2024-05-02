@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -21,17 +22,26 @@ namespace WebApp.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly IRepository _repo;
-        private readonly IHttpContextAccessor _context;
+        private IConfiguration _config;
+        private IOptions<ApiEndpoint> _settings;
+        //        private readonly IRepository _repo;
+        //        private readonly IHttpContextAccessor _context;
         private readonly IStringLocalizer<HomeController> _local;
 
 
-        public HomeController(ILogger<HomeController> logger, IRepository repo, IHttpContextAccessor context, IStringLocalizer<HomeController> local)
+        public HomeController(ILogger<HomeController> logger,
+                         //IRepository repo,
+                         //IHttpContextAccessor context,
+                         //IStringLocalizer<HomeController> local
+                         IConfiguration config,
+                         IOptions<ApiEndpoint> settings)
         {
             _logger = logger;
-            _repo = repo;
-            _context = context;
-            _local = local;
+            _config = config;
+            _settings = settings;
+//            _repo = repo;
+//            _context = context;
+//            _local = local;
         }
         public IActionResult AboutUs()
         {
@@ -50,18 +60,34 @@ namespace WebApp.Controllers
 
             return View();
         }
-        public IActionResult Index(string culture, string cultureUI)
+        public IActionResult Index(string culture ="")
+            //string cultureUI)
         {
-            if(!string.IsNullOrEmpty(culture))
+            var data0 = _settings.Value.Url;
+            var data =
+                _config.GetSection("Middleware")
+                .GetSection("EnableContentMiddleware")
+                .Value;
+
+            var data2 =
+            _config.GetSection("Middleware")
+            .GetValue<bool>("EnableContentMiddleware");
+
+
+            var data3 = _config
+                .GetSection("Middleware:EnableContentMiddleware")
+                .Value;
+
+            if (!string.IsNullOrEmpty(culture))
             {
                 CultureInfo.CurrentCulture = new CultureInfo(culture);
                 CultureInfo.CurrentUICulture = new CultureInfo(culture);
             }
             
             
-            ViewBag.About_us = _local["About_us"];
+            //ViewBag.About_us = _local["About_us"];
                 
-            GetCulture(culture);
+//            GetCulture(culture);
 
 
             HttpContext.Session.SetString("product", "Auto");
@@ -78,7 +104,16 @@ namespace WebApp.Controllers
 
             return View();
         }
+        public string GetCulture(string code)
+        {
+            if (string.IsNullOrWhiteSpace(code))
+            {
+                CultureInfo.CurrentCulture = new CultureInfo(code);
 
+                CultureInfo.CurrentUICulture = new CultureInfo(code);
+            }
+            return "";
+        }
         public IActionResult Privacy()
         {
             return View();
@@ -157,17 +192,21 @@ namespace WebApp.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-        public string GetCulture(string code = "")
-        {
-            if (!string.IsNullOrWhiteSpace(code))
-            {
-                CultureInfo.CurrentCulture = new CultureInfo(code);
-                CultureInfo.CurrentUICulture = new CultureInfo(code);
+        //public string GetCulture(string code = "")
+        //{
+        //    if (!string.IsNullOrWhiteSpace(code))
+        //    {
+        //        CultureInfo.CurrentCulture = new CultureInfo(code);
+        //        CultureInfo.CurrentUICulture = new CultureInfo(code);
 
-                ViewBag.Culture = string.Format("CurrentCulture: {0}, CurrentUICulture: {1}", CultureInfo.CurrentCulture,
-                    CultureInfo.CurrentUICulture);
-            }
-            return "";
+        //      //  ViewBag.Culture = string.Format("CurrentCulture: {0}, CurrentUICulture: {1}", CultureInfo.CurrentCulture,
+        //      //      CultureInfo.CurrentUICulture);
+        //    }
+        //    return "";
+        //}
+        public IActionResult Team()
+        {
+            return View();
         }
     }
 }

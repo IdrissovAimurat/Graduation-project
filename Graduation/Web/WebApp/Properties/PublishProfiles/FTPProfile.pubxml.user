@@ -7,21 +7,39 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAEzOkz6K5xEyoaqammkIE6wAAAAACAAAAAAAQZgAAAAEAACAAAACNXjYdT1s4zS9fdO+a/a5EK8uAWR8E8NUeChB/i/EhcQAAAAAOgAAAAAIAACAAAABsPys+b9cpR9S4EPvdAMQ4aWjZTs+25LNdanEfuDRDmSAAAACQwnk28W+i7KIDImuypCBlUV0gVSYAUc9sIhDQJlWseUAAAACngLZB3ilpaM9SosFCB7Y4PC8Od2Pwkdu3gVCeQMC0aBIS7cNy6IrdVnFKk+SzmC+Y7NsaIH7Pewjqbkcm3Ed8</EncryptedPassword>
     <_PublishTargetUrl>ftp://178.89.186.221</_PublishTargetUrl>
-    <History>True|2024-03-14T04:10:24.9764731Z;</History>
+    <History>True|2024-05-02T06:00:46.4364956Z;True|2024-05-02T09:37:23.7794488+05:00;True|2024-03-14T09:10:24.9764731+05:00;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
     <File Include="appsettings.Development.json">
-      <publishTime>03/13/2024 01:47:05</publishTime>
+      <publishTime>02/05/2024 08:21:16</publishTime>
     </File>
     <File Include="appsettings.json">
-      <publishTime>03/14/2024 01:10:45</publishTime>
+      <publishTime>02/05/2024 08:34:24</publishTime>
     </File>
     <File Include="en/WebApp.resources.dll">
-      <publishTime>03/14/2024 09:01:00</publishTime>
+      <publishTime>05/02/2024 10:59:09</publishTime>
     </File>
     <File Include="kk/WebApp.resources.dll">
-      <publishTime>03/14/2024 09:01:01</publishTime>
+      <publishTime>05/02/2024 10:59:09</publishTime>
+    </File>
+    <File Include="Microsoft.Data.SqlClient.dll">
+      <publishTime>09/21/2021 04:59:32</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.Abstractions.dll">
+      <publishTime>08/15/2022 22:29:26</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.dll">
+      <publishTime>08/15/2022 22:29:58</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.Relational.dll">
+      <publishTime>08/15/2022 22:30:18</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.SqlServer.dll">
+      <publishTime>08/15/2022 22:30:34</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Caching.Memory.dll">
+      <publishTime>01/15/2022 00:54:16</publishTime>
     </File>
     <File Include="Microsoft.Extensions.Configuration.Abstractions.dll">
       <publishTime>10/31/2023 20:02:56</publishTime>
@@ -54,7 +72,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/31/2023 20:06:32</publishTime>
     </File>
     <File Include="Microsoft.Extensions.Logging.Configuration.dll">
-      <publishTime>10/31/2023 20:10:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="Microsoft.Extensions.Logging.dll">
       <publishTime>10/31/2023 20:08:04</publishTime>
@@ -68,11 +86,68 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="Microsoft.Extensions.Primitives.dll">
       <publishTime>10/31/2023 20:00:16</publishTime>
     </File>
+    <File Include="Microsoft.Identity.Client.dll">
+      <publishTime>10/20/2020 02:51:12</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.JsonWebTokens.dll">
+      <publishTime>10/13/2020 05:21:34</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Logging.dll">
+      <publishTime>10/13/2020 05:23:12</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Protocols.dll">
+      <publishTime>10/13/2020 05:25:30</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Protocols.OpenIdConnect.dll">
+      <publishTime>10/13/2020 05:31:32</publishTime>
+    </File>
+    <File Include="Microsoft.IdentityModel.Tokens.dll">
+      <publishTime>10/13/2020 05:27:48</publishTime>
+    </File>
+    <File Include="Microsoft.Win32.SystemEvents.dll">
+      <publishTime>11/15/2019 13:36:56</publishTime>
+    </File>
     <File Include="ru/WebApp.resources.dll">
-      <publishTime>03/14/2024 09:01:01</publishTime>
+      <publishTime>05/02/2024 10:59:09</publishTime>
     </File>
     <File Include="runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll">
       <publishTime>10/31/2023 20:01:16</publishTime>
+    </File>
+    <File Include="runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll">
+      <publishTime>11/15/2019 13:56:36</publishTime>
+    </File>
+    <File Include="runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll">
+      <publishTime>09/21/2021 04:59:34</publishTime>
+    </File>
+    <File Include="runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll">
+      <publishTime>10/20/2020 23:13:26</publishTime>
+    </File>
+    <File Include="runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll">
+      <publishTime>10/20/2020 23:13:26</publishTime>
+    </File>
+    <File Include="runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll">
+      <publishTime>10/20/2020 23:13:38</publishTime>
+    </File>
+    <File Include="runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll">
+      <publishTime>10/20/2020 23:13:26</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll">
+      <publishTime>11/15/2019 13:54:18</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll">
+      <publishTime>11/15/2019 13:54:20</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll">
+      <publishTime>11/15/2019 13:54:30</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll">
+      <publishTime>09/21/2021 04:59:34</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll">
+      <publishTime>11/15/2019 13:53:44</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll">
+      <publishTime>11/15/2019 13:53:46</publishTime>
     </File>
     <File Include="Seq.Extensions.Logging.dll">
       <publishTime>01/29/2024 04:35:36</publishTime>
@@ -110,8 +185,26 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="Serilog.Sinks.Seq.dll">
       <publishTime>03/07/2024 03:25:12</publishTime>
     </File>
+    <File Include="System.Configuration.ConfigurationManager.dll">
+      <publishTime>11/15/2019 13:37:04</publishTime>
+    </File>
     <File Include="System.Diagnostics.DiagnosticSource.dll">
       <publishTime>10/31/2023 20:03:22</publishTime>
+    </File>
+    <File Include="System.Drawing.Common.dll">
+      <publishTime>09/19/2018 01:38:14</publishTime>
+    </File>
+    <File Include="System.IdentityModel.Tokens.Jwt.dll">
+      <publishTime>10/13/2020 05:20:12</publishTime>
+    </File>
+    <File Include="System.Runtime.Caching.dll">
+      <publishTime>11/15/2019 13:37:36</publishTime>
+    </File>
+    <File Include="System.Security.Cryptography.ProtectedData.dll">
+      <publishTime>11/15/2019 13:37:42</publishTime>
+    </File>
+    <File Include="System.Security.Permissions.dll">
+      <publishTime>11/15/2019 13:56:44</publishTime>
     </File>
     <File Include="System.Text.Encodings.Web.dll">
       <publishTime>10/31/2023 20:00:54</publishTime>
@@ -122,23 +215,26 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="System.Threading.Channels.dll">
       <publishTime>10/31/2023 20:09:30</publishTime>
     </File>
+    <File Include="System.Windows.Extensions.dll">
+      <publishTime>11/15/2019 13:56:52</publishTime>
+    </File>
     <File Include="web.config">
-      <publishTime>03/14/2024 09:01:07</publishTime>
+      <publishTime>05/02/2024 10:59:10</publishTime>
     </File>
     <File Include="WebApp.deps.json">
-      <publishTime>03/14/2024 09:01:01</publishTime>
+      <publishTime>05/02/2024 10:59:10</publishTime>
     </File>
     <File Include="WebApp.dll">
-      <publishTime>03/14/2024 09:01:00</publishTime>
+      <publishTime>05/02/2024 10:58:54</publishTime>
     </File>
     <File Include="WebApp.exe">
-      <publishTime>03/14/2024 09:01:00</publishTime>
+      <publishTime>05/02/2024 10:58:54</publishTime>
     </File>
     <File Include="WebApp.pdb">
-      <publishTime>03/14/2024 09:01:00</publishTime>
+      <publishTime>05/02/2024 10:58:54</publishTime>
     </File>
     <File Include="WebApp.runtimeconfig.json">
-      <publishTime>03/14/2024 09:01:01</publishTime>
+      <publishTime>02/05/2024 09:34:57</publishTime>
     </File>
     <File Include="wwwroot/404.html">
       <publishTime>03/12/2024 19:14:32</publishTime>
@@ -930,7 +1026,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>03/12/2024 19:14:32</publishTime>
     </File>
     <File Include="wwwroot/team.html">
-      <publishTime>03/12/2024 19:14:32</publishTime>
+      <publishTime>02/05/2024 06:22:11</publishTime>
     </File>
     <File Include="wwwroot/WebApp.styles.css">
       <publishTime>03/14/2024 09:01:01</publishTime>

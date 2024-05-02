@@ -1,0 +1,301 @@
+2024-04-22 08:33:27.345 +05:00 [INF] User profile is available. Using 'C:\Users\gerse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-22 08:33:27.506 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-22 08:33:27.506 +05:00 [INF] Hosting environment: Development
+2024-04-22 08:33:27.506 +05:00 [INF] Content root path: C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR
+2024-04-22 08:33:27.518 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/ - -
+2024-04-22 08:33:27.554 +05:00 [INF] Executing endpoint 'CSE6581.Hotel.ATR.Controllers.HomeController.Index (CSE6581.Hotel.ATR)'
+2024-04-22 08:33:27.580 +05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller CSE6581.Hotel.ATR.Controllers.HomeController (CSE6581.Hotel.ATR).
+2024-04-22 08:33:27.594 +05:00 [INF] Executing ViewResult, running view Index.
+2024-04-22 08:33:28.309 +05:00 [INF] Executed ViewResult - view Index executed in 716.7696ms.
+2024-04-22 08:33:28.309 +05:00 [INF] Executed action CSE6581.Hotel.ATR.Controllers.HomeController.Index (CSE6581.Hotel.ATR) in 728.5785ms
+2024-04-22 08:33:28.309 +05:00 [INF] Executed endpoint 'CSE6581.Hotel.ATR.Controllers.HomeController.Index (CSE6581.Hotel.ATR)'
+2024-04-22 08:33:28.313 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/ - - - 200 - text/html;+charset=utf-8 796.6321ms
+2024-04-22 08:33:28.325 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/css/bootstrap.min.css - -
+2024-04-22 08:33:28.328 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/css/font-awesome.min.css - -
+2024-04-22 08:33:28.330 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/style.css - -
+2024-04-22 08:33:28.331 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/css/shortcode/shortcodes.css - -
+2024-04-22 08:33:28.333 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/js/vendor/modernizr-2.8.3.min.js - -
+2024-04-22 08:33:28.333 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/css/responsive.css - -
+2024-04-22 08:33:28.335 +05:00 [INF] Sending file. Request path: '/css/shortcode/shortcodes.css'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\css\shortcode\shortcodes.css'
+2024-04-22 08:33:28.335 +05:00 [INF] Sending file. Request path: '/style.css'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\style.css'
+2024-04-22 08:33:28.335 +05:00 [INF] Sending file. Request path: '/css/responsive.css'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\css\responsive.css'
+2024-04-22 08:33:28.335 +05:00 [INF] Sending file. Request path: '/css/font-awesome.min.css'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\css\font-awesome.min.css'
+2024-04-22 08:33:28.335 +05:00 [INF] Sending file. Request path: '/css/bootstrap.min.css'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\css\bootstrap.min.css'
+2024-04-22 08:33:28.335 +05:00 [INF] Sending file. Request path: '/js/vendor/modernizr-2.8.3.min.js'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\js\vendor\modernizr-2.8.3.min.js'
+2024-04-22 08:33:28.335 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/css/shortcode/shortcodes.css - - - 200 690 text/css 4.6523ms
+2024-04-22 08:33:28.335 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/js/vendor/modernizr-2.8.3.min.js - - - 200 15518 application/javascript 2.5665ms
+2024-04-22 08:33:28.335 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/css/responsive.css - - - 200 11492 text/css 2.5160ms
+2024-04-22 08:33:28.336 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/css/font-awesome.min.css - - - 200 31028 text/css 7.8703ms
+2024-04-22 08:33:28.336 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/style.css - - - 200 31578 text/css 6.2445ms
+2024-04-22 08:33:28.337 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/css/bootstrap.min.css - - - 200 121209 text/css 11.5026ms
+2024-04-22 08:33:28.338 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/img/logo/logo.png - -
+2024-04-22 08:33:28.338 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/img/banner/4.jpg - -
+2024-04-22 08:33:28.339 +05:00 [INF] Sending file. Request path: '/img/logo/logo.png'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\img\logo\logo.png'
+2024-04-22 08:33:28.339 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/img/logo/logo.png - - - 200 2876 image/png 0.5629ms
+2024-04-22 08:33:28.339 +05:00 [INF] Sending file. Request path: '/img/banner/4.jpg'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\img\banner\4.jpg'
+2024-04-22 08:33:28.340 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/img/banner/4.jpg - - - 200 200374 image/jpeg 1.6731ms
+2024-04-22 08:33:28.345 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/img/logo/footer-logo.png - -
+2024-04-22 08:33:28.345 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/img/footer/1.jpg - -
+2024-04-22 08:33:28.345 +05:00 [INF] Sending file. Request path: '/img/footer/1.jpg'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\img\footer\1.jpg'
+2024-04-22 08:33:28.345 +05:00 [INF] Sending file. Request path: '/img/logo/footer-logo.png'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\img\logo\footer-logo.png'
+2024-04-22 08:33:28.345 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/img/footer/1.jpg - - - 200 7131 image/jpeg 0.7798ms
+2024-04-22 08:33:28.345 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/img/logo/footer-logo.png - - - 200 2343 image/png 0.7610ms
+2024-04-22 08:33:28.351 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/css/shortcode/header.css - -
+2024-04-22 08:33:28.351 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/css/shortcode/default.css - -
+2024-04-22 08:33:28.351 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/css/shortcode/slider.css - -
+2024-04-22 08:33:28.351 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/css/shortcode/footer.css - -
+2024-04-22 08:33:28.351 +05:00 [INF] Sending file. Request path: '/css/shortcode/header.css'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\css\shortcode\header.css'
+2024-04-22 08:33:28.351 +05:00 [INF] Sending file. Request path: '/css/shortcode/slider.css'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\css\shortcode\slider.css'
+2024-04-22 08:33:28.351 +05:00 [INF] Sending file. Request path: '/css/shortcode/default.css'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\css\shortcode\default.css'
+2024-04-22 08:33:28.351 +05:00 [INF] Sending file. Request path: '/css/shortcode/footer.css'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\css\shortcode\footer.css'
+2024-04-22 08:33:28.351 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/css/shortcode/header.css - - - 200 5311 text/css 0.7730ms
+2024-04-22 08:33:28.351 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/css/shortcode/slider.css - - - 200 3805 text/css 0.7583ms
+2024-04-22 08:33:28.351 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/css/shortcode/footer.css - - - 200 4379 text/css 0.5287ms
+2024-04-22 08:33:28.351 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/css/shortcode/default.css - - - 200 18151 text/css 0.8512ms
+2024-04-22 08:33:28.352 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/css/owl.carousel.css - -
+2024-04-22 08:33:28.352 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/css/animate.css - -
+2024-04-22 08:33:28.352 +05:00 [INF] Sending file. Request path: '/css/owl.carousel.css'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\css\owl.carousel.css'
+2024-04-22 08:33:28.353 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/css/owl.carousel.css - - - 200 4830 text/css 0.4229ms
+2024-04-22 08:33:28.353 +05:00 [INF] Sending file. Request path: '/css/animate.css'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\css\animate.css'
+2024-04-22 08:33:28.354 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/css/animate.css - - - 200 74096 text/css 1.6326ms
+2024-04-22 08:33:28.356 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/css/magnific-popup.css - -
+2024-04-22 08:33:28.356 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/css/material-design-iconic-font.css - -
+2024-04-22 08:33:28.357 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/css/material-design-iconic-font.min.css - -
+2024-04-22 08:33:28.357 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/css/slick.css - -
+2024-04-22 08:33:28.357 +05:00 [INF] Sending file. Request path: '/css/magnific-popup.css'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\css\magnific-popup.css'
+2024-04-22 08:33:28.357 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/css/magnific-popup.css - - - 200 5204 text/css 0.7760ms
+2024-04-22 08:33:28.357 +05:00 [INF] Sending file. Request path: '/css/slick.css'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\css\slick.css'
+2024-04-22 08:33:28.357 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/css/slick.css - - - 200 1307 text/css 0.3928ms
+2024-04-22 08:33:28.358 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/css/meanmenu.min.css - -
+2024-04-22 08:33:28.358 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/img/footer/2.jpg - -
+2024-04-22 08:33:28.358 +05:00 [INF] Sending file. Request path: '/css/meanmenu.min.css'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\css\meanmenu.min.css'
+2024-04-22 08:33:28.358 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/css/meanmenu.min.css - - - 200 3074 text/css 0.6142ms
+2024-04-22 08:33:28.358 +05:00 [INF] Sending file. Request path: '/img/footer/2.jpg'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\img\footer\2.jpg'
+2024-04-22 08:33:28.358 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/img/footer/2.jpg - - - 200 9331 image/jpeg 0.3583ms
+2024-04-22 08:33:28.359 +05:00 [INF] Sending file. Request path: '/css/material-design-iconic-font.min.css'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\css\material-design-iconic-font.min.css'
+2024-04-22 08:33:28.359 +05:00 [INF] Sending file. Request path: '/css/material-design-iconic-font.css'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\css\material-design-iconic-font.css'
+2024-04-22 08:33:28.360 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/css/material-design-iconic-font.min.css - - - 200 70827 text/css 2.8148ms
+2024-04-22 08:33:28.360 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/css/material-design-iconic-font.css - - - 200 90482 text/css 3.3656ms
+2024-04-22 08:33:28.361 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/js/vendor/jquery-1.12.4.min.js - -
+2024-04-22 08:33:28.362 +05:00 [INF] Sending file. Request path: '/js/vendor/jquery-1.12.4.min.js'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\js\vendor\jquery-1.12.4.min.js'
+2024-04-22 08:33:28.363 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/js/vendor/jquery-1.12.4.min.js - - - 200 97168 application/javascript 2.3381ms
+2024-04-22 08:33:28.369 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/js/bootstrap.min.js - -
+2024-04-22 08:33:28.370 +05:00 [INF] Sending file. Request path: '/js/bootstrap.min.js'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\js\bootstrap.min.js'
+2024-04-22 08:33:28.370 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/js/bootstrap.min.js - - - 200 37051 application/javascript 1.1385ms
+2024-04-22 08:33:28.396 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/js/owl.carousel.min.js - -
+2024-04-22 08:33:28.397 +05:00 [INF] Sending file. Request path: '/js/owl.carousel.min.js'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\js\owl.carousel.min.js'
+2024-04-22 08:33:28.398 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/js/ajax-mail.js - -
+2024-04-22 08:33:28.399 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/js/owl.carousel.min.js - - - 200 80843 application/javascript 2.9745ms
+2024-04-22 08:33:28.399 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/js/jquery.ajaxchimp.min.js - -
+2024-04-22 08:33:28.399 +05:00 [INF] Sending file. Request path: '/js/jquery.ajaxchimp.min.js'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\js\jquery.ajaxchimp.min.js'
+2024-04-22 08:33:28.399 +05:00 [INF] Sending file. Request path: '/js/ajax-mail.js'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\js\ajax-mail.js'
+2024-04-22 08:33:28.399 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/js/ajax-mail.js - - - 200 1327 application/javascript 0.9042ms
+2024-04-22 08:33:28.399 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/js/jquery.ajaxchimp.min.js - - - 200 2455 application/javascript 0.6632ms
+2024-04-22 08:33:28.400 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/js/jquery.meanmenu.js - -
+2024-04-22 08:33:28.400 +05:00 [INF] Sending file. Request path: '/js/jquery.meanmenu.js'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\js\jquery.meanmenu.js'
+2024-04-22 08:33:28.400 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/js/jquery.counterup.min.js - -
+2024-04-22 08:33:28.400 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/js/jquery.meanmenu.js - - - 200 11752 application/javascript 0.6151ms
+2024-04-22 08:33:28.401 +05:00 [INF] Sending file. Request path: '/js/jquery.counterup.min.js'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\js\jquery.counterup.min.js'
+2024-04-22 08:33:28.401 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/js/jquery.counterup.min.js - - - 200 1074 application/javascript 0.6033ms
+2024-04-22 08:33:28.402 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/js/waypoints.min.js - -
+2024-04-22 08:33:28.402 +05:00 [INF] Sending file. Request path: '/js/waypoints.min.js'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\js\waypoints.min.js'
+2024-04-22 08:33:28.403 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/js/waypoints.min.js - - - 200 8051 application/javascript 0.9970ms
+2024-04-22 08:33:28.411 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/js/isotope.pkgd.min.js - -
+2024-04-22 08:33:28.411 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/js/imagesloaded.pkgd.min.js - -
+2024-04-22 08:33:28.412 +05:00 [INF] Sending file. Request path: '/js/isotope.pkgd.min.js'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\js\isotope.pkgd.min.js'
+2024-04-22 08:33:28.412 +05:00 [INF] Sending file. Request path: '/js/imagesloaded.pkgd.min.js'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\js\imagesloaded.pkgd.min.js'
+2024-04-22 08:33:28.412 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/js/imagesloaded.pkgd.min.js - - - 200 5447 application/javascript 0.8529ms
+2024-04-22 08:33:28.412 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/js/jquery.magnific-popup.js - -
+2024-04-22 08:33:28.412 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/js/isotope.pkgd.min.js - - - 200 34706 application/javascript 1.2657ms
+2024-04-22 08:33:28.412 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/js/plugins.js - -
+2024-04-22 08:33:28.413 +05:00 [INF] Sending file. Request path: '/js/jquery.magnific-popup.js'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\js\jquery.magnific-popup.js'
+2024-04-22 08:33:28.413 +05:00 [INF] Sending file. Request path: '/js/plugins.js'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\js\plugins.js'
+2024-04-22 08:33:28.413 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/js/main.js - -
+2024-04-22 08:33:28.413 +05:00 [INF] Sending file. Request path: '/js/main.js'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\js\main.js'
+2024-04-22 08:33:28.414 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/js/jquery.magnific-popup.js - - - 200 43601 application/javascript 1.3021ms
+2024-04-22 08:33:28.414 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/_framework/aspnetcore-browser-refresh.js - -
+2024-04-22 08:33:28.414 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/js/main.js - - - 200 7157 application/javascript 0.5377ms
+2024-04-22 08:33:28.414 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/js/plugins.js - - - 200 54070 application/javascript 1.3278ms
+2024-04-22 08:33:28.415 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 1.3625ms
+2024-04-22 08:33:28.420 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/img/footer/3.jpg - -
+2024-04-22 08:33:28.420 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/img/footer/4.jpg - -
+2024-04-22 08:33:28.420 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/img/footer/5.jpg - -
+2024-04-22 08:33:28.420 +05:00 [INF] Sending file. Request path: '/img/footer/3.jpg'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\img\footer\3.jpg'
+2024-04-22 08:33:28.420 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/img/footer/6.jpg - -
+2024-04-22 08:33:28.420 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/img/footer/3.jpg - - - 200 10820 image/jpeg 0.6603ms
+2024-04-22 08:33:28.421 +05:00 [INF] Sending file. Request path: '/img/footer/4.jpg'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\img\footer\4.jpg'
+2024-04-22 08:33:28.421 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/_vs/browserLink - -
+2024-04-22 08:33:28.421 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/img/footer/4.jpg - - - 200 9987 image/jpeg 0.6095ms
+2024-04-22 08:33:28.421 +05:00 [INF] Sending file. Request path: '/img/footer/5.jpg'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\img\footer\5.jpg'
+2024-04-22 08:33:28.421 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/img/footer/5.jpg - - - 200 8597 image/jpeg 0.6572ms
+2024-04-22 08:33:28.421 +05:00 [INF] Sending file. Request path: '/img/footer/6.jpg'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\img\footer\6.jpg'
+2024-04-22 08:33:28.421 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/img/footer/6.jpg - - - 200 9719 image/jpeg 0.5531ms
+2024-04-22 08:33:28.422 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/img/slider/1.jpg - -
+2024-04-22 08:33:28.425 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/img/slider/2.jpg - -
+2024-04-22 08:33:28.428 +05:00 [INF] Sending file. Request path: '/img/slider/1.jpg'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\img\slider\1.jpg'
+2024-04-22 08:33:28.431 +05:00 [INF] Sending file. Request path: '/img/slider/2.jpg'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\img\slider\2.jpg'
+2024-04-22 08:33:28.435 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/img/slider/1.jpg - - - 200 1720959 image/jpeg 13.3973ms
+2024-04-22 08:33:28.438 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/img/slider/2.jpg - - - 200 1336260 image/jpeg 13.6621ms
+2024-04-22 08:33:28.447 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/fonts/Material-Design-Iconic-Fontd1f1.woff2?v=2.2.0 - -
+2024-04-22 08:33:28.448 +05:00 [INF] Sending file. Request path: '/fonts/Material-Design-Iconic-Fontd1f1.woff2'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\fonts\Material-Design-Iconic-Fontd1f1.woff2'
+2024-04-22 08:33:28.448 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/fonts/Material-Design-Iconic-Fontd1f1.woff2?v=2.2.0 - - - 200 38384 font/woff2 1.2477ms
+2024-04-22 08:33:28.458 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 37.4015ms
+2024-04-22 08:33:28.543 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/img/favicon.ico - -
+2024-04-22 08:33:28.544 +05:00 [INF] Sending file. Request path: '/img/favicon.ico'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\img\favicon.ico'
+2024-04-22 08:33:28.545 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/img/favicon.ico - - - 200 1150 image/x-icon 1.7357ms
+2024-04-22 08:41:26.085 +05:00 [INF] User profile is available. Using 'C:\Users\gerse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-22 08:41:26.441 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-22 08:41:26.441 +05:00 [INF] Hosting environment: Development
+2024-04-22 08:41:26.441 +05:00 [INF] Content root path: C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR
+2024-04-22 08:41:26.477 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/ - -
+2024-04-22 08:41:26.549 +05:00 [INF] Executing endpoint 'CSE6581.Hotel.ATR.Controllers.HomeController.Index (CSE6581.Hotel.ATR)'
+2024-04-22 08:41:26.588 +05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller CSE6581.Hotel.ATR.Controllers.HomeController (CSE6581.Hotel.ATR).
+2024-04-22 08:41:26.611 +05:00 [INF] Executing ViewResult, running view Index.
+2024-04-22 08:41:27.353 +05:00 [INF] Executed ViewResult - view Index executed in 744.3262ms.
+2024-04-22 08:41:27.354 +05:00 [INF] Executed action CSE6581.Hotel.ATR.Controllers.HomeController.Index (CSE6581.Hotel.ATR) in 765.635ms
+2024-04-22 08:41:27.354 +05:00 [INF] Executed endpoint 'CSE6581.Hotel.ATR.Controllers.HomeController.Index (CSE6581.Hotel.ATR)'
+2024-04-22 08:41:27.358 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/ - - - 200 - text/html;+charset=utf-8 884.2428ms
+2024-04-22 08:41:27.402 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/js/vendor/modernizr-2.8.3.min.js - -
+2024-04-22 08:41:27.416 +05:00 [INF] Sending file. Request path: '/js/vendor/modernizr-2.8.3.min.js'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\js\vendor\modernizr-2.8.3.min.js'
+2024-04-22 08:41:27.417 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/js/vendor/modernizr-2.8.3.min.js - - - 200 15518 application/javascript 14.8698ms
+2024-04-22 08:41:27.418 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/js/bootstrap.min.js - -
+2024-04-22 08:41:27.419 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/js/vendor/jquery-1.12.4.min.js - -
+2024-04-22 08:41:27.448 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/_framework/aspnetcore-browser-refresh.js - -
+2024-04-22 08:41:27.448 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/_vs/browserLink - -
+2024-04-22 08:41:27.449 +05:00 [INF] Sending file. Request path: '/js/vendor/jquery-1.12.4.min.js'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\js\vendor\jquery-1.12.4.min.js'
+2024-04-22 08:41:27.449 +05:00 [INF] Sending file. Request path: '/js/bootstrap.min.js'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\js\bootstrap.min.js'
+2024-04-22 08:41:27.454 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 5.2544ms
+2024-04-22 08:41:27.454 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/js/bootstrap.min.js - - - 200 37051 application/javascript 35.1477ms
+2024-04-22 08:41:27.455 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/js/vendor/jquery-1.12.4.min.js - - - 200 97168 application/javascript 36.4245ms
+2024-04-22 08:41:27.499 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 50.8370ms
+2024-04-22 08:41:27.820 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/js/owl.carousel.min.js - -
+2024-04-22 08:41:27.820 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/js/ajax-mail.js - -
+2024-04-22 08:41:27.820 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/js/jquery.ajaxchimp.min.js - -
+2024-04-22 08:41:27.822 +05:00 [INF] Sending file. Request path: '/js/ajax-mail.js'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\js\ajax-mail.js'
+2024-04-22 08:41:27.824 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/js/jquery.counterup.min.js - -
+2024-04-22 08:41:27.825 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/js/ajax-mail.js - - - 200 1327 application/javascript 4.6741ms
+2024-04-22 08:41:27.830 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/js/jquery.meanmenu.js - -
+2024-04-22 08:41:27.830 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/js/isotope.pkgd.min.js - -
+2024-04-22 08:41:27.831 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/js/waypoints.min.js - -
+2024-04-22 08:41:27.831 +05:00 [INF] Sending file. Request path: '/js/jquery.ajaxchimp.min.js'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\js\jquery.ajaxchimp.min.js'
+2024-04-22 08:41:27.831 +05:00 [INF] Sending file. Request path: '/js/jquery.counterup.min.js'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\js\jquery.counterup.min.js'
+2024-04-22 08:41:27.833 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/js/jquery.ajaxchimp.min.js - - - 200 2455 application/javascript 11.8017ms
+2024-04-22 08:41:27.834 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/js/jquery.counterup.min.js - - - 200 1074 application/javascript 8.5319ms
+2024-04-22 08:41:27.834 +05:00 [INF] Sending file. Request path: '/js/waypoints.min.js'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\js\waypoints.min.js'
+2024-04-22 08:41:27.834 +05:00 [INF] Sending file. Request path: '/js/owl.carousel.min.js'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\js\owl.carousel.min.js'
+2024-04-22 08:41:27.836 +05:00 [INF] Sending file. Request path: '/js/jquery.meanmenu.js'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\js\jquery.meanmenu.js'
+2024-04-22 08:41:27.837 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/js/waypoints.min.js - - - 200 8051 application/javascript 5.3754ms
+2024-04-22 08:41:27.838 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/js/jquery.magnific-popup.js - -
+2024-04-22 08:41:27.838 +05:00 [INF] Sending file. Request path: '/js/isotope.pkgd.min.js'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\js\isotope.pkgd.min.js'
+2024-04-22 08:41:27.847 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/js/owl.carousel.min.js - - - 200 80843 application/javascript 27.0509ms
+2024-04-22 08:41:27.848 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/js/plugins.js - -
+2024-04-22 08:41:27.848 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/js/imagesloaded.pkgd.min.js - -
+2024-04-22 08:41:27.849 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/js/jquery.meanmenu.js - - - 200 11752 application/javascript 18.7763ms
+2024-04-22 08:41:27.850 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/js/main.js - -
+2024-04-22 08:41:27.852 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/js/isotope.pkgd.min.js - - - 200 34706 application/javascript 19.9840ms
+2024-04-22 08:41:27.853 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/_vs/browserLink - -
+2024-04-22 08:41:27.865 +05:00 [INF] Sending file. Request path: '/js/jquery.magnific-popup.js'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\js\jquery.magnific-popup.js'
+2024-04-22 08:41:27.866 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/_framework/aspnetcore-browser-refresh.js - -
+2024-04-22 08:41:27.866 +05:00 [INF] Sending file. Request path: '/js/imagesloaded.pkgd.min.js'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\js\imagesloaded.pkgd.min.js'
+2024-04-22 08:41:27.868 +05:00 [INF] Sending file. Request path: '/js/main.js'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\js\main.js'
+2024-04-22 08:41:27.868 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/js/imagesloaded.pkgd.min.js - - - 200 5447 application/javascript 20.8802ms
+2024-04-22 08:41:27.873 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/js/main.js - - - 200 7157 application/javascript 23.0619ms
+2024-04-22 08:41:27.875 +05:00 [INF] Sending file. Request path: '/js/plugins.js'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\js\plugins.js'
+2024-04-22 08:41:27.877 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 11.4386ms
+2024-04-22 08:41:27.878 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/js/jquery.magnific-popup.js - - - 200 43601 application/javascript 41.6729ms
+2024-04-22 08:41:27.878 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/js/plugins.js - - - 200 54070 application/javascript 30.7888ms
+2024-04-22 08:41:27.891 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 38.3375ms
+2024-04-22 08:41:42.987 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/Room - -
+2024-04-22 08:41:42.998 +05:00 [INF] Executing endpoint 'CSE6581.Hotel.ATR.Controllers.RoomController.Index (CSE6581.Hotel.ATR)'
+2024-04-22 08:41:43.005 +05:00 [INF] Route matched with {action = "Index", controller = "Room"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(Int32) on controller CSE6581.Hotel.ATR.Controllers.RoomController (CSE6581.Hotel.ATR).
+2024-04-22 08:41:45.085 +05:00 [INF] Executing ViewResult, running view Index.
+2024-04-22 08:41:53.917 +05:00 [INF] Executed action CSE6581.Hotel.ATR.Controllers.RoomController.Index (CSE6581.Hotel.ATR) in 10911.9391ms
+2024-04-22 08:41:53.918 +05:00 [INF] Executed endpoint 'CSE6581.Hotel.ATR.Controllers.RoomController.Index (CSE6581.Hotel.ATR)'
+2024-04-22 08:41:53.922 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AspNetCore.Views_Room_Index.ExecuteAsync() in C:\Users\gerse\source\repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\Views\Room\Index.cshtml:line 86
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-04-22 08:41:54.019 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/Room - - - 500 - text/html;+charset=utf-8 11031.7919ms
+2024-04-22 08:41:54.063 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/_vs/browserLink - -
+2024-04-22 08:41:54.074 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/_framework/aspnetcore-browser-refresh.js - -
+2024-04-22 08:41:54.075 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 1.5141ms
+2024-04-22 08:41:54.078 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 14.7175ms
+2024-04-22 08:41:54.101 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/_vs/browserLink - -
+2024-04-22 08:41:54.113 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 12.0465ms
+2024-04-22 08:41:54.152 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/favicon.ico - -
+2024-04-22 08:41:54.156 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/favicon.ico - - - 404 - - 3.6995ms
+2024-04-22 08:42:06.950 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/Room - -
+2024-04-22 08:42:06.953 +05:00 [INF] Executing endpoint 'CSE6581.Hotel.ATR.Controllers.RoomController.Index (CSE6581.Hotel.ATR)'
+2024-04-22 08:42:06.953 +05:00 [INF] Route matched with {action = "Index", controller = "Room"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(Int32) on controller CSE6581.Hotel.ATR.Controllers.RoomController (CSE6581.Hotel.ATR).
+2024-04-22 08:42:33.537 +05:00 [INF] Executing ViewResult, running view Index.
+2024-04-22 08:42:51.289 +05:00 [INF] User profile is available. Using 'C:\Users\gerse\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-22 08:42:51.670 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-22 08:42:51.670 +05:00 [INF] Hosting environment: Development
+2024-04-22 08:42:51.670 +05:00 [INF] Content root path: C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR
+2024-04-22 08:42:51.700 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/ - -
+2024-04-22 08:42:51.781 +05:00 [INF] Executing endpoint 'CSE6581.Hotel.ATR.Controllers.HomeController.Index (CSE6581.Hotel.ATR)'
+2024-04-22 08:42:51.830 +05:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller CSE6581.Hotel.ATR.Controllers.HomeController (CSE6581.Hotel.ATR).
+2024-04-22 08:42:51.887 +05:00 [INF] Executing ViewResult, running view Index.
+2024-04-22 08:42:52.062 +05:00 [INF] Executed ViewResult - view Index executed in 177.6968ms.
+2024-04-22 08:42:52.064 +05:00 [INF] Executed action CSE6581.Hotel.ATR.Controllers.HomeController.Index (CSE6581.Hotel.ATR) in 232.8208ms
+2024-04-22 08:42:52.065 +05:00 [INF] Executed endpoint 'CSE6581.Hotel.ATR.Controllers.HomeController.Index (CSE6581.Hotel.ATR)'
+2024-04-22 08:42:52.073 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/ - - - 200 - text/html;+charset=utf-8 375.0617ms
+2024-04-22 08:42:52.229 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/_framework/aspnetcore-browser-refresh.js - -
+2024-04-22 08:42:52.236 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 6.2682ms
+2024-04-22 08:42:52.236 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/_vs/browserLink - -
+2024-04-22 08:42:52.327 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 90.4769ms
+2024-04-22 08:42:55.381 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/Room - -
+2024-04-22 08:42:55.389 +05:00 [INF] Executing endpoint 'CSE6581.Hotel.ATR.Controllers.RoomController.Index (CSE6581.Hotel.ATR)'
+2024-04-22 08:42:55.396 +05:00 [INF] Route matched with {action = "Index", controller = "Room"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(Int32) on controller CSE6581.Hotel.ATR.Controllers.RoomController (CSE6581.Hotel.ATR).
+2024-04-22 08:42:59.213 +05:00 [INF] Executing ViewResult, running view Index.
+2024-04-22 08:42:59.291 +05:00 [INF] Executed ViewResult - view Index executed in 78.6157ms.
+2024-04-22 08:42:59.293 +05:00 [INF] Executed action CSE6581.Hotel.ATR.Controllers.RoomController.Index (CSE6581.Hotel.ATR) in 3896.6983ms
+2024-04-22 08:42:59.293 +05:00 [INF] Executed endpoint 'CSE6581.Hotel.ATR.Controllers.RoomController.Index (CSE6581.Hotel.ATR)'
+2024-04-22 08:42:59.297 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/Room - - - 200 - text/html;+charset=utf-8 3915.4345ms
+2024-04-22 08:42:59.319 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/img/room/11.jpg - -
+2024-04-22 08:42:59.322 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/img/room/13.jpg - -
+2024-04-22 08:42:59.346 +05:00 [INF] Sending file. Request path: '/img/room/11.jpg'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\img\room\11.jpg'
+2024-04-22 08:42:59.346 +05:00 [INF] Sending file. Request path: '/img/room/13.jpg'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\img\room\13.jpg'
+2024-04-22 08:42:59.347 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/img/room/11.jpg - - - 200 141261 image/jpeg 27.4702ms
+2024-04-22 08:42:59.347 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/img/room/13.jpg - - - 200 144258 image/jpeg 25.1971ms
+2024-04-22 08:42:59.347 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/img/room/14.jpg - -
+2024-04-22 08:42:59.347 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/img/room/7.jpg - -
+2024-04-22 08:42:59.348 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/_framework/aspnetcore-browser-refresh.js - -
+2024-04-22 08:42:59.355 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/_vs/browserLink - -
+2024-04-22 08:42:59.356 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 8.3586ms
+2024-04-22 08:42:59.408 +05:00 [INF] Sending file. Request path: '/img/room/14.jpg'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\img\room\14.jpg'
+2024-04-22 08:42:59.409 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/img/bg/3.jpg - -
+2024-04-22 08:42:59.415 +05:00 [INF] Sending file. Request path: '/img/room/7.jpg'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\img\room\7.jpg'
+2024-04-22 08:42:59.418 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/img/room/14.jpg - - - 200 113745 image/jpeg 70.9720ms
+2024-04-22 08:42:59.419 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/img/room/7.jpg - - - 200 117079 image/jpeg 71.0562ms
+2024-04-22 08:42:59.423 +05:00 [INF] Sending file. Request path: '/img/bg/3.jpg'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\img\bg\3.jpg'
+2024-04-22 08:42:59.425 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/img/bg/3.jpg - - - 200 666937 image/jpeg 16.2733ms
+2024-04-22 08:42:59.431 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 79.0349ms
+2024-04-22 08:43:00.283 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:52108/fonts/fontawesome-webfont3e6e.woff2?v=4.7.0 - -
+2024-04-22 08:43:00.285 +05:00 [INF] Sending file. Request path: '/fonts/fontawesome-webfont3e6e.woff2'. Physical path: 'C:\Users\gerse\Source\Repos\CSE6581.Hotel.ATR\CSE6581.Hotel.ATR\wwwroot\fonts\fontawesome-webfont3e6e.woff2'
+2024-04-22 08:43:00.285 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:52108/fonts/fontawesome-webfont3e6e.woff2?v=4.7.0 - - - 200 77160 font/woff2 2.7990ms
