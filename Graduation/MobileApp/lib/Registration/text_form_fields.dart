@@ -12,7 +12,7 @@ class NameField extends StatelessWidget {
       child: TextFormField(
         controller: controller,
         decoration: InputDecoration(
-          labelText: "ФИО",
+          labelText: "Имя",
           border: OutlineInputBorder(
             borderSide: BorderSide(),
           ),

@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:graduation/rounded_button.dart';
 import 'package:graduation/choose_action_page.dart';

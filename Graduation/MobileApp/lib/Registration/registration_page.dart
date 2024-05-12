@@ -1,8 +1,29 @@
 import 'package:flutter/material.dart';
-import 'package:graduation/Registration/text_form_fields.dart'; // Импортируем созданные нами виджеты
+import 'package:graduation/Registration/text_form_fields.dart';
 import 'package:graduation/Registration/dropdown_field.dart';
 import 'package:graduation/Registration/phone_number_field.dart';
 import 'package:graduation/Registration/register_button.dart';
+
+// Класс для хранения состояния страницы регистрации
+class RegistrationPageState extends ChangeNotifier {
+  // Контроллеры для каждого текстового поля
+  final TextEditingController surnameController = TextEditingController();
+  final TextEditingController nameController = TextEditingController();
+  final TextEditingController patronymicController = TextEditingController();
+  String? selectedJob;
+  final TextEditingController addressController = TextEditingController();
+  final TextEditingController phoneNumberController = TextEditingController();
+
+  // Метод для очистки контроллеров при диспозе страницы
+  void dispose() {
+    surnameController.dispose();
+    nameController.dispose();
+    patronymicController.dispose();
+    addressController.dispose();
+    phoneNumberController.dispose();
+    super.dispose();
+  }
+}
 
 class RegistrationPage extends StatefulWidget {
   @override
@@ -10,26 +31,9 @@ class RegistrationPage extends StatefulWidget {
 }
 
 class _RegistrationPageState extends State<RegistrationPage> {
-  final TextEditingController _surnameController = TextEditingController();
-  final TextEditingController _nameController = TextEditingController();
-  final TextEditingController _patronymicController = TextEditingController(); //отечественная война
-  String? _selectedJob;
-  final TextEditingController _addressController = TextEditingController();
-  final TextEditingController _phoneNumberController = TextEditingController();
-
-  // Создаем переменную для управления отступом
-  final double fieldSpacing = 16.0;
-
-  @override
-  void dispose() {
-    _surnameController.dispose();
-    _nameController.dispose();
-    _patronymicController.dispose();
-    _addressController.dispose();
-    _phoneNumberController.dispose();
-
-    super.dispose();
-  }
+  // Создаем экземпляр класса состояния
+  final RegistrationPageState _registrationPageState =
+  RegistrationPageState();
 
   @override
   Widget build(BuildContext context) {
@@ -44,33 +48,31 @@ class _RegistrationPageState extends State<RegistrationPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              SizedBox(height: fieldSpacing), // Отступ перед изображением
+              SizedBox(height: 16.0),
               Image.asset(
                 'assets/images/ui-design.png',
                 height: 120,
-              ), // Используйте Image.network если картинка из интернета
-              SizedBox(height: fieldSpacing), // Отступ после изображения
-              SurnameField(controller: _surnameController),
-              SizedBox(height: fieldSpacing), // Отступ после изображения
-              NameField(controller: _nameController),
-              SizedBox(height: fieldSpacing), // Отступ после изображения
-              PatronymicField(controller: _patronymicController),
-
-              SizedBox(height: fieldSpacing),
+              ),
+              SizedBox(height: 16.0),
+              SurnameField(controller: _registrationPageState.surnameController),
+              SizedBox(height: 16.0),
+              NameField(controller: _registrationPageState.nameController),
+              SizedBox(height: 16.0),
+              PatronymicField(controller: _registrationPageState.patronymicController),
+              SizedBox(height: 16.0),
               JobDropdown(
-                value: _selectedJob,
+                value: _registrationPageState.selectedJob,
                 onChanged: (newValue) {
                   setState(() {
-                    _selectedJob = newValue;
+                    _registrationPageState.selectedJob = newValue;
                   });
                 },
               ),
-              SizedBox(height: fieldSpacing),
-              AddressField(controller: _addressController),
-              SizedBox(height: fieldSpacing),
-              PhoneNumberField(controller: _phoneNumberController),
-              SizedBox(height: fieldSpacing), // добавим дополнительный отступ
-
+              SizedBox(height: 16.0),
+              AddressField(controller: _registrationPageState.addressController),
+              SizedBox(height: 16.0),
+              PhoneNumberField(controller: _registrationPageState.phoneNumberController),
+              SizedBox(height: 16.0),
               RegisterButton(
                 onPressed: () {
                   _registerWorker();
@@ -84,33 +86,51 @@ class _RegistrationPageState extends State<RegistrationPage> {
   }
 
   void _registerWorker() {
-    // В этом методе вы можете собирать данные с полей ввода и отправлять на сервер или сохранять локально
-    String surname = _surnameController.text;
-    String name = _nameController.text;
-    String patronymic = _patronymicController.text;
-    String job = _selectedJob ?? 'Не выбрано';
-    String address = _addressController.text;
-    String phoneNumber = _phoneNumberController.text;
+    String surname = _registrationPageState.surnameController.text.trim();
+    String name = _registrationPageState.nameController.text.trim();
+    String patronymic =
+    _registrationPageState.patronymicController.text.trim();
+    String job = _registrationPageState.selectedJob ?? 'Не выбрано';
+    String address =
+    _registrationPageState.addressController.text.trim();
+    String phoneNumber =
+    _registrationPageState.phoneNumberController.text.trim();
 
-    // Вывод полученных данных в консоль (для проверки)
-    print('Фамилия: $surname');
-    print('Имя: $name');
-    print('Отчество: $patronymic');
-    print('Тип работы: $job');
-    print('Адрес: $address');
-    //print('Почта: $email');
-    print('Номер телефона: $phoneNumber');
+    // Проверяем, заполнены ли все поля, кроме отчества
+    if (surname.isEmpty ||
+        name.isEmpty ||
+        job == 'Не выбрано' ||
+        address.isEmpty ||
+        phoneNumber.isEmpty) {
+      // Если какое-то поле пустое, показываем уведомление
+      String emptyField = _getEmptyField();
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Пожалуйста, заполните поле "$emptyField"')),
+      );
+      return; // Прерываем выполнение функции, чтобы не продолжать действия
+    }
 
-    // Очистка полей после регистрации (если необходимо)
-    _surnameController.clear();
-    _nameController.clear();
-    _patronymicController.clear();
-    _selectedJob = null;
-    _addressController.clear();
-    _phoneNumberController.clear();
+    // Если все поля заполнены, можно выполнить дальнейшие действия
+    // Например, регистрацию пользователя
+  }
 
-    // Переход на другую страницу или выполнение других действий после регистрации
-    // Например:
-    // Navigator.of(context).push(MaterialPageRoute(builder: (context) => SomePage()));
+  // Функция для определения первого пустого поля
+  String _getEmptyField() {
+    if (_registrationPageState.surnameController.text.trim().isEmpty) {
+      return 'Фамилия';
+    } else if (_registrationPageState.nameController.text.trim().isEmpty) {
+      return 'Имя';
+      // } else if (_registrationPageState.patronymicController.text.trim().isEmpty) {
+      //   return 'Отчество';
+    } else if (_registrationPageState.selectedJob == null ||
+        _registrationPageState.selectedJob == 'Не выбрано') {
+      return 'Тип работы';
+    } else if (_registrationPageState.addressController.text.trim().isEmpty) {
+      return 'Адрес';
+    } else if (_registrationPageState.phoneNumberController.text.trim().isEmpty) {
+      return 'Номер телефона';
+    } else {
+      return ''; // Если все поля заполнены, возвращаем пустую строку
+    }
   }
 }
