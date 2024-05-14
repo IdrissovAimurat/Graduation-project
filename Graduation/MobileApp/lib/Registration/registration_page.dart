@@ -3,6 +3,7 @@ import 'package:graduation/Registration/text_form_fields.dart';
 import 'package:graduation/Registration/dropdown_field.dart';
 import 'package:graduation/Registration/phone_number_field.dart';
 import 'package:graduation/Registration/register_button.dart';
+import 'package:graduation/Authorization/login_page.dart';
 
 // Класс для хранения состояния страницы регистрации
 class RegistrationPageState extends ChangeNotifier {
@@ -32,8 +33,7 @@ class RegistrationPage extends StatefulWidget {
 
 class _RegistrationPageState extends State<RegistrationPage> {
   // Создаем экземпляр класса состояния
-  final RegistrationPageState _registrationPageState =
-  RegistrationPageState();
+  final RegistrationPageState _registrationPageState = RegistrationPageState();
 
   @override
   Widget build(BuildContext context) {
@@ -54,11 +54,17 @@ class _RegistrationPageState extends State<RegistrationPage> {
                 height: 120,
               ),
               SizedBox(height: 16.0),
-              SurnameField(controller: _registrationPageState.surnameController),
+              SurnameField(
+                controller: _registrationPageState.surnameController,
+              ),
               SizedBox(height: 16.0),
-              NameField(controller: _registrationPageState.nameController),
+              NameField(
+                controller: _registrationPageState.nameController,
+              ),
               SizedBox(height: 16.0),
-              PatronymicField(controller: _registrationPageState.patronymicController),
+              PatronymicField(
+                controller: _registrationPageState.patronymicController,
+              ),
               SizedBox(height: 16.0),
               JobDropdown(
                 value: _registrationPageState.selectedJob,
@@ -69,14 +75,16 @@ class _RegistrationPageState extends State<RegistrationPage> {
                 },
               ),
               SizedBox(height: 16.0),
-              AddressField(controller: _registrationPageState.addressController),
+              AddressField(
+                controller: _registrationPageState.addressController,
+              ),
               SizedBox(height: 16.0),
-              PhoneNumberField(controller: _registrationPageState.phoneNumberController),
+              PhoneNumberField(
+                controller: _registrationPageState.phoneNumberController,
+              ),
               SizedBox(height: 16.0),
               RegisterButton(
-                onPressed: () {
-                  _registerWorker();
-                },
+                onPressed: _registerWorker,
               ),
             ],
           ),
@@ -88,30 +96,22 @@ class _RegistrationPageState extends State<RegistrationPage> {
   void _registerWorker() {
     String surname = _registrationPageState.surnameController.text.trim();
     String name = _registrationPageState.nameController.text.trim();
-    String patronymic =
-    _registrationPageState.patronymicController.text.trim();
+    String patronymic = _registrationPageState.patronymicController.text.trim();
     String job = _registrationPageState.selectedJob ?? 'Не выбрано';
-    String address =
-    _registrationPageState.addressController.text.trim();
-    String phoneNumber =
-    _registrationPageState.phoneNumberController.text.trim();
+    String address = _registrationPageState.addressController.text.trim();
+    String phoneNumber = _registrationPageState.phoneNumberController.text.trim();
 
-    // Проверяем, заполнены ли все поля, кроме отчества
-    if (surname.isEmpty ||
-        name.isEmpty ||
-        job == 'Не выбрано' ||
-        address.isEmpty ||
-        phoneNumber.isEmpty) {
+    if (surname.isNotEmpty && name.isNotEmpty && patronymic.isNotEmpty &&
+        job != 'Не выбрано' && address.isNotEmpty && phoneNumber.isNotEmpty) {
+      // Все поля заполнены, выполняем регистрацию и переход на страницу входа
+      Navigator.of(context).push(MaterialPageRoute(builder: (context) => LoginPage()));
+    } else {
       // Если какое-то поле пустое, показываем уведомление
       String emptyField = _getEmptyField();
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text('Пожалуйста, заполните поле "$emptyField"')),
       );
-      return; // Прерываем выполнение функции, чтобы не продолжать действия
     }
-
-    // Если все поля заполнены, можно выполнить дальнейшие действия
-    // Например, регистрацию пользователя
   }
 
   // Функция для определения первого пустого поля
@@ -120,8 +120,6 @@ class _RegistrationPageState extends State<RegistrationPage> {
       return 'Фамилия';
     } else if (_registrationPageState.nameController.text.trim().isEmpty) {
       return 'Имя';
-      // } else if (_registrationPageState.patronymicController.text.trim().isEmpty) {
-      //   return 'Отчество';
     } else if (_registrationPageState.selectedJob == null ||
         _registrationPageState.selectedJob == 'Не выбрано') {
       return 'Тип работы';
@@ -133,4 +131,5 @@ class _RegistrationPageState extends State<RegistrationPage> {
       return ''; // Если все поля заполнены, возвращаем пустую строку
     }
   }
+
 }

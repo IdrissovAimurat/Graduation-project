@@ -1,12 +1,10 @@
-// ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
 import 'package:graduation/rounded_button.dart';
 import 'package:graduation/choose_action_page.dart';
 
 class AuthorizationPage extends StatelessWidget {
-  void _navigateToRegistration(BuildContext context) {
-    Navigator.of(context).push(
+  void _navigateToChooseAction(BuildContext context) {
+    Navigator.of(context).pushReplacement(
       MaterialPageRoute(builder: (context) => ChooseActionPage()),
     );
   }
@@ -31,19 +29,14 @@ class AuthorizationPage extends StatelessWidget {
             ),
             RoundedButton(
               title: 'Работник',
-              color: Theme.of(context).primaryColor, // Использование primaryColor из темы
-              //color: Colors.pink,
-              onPressed: () => _navigateToRegistration(context), // Изменение обработчика события
+              color: Theme.of(context).primaryColor,
+              onPressed: () => _navigateToChooseAction(context),
             ),
-            SizedBox(height: 20), // Отступ между кнопками
+            SizedBox(height: 20),
             RoundedButton(
               title: 'Клиент',
-              //color: Colors.pink,
-              color: Theme.of(context).primaryColor, // Использование primaryColor из темы
-              onPressed: () {
-                // Обработчик события для кнопки Клиент
-                print('Кнопка Клиент нажата');
-              },
+              color: Theme.of(context).primaryColor,
+              onPressed: () => _navigateToChooseAction(context),
             ),
           ],
         ),

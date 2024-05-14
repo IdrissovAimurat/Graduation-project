@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:graduation/rounded_button.dart';
-import '../Registration/registration_page.dart';  // Используйте нужный экран для перехода после успешного логина
+import 'package:graduation/Worker_menu/main_menu_page.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -9,17 +10,38 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
-  final TextEditingController _loginController = TextEditingController();
+  final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
   bool _obscureText = true;
 
+  @override
+  void initState() {
+    super.initState();
+    _loadUserData();
+  }
+
+  void _loadUserData() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    setState(() {
+      _emailController.text = prefs.getString('email') ?? '';
+      _passwordController.text = prefs.getString('password') ?? '';
+    });
+  }
+
+  void _saveUserData(String email, String password) async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    prefs.setString('email', email);
+    prefs.setString('password', password);
+    prefs.setBool('isLoggedIn', true);
+  }
+
   void _login() {
     if (_formKey.currentState!.validate()) {
-      // Имитация проверки логина и пароля (здесь должен быть запрос к серверу или локальная проверка)
       bool loginSuccess = true;  // Предположим, что данные корректны
       if (loginSuccess) {
-        Navigator.of(context).push(
-          MaterialPageRoute(builder: (context) => RegistrationPage()), // Сменить на страницу после логина
+        _saveUserData(_emailController.text, _passwordController.text);
+        Navigator.of(context).pushReplacement(
+          MaterialPageRoute(builder: (context) => MainMenuPage()),
         );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
@@ -37,7 +59,7 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Логин'),
+        title: Text('Вход'),
         centerTitle: true,
       ),
       body: Center(
@@ -57,43 +79,51 @@ class _LoginPageState extends State<LoginPage> {
                   style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                 ),
                 SizedBox(height: 40),
-                TextFormField(
-                  controller: _loginController,
-                  decoration: InputDecoration(
-                    labelText: 'Логин',
-                    border: OutlineInputBorder(),
-                    prefixIcon: Icon(Icons.person),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                  child: TextFormField(
+                    controller: _emailController,
+                    decoration: InputDecoration(
+                      labelText: 'Почта',
+                      border: OutlineInputBorder(),
+                      prefixIcon: Icon(Icons.email),
+                    ),
+                    validator: (value) {
+                      if (value == null || value.isEmpty) {
+                        return 'Введите вашу почту';
+                      } else if (!RegExp(r"^[a-zA-Z0-9.]+@[a-zA-Z0-9]+\.[a-zA-Z]+").hasMatch(value)) {
+                        return 'Введите корректный адрес электронной почты';
+                      }
+                      return null;
+                    },
                   ),
-                  validator: (value) {
-                    if (value == null || value.isEmpty) {
-                      return 'Введите ваш логин';
-                    }
-                    return null;
-                  },
                 ),
                 SizedBox(height: 20),
-                TextFormField(
-                  controller: _passwordController,
-                  obscureText: _obscureText,
-                  decoration: InputDecoration(
-                    labelText: 'Пароль',
-                    border: OutlineInputBorder(),
-                    prefixIcon: Icon(Icons.lock),
-                    suffixIcon: IconButton(
-                      icon: Icon(_obscureText ? Icons.visibility_off : Icons.visibility),
-                      onPressed: () {
-                        setState(() {
-                          _obscureText = !_obscureText;
-                        });
-                      },
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                  child: TextFormField(
+                    controller: _passwordController,
+                    obscureText: _obscureText,
+                    decoration: InputDecoration(
+                      labelText: 'Пароль',
+                      border: OutlineInputBorder(),
+                      prefixIcon: Icon(Icons.lock),
+                      suffixIcon: IconButton(
+                        icon: Icon(_obscureText ? Icons.visibility_off : Icons.visibility),
+                        onPressed: () {
+                          setState(() {
+                            _obscureText = !_obscureText;
+                          });
+                        },
+                      ),
                     ),
+                    validator: (value) {
+                      if (value == null || value.isEmpty) {
+                        return 'Введите ваш пароль';
+                      }
+                      return null;
+                    },
                   ),
-                  validator: (value) {
-                    if (value == null || value.isEmpty) {
-                      return 'Введите ваш пароль';
-                    }
-                    return null;
-                  },
                 ),
                 SizedBox(height: 40),
                 RoundedButton(

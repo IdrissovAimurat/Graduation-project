@@ -51,6 +51,8 @@ android {
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
+//        Лимит составляет 65536 методов, а у вас их более 67000. Для решения этой проблемы необходимо включить поддержку MultiDex.
+        multiDexEnabled true
     }
 
     buildTypes {
