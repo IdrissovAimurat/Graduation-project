@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:graduation/Worker_menu/request_detail_page.dart';
 import 'package:intl/intl.dart';
-import 'package:url_launcher/url_launcher.dart';
-
 import 'client_models.dart';
+import 'client_new_requests_page.dart';
 import 'client_request_detail_page.dart';
 
 class ClientRequestsPage extends StatefulWidget {
@@ -11,7 +9,8 @@ class ClientRequestsPage extends StatefulWidget {
     ClientRequest(type: "Уборка", address: "ул. Ленина, 12", dateTime: DateTime.now().subtract(Duration(days: 50))),
     ClientRequest(type: "Ремонт", address: "ул. Байтурсынова, 8", dateTime: DateTime.now().subtract(Duration(days: 45))),
     ClientRequest(type: "Лампу поменять", address: "ул. Сейфуллина, 12", dateTime: DateTime.now().subtract(Duration(days: 47))),
-  ];  // Используйте этот список для работы с данными
+  ];  // Инициализация пустым списком
+
   @override
   _ClientRequestsPageState createState() => _ClientRequestsPageState();
 }
@@ -38,9 +37,7 @@ class _ClientRequestsPageState extends State<ClientRequestsPage> {
             leading: Icon(Icons.work),
             title: Text(ClientRequestsPage.requests[index].type),
             subtitle: Text(
-                "${ClientRequestsPage.requests[index].address} - ${DateFormat(
-                    'yyyy-MM-dd – kk:mm').format(
-                    ClientRequestsPage.requests[index].dateTime)}"),
+                "${ClientRequestsPage.requests[index].address} - ${DateFormat('yyyy-MM-dd – kk:mm').format(ClientRequestsPage.requests[index].dateTime)}"),
             onTap: () => _navigateToDetailPage(ClientRequestsPage.requests[index]),
           );
         },
@@ -62,11 +59,6 @@ class _ClientRequestsPageState extends State<ClientRequestsPage> {
   void _navigateToDetailPage(ClientRequest request) {
     Navigator.of(context).push(MaterialPageRoute(
       builder: (context) => ClientRequestDetailPage(request: request),
-    )).then((value) {
-      // Проверяем, вернулась ли страница с изменениями
-      if (value == true) {
-        setState(() {}); // Принудительное обновление состояния для отображения изменений
-      }
-    });
+    ));
   }
 }

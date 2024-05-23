@@ -84,26 +84,30 @@ class ClientPatronymicField extends StatelessWidget {
 
 class ClientAddressField extends StatelessWidget {
   final TextEditingController controller;
+  final VoidCallback onTap;
 
-  const ClientAddressField({required this.controller});
+  const ClientAddressField({required this.controller, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: TextFormField(
-        controller: controller,
-        decoration: InputDecoration(
-          labelText: "Адрес",
-          border: OutlineInputBorder(
-            borderSide: BorderSide(),
+    return GestureDetector(
+      onTap: onTap,
+      child: AbsorbPointer(
+        child: TextFormField(
+          controller: controller,
+          decoration: InputDecoration(
+            labelText: "Адрес",
+            border: OutlineInputBorder(
+              borderSide: BorderSide(),
+            ),
           ),
+          validator: (value) {
+            if (value == null || value.isEmpty) {
+              return 'Введите ваш адрес';
+            }
+            return null;
+          },
         ),
-        validator: (value) {
-          if (value == null || value.isEmpty) {
-            return 'Введите ваш адрес';
-          }
-          return null;
-        },
       ),
     );
   }

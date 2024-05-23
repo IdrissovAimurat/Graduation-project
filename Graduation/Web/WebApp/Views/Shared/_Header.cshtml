@@ -19,6 +19,8 @@
     <nav role="navigation" class="nav-menu w-nav-menu">
         <a asp-action="Index" asp-controller="Home" aria-current="page" class="nav-link w-nav-link w--current">@_lang["Home"]</a>
         <a asp-action="About_us" asp-controller="Home" class="nav-link w-nav-link">@_lang["About Us"]</a>
+        
+        
         <div data-hover="true" data-delay="0" class="dropdown w-dropdown">
             <div class="nav-link w-dropdown-toggle">
                 <div class="dropdown-toggle-icon w-icon-dropdown-toggle"></div>
@@ -26,8 +28,8 @@
             </div>
             <nav class="dropdown-list w-dropdown-list">
                 <a href="/home-2" class="dropdown-link w-dropdown-link">Home 2</a>
-                <a href="/portfolio" class="dropdown-link w-dropdown-link">Projects</a>
-                <a href="/team" class="dropdown-link w-dropdown-link">Team</a>
+                <a asp-action="Portfolio" asp-controller="Home" class="nav-link w-nav-link">@_lang["Portfolio"]</a>
+                <a asp-action="Team" asp-controller="Home" class="nav-link w-nav-link">@_lang["Team"]</a>
                 <a href="/pricing-plan" class="dropdown-link w-dropdown-link">Pricing Plan</a>
                 <a href="https://buildazo.webflow.io/404" class="dropdown-link w-dropdown-link">404</a>
             </nav>

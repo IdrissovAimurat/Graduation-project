@@ -5,13 +5,16 @@ import 'package:graduation/rounded_button.dart';
 import 'package:graduation/Authorization/signup_client_page.dart';
 import 'package:graduation/Authorization/login_client_page.dart';
 
-class ChooseActionPage extends StatelessWidget {
-  void _navigateToSignupClientPage(BuildContext context){
+import '../registration_client/client_registration_page.dart';
+
+class ClientChooseActionPage extends StatelessWidget {
+  void _navigateToClientRegistrationPage(BuildContext context){
     Navigator.of(context).push(
-      MaterialPageRoute(builder: (context) => SignupClientPage()),
+      MaterialPageRoute(builder: (context) => ClientRegistrationPage()),
 
     );
-  }
+  }//
+
   void _navigateToLoginClientPage(BuildContext context){
     Navigator.of(context).push(
       MaterialPageRoute(builder: (context) => LoginClientPage()),
@@ -22,7 +25,7 @@ class ChooseActionPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Выберите действие'),
+        title: Text('Выберите действие, пожалуйста'),
         centerTitle: true,
       ),
       body: Center(
@@ -39,7 +42,7 @@ class ChooseActionPage extends StatelessWidget {
             RoundedButton(
               title: 'Регистрация',
               color: Theme.of(context).primaryColor, // Использование primaryColor из темы
-              onPressed: () => _navigateToSignupClientPage(context), // Изменение обработчика события
+              onPressed: () => _navigateToClientRegistrationPage(context), // Изменение обработчика события
             ),
             SizedBox(height: 20), // Отступ между кнопками
             RoundedButton(

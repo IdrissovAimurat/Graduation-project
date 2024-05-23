@@ -10,24 +10,57 @@
                         Login
                     </h3>
                     <div class="form">
-                        <form asp-action="Login" asp-controller="Home"  method="post">
+                        <form asp-action="Login" asp-controller="Home" method="post">
                             <div class="contact-form" data-wf-page-id="659b713b094eaac10ea75761" data-wf-element-id="c57e3741-9255-133c-abff-7afe4a5060c5"></div>
                             <div class="field-block">
                                 <input class="input-field w-input" maxlength="256" name="username" data-name="Name"
                                        placeholder="Name" type="username" />
                             </div>
                             <div class="field-block">
-                                <input class="input-field w-input" maxlength="256" name="Password" data-name="Password"
+                                <input class="input-field w-input" maxlength="256" name="password" data-name="Password"
                                        placeholder="Password" type="password" required="" />
                             </div>
                             <div class="field-block">
                                 <input class="input-field w-input" maxlength="256" name="phoneNumber" data-name="phoneNumber"
-                                       placeholder="phoneNumber" type="phoneNumber" required="" />
+                                       placeholder="Phone Number" type="text" required="" />
                             </div>
                             <div class="form-button-block">
                                 <input type="hidden" name="ReturnUrl" value="@((string)ViewBag.ReturnUrl ?? "?ReturnUrl=%2F")" />
                                 <input type="submit" data-wait="Please wait..." class="submit-button w-button"
-                                       value="HIT US UP" />
+                                       value="Login" />
+                            </div>
+                        </form>
+                        <div class="w-form-done">
+                            <div>
+                                Thank you! Your submission has been received!
+                            </div>
+                        </div>
+                        <div class="w-form-fail">
+                            <div>
+                                Oops! Something went wrong while submitting the form.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-block">
+                    <h3 class="contact-form-title">
+                        Register
+                    </h3>
+                    <div class="form">
+                        <form asp-action="Register" asp-controller="Home" method="post">
+                            <div class="contact-form" data-wf-page-id="659b713b094eaac10ea75761" data-wf-element-id="c57e3741-9255-133c-abff-7afe4a5060c5"></div>
+                            <div class="field-block">
+                                <input class="input-field w-input" maxlength="256" name="username" data-name="Name"
+                                       placeholder="Name" type="username" />
+                            </div>
+                            <div class="field-block">
+                                <input class="input-field w-input" maxlength="256" name="password" data-name="Password"
+                                       placeholder="Password" type="password" required="" />
+                            </div>
+                            <div class="form-button-block">
+                                <input type="submit" data-wait="Please wait..." class="submit-button w-button"
+                                       value="Register" />
                             </div>
                         </form>
                         <div class="w-form-done">

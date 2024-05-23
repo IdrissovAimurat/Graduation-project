@@ -141,7 +141,16 @@
   <data name="Pages" xml:space="preserve">
     <value>Pages</value>
   </data>
+  <data name="Portfolio" xml:space="preserve">
+    <value>Portfolio</value>
+  </data>
+  <data name="READ MORE" xml:space="preserve">
+    <value>READ MORE</value>
+  </data>
   <data name="Services" xml:space="preserve">
     <value>Services</value>
+  </data>
+  <data name="Team" xml:space="preserve">
+    <value>Team</value>
   </data>
 </root>

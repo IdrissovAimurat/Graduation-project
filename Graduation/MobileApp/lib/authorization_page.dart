@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:graduation/rounded_button.dart';
 import 'package:graduation/choose_action_page.dart';
+import 'auth_client/choose_action_client_page.dart';
 
 class AuthorizationPage extends StatelessWidget {
-  void _navigateToChooseAction(BuildContext context) {
+  void _navigateToChooseActionWorker(BuildContext context) {
     Navigator.of(context).pushReplacement(
       MaterialPageRoute(builder: (context) => ChooseActionPage()),
+    );
+  }
+  void _navigateToChooseActionClient(BuildContext context) {
+    Navigator.of(context).pushReplacement(
+      MaterialPageRoute(builder: (context) => ClientChooseActionPage()),
     );
   }
 
@@ -30,13 +36,13 @@ class AuthorizationPage extends StatelessWidget {
             RoundedButton(
               title: 'Работник',
               color: Theme.of(context).primaryColor,
-              onPressed: () => _navigateToChooseAction(context),
+              onPressed: () => _navigateToChooseActionWorker(context),
             ),
             SizedBox(height: 20),
             RoundedButton(
               title: 'Клиент',
               color: Theme.of(context).primaryColor,
-              onPressed: () => _navigateToChooseAction(context),
+              onPressed: () => _navigateToChooseActionClient(context),
             ),
           ],
         ),

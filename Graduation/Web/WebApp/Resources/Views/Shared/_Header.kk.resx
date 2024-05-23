@@ -141,7 +141,16 @@
   <data name="Pages" xml:space="preserve">
     <value>Беттер</value>
   </data>
+  <data name="Portfolio" xml:space="preserve">
+    <value>Портфолио</value>
+  </data>
+  <data name="READ MORE" xml:space="preserve">
+    <value>ТОЛҒЫРАҚ</value>
+  </data>
   <data name="Services" xml:space="preserve">
     <value>Сервистер</value>
+  </data>
+  <data name="Team" xml:space="preserve">
+    <value>Топ</value>
   </data>
 </root>

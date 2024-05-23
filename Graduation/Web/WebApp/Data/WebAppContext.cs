@@ -6,6 +6,7 @@ using WebApp.Models;
 
 namespace WebApp.Data
 {
+
     public partial class WebAppContext : DbContext
     {
         public WebAppContext()

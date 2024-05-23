@@ -27,12 +27,7 @@ namespace WebApp
                 //    //logBuilder.AddDebug()
                 //    //.AddEventLog()
                 //    //.AddConsole();
-
                 //    //logBuilder.AddSeq();
-
-
-
-
                 //})
                 .ConfigureWebHostDefaults(webBuilder =>
                 {

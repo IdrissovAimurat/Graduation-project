@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:graduation/client_menu/client_consider_request_page.dart' as client_consider_request_page;
 import 'client_settings_page.dart';
 import 'client_support_page.dart';
 import 'package:graduation/client_menu/client_requests_page.dart' as client_requests_page;
@@ -32,6 +33,13 @@ class _ClientMainMenuPageState extends State<ClientMainMenuPage> {
               title: Text('Мои заявки'),
               leading: Icon(Icons.work),
               onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => client_requests_page.ClientRequestsPage())),
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: Text('Заявки на рассмотрении'),
+              leading: Icon(Icons.work),
+              onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => client_consider_request_page.ClientConsiderRequestPage())),
             ),
           ),
           Card(

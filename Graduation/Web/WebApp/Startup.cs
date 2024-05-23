@@ -1,5 +1,6 @@
 ﻿using WebApp.Models;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Localization;
@@ -8,12 +9,12 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
 using Serilog;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Text;
 
 namespace WebApp
 {
@@ -26,7 +27,6 @@ namespace WebApp
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
@@ -34,22 +34,19 @@ namespace WebApp
             services.AddMvc().AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix);
             services.Configure<RequestLocalizationOptions>(options =>
             {
-                var culturies = new[]
+                var cultures = new[]
                 {
-                    new CultureInfo("ru-Ru"),
-                    new CultureInfo("kk-Kz"),
+                    new CultureInfo("ru-RU"),
+                    new CultureInfo("kk-KZ"),
                     new CultureInfo("en-US")
                 };
 
-                options.DefaultRequestCulture = new RequestCulture("ru-Ru", "ru-Ru");
-
-                options.SupportedCultures = culturies;
-                options.SupportedUICultures = culturies;
+                options.DefaultRequestCulture = new RequestCulture("ru-RU", "ru-RU");
+                options.SupportedCultures = cultures;
+                options.SupportedUICultures = cultures;
             });
 
             services.AddLocalization(options => options.ResourcesPath = "Resources");
-
-
 
             Log.Logger = new LoggerConfiguration()
                .WriteTo.Seq("http://localhost:5341/")
@@ -65,20 +62,41 @@ namespace WebApp
 
             services.AddSession(options =>
             {
-
                 options.IdleTimeout = TimeSpan.FromSeconds(10);
                 options.Cookie.HttpOnly = true;
                 options.Cookie.Name = "HotelAtrSession";
             });
 
+            // Add Cookie Authentication
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie(options =>
                 {
                     options.LoginPath = "/Home/Login";
                 });
+
+            // Add JWT Authentication
+            services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+            .AddJwtBearer(options =>
+            {
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    ValidIssuer = Configuration["Jwt:Issuer"],
+                    ValidAudience = Configuration["Jwt:Audience"],
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:Key"]))
+                };
+            });
+
+            services.AddAuthorization();
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
@@ -106,6 +124,11 @@ namespace WebApp
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+                endpoints.MapControllerRoute(
+                    name: "team",
+                    pattern: "Home/Team",
+                    defaults: new { controller = "Home", action = "Team" });
             });
         }
     }

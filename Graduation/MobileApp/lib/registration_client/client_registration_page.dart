@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:graduation/Registration/text_form_fields.dart';
+import 'package:graduation/registration_client/client_text_form_fields.dart';
 import 'package:graduation/Registration/dropdown_field.dart';
 import 'package:graduation/Registration/phone_number_field.dart';
 import 'package:graduation/Registration/register_button.dart';
 import '../Authorization/login_client_page.dart';
+import 'client_address_page.dart';
 
 // Класс для хранения состояния страницы регистрации
 class ClientRegistrationPageState extends ChangeNotifier {
@@ -11,8 +12,8 @@ class ClientRegistrationPageState extends ChangeNotifier {
   final TextEditingController surnameController = TextEditingController();
   final TextEditingController nameController = TextEditingController();
   final TextEditingController patronymicController = TextEditingController();
-  String? selectedJob;
-  final TextEditingController addressController = TextEditingController();
+  //String? selectedJob;
+  //final TextEditingController addressController = TextEditingController();
   final TextEditingController phoneNumberController = TextEditingController();
 
   // Метод для очистки контроллеров при диспозе страницы
@@ -20,7 +21,7 @@ class ClientRegistrationPageState extends ChangeNotifier {
     surnameController.dispose();
     nameController.dispose();
     patronymicController.dispose();
-    addressController.dispose();
+    //addressController.dispose();
     phoneNumberController.dispose();
     super.dispose();
   }
@@ -34,6 +35,8 @@ class ClientRegistrationPage extends StatefulWidget {
 class _ClientRegistrationPageState extends State<ClientRegistrationPage> {
   // Создаем экземпляр класса состояния
   final ClientRegistrationPageState _clientregistrationPageState = ClientRegistrationPageState();
+
+  String address = "";
 
   @override
   Widget build(BuildContext context) {
@@ -54,29 +57,41 @@ class _ClientRegistrationPageState extends State<ClientRegistrationPage> {
                 height: 120,
               ),
               SizedBox(height: 16.0),
-              SurnameField(
+              ClientSurnameField(
                 controller: _clientregistrationPageState.surnameController,
               ),
               SizedBox(height: 16.0),
-              NameField(
+              ClientNameField(
                 controller: _clientregistrationPageState.nameController,
               ),
               SizedBox(height: 16.0),
-              PatronymicField(
+              ClientPatronymicField(
                 controller: _clientregistrationPageState.patronymicController,
               ),
+              //SizedBox(height: 16.0),
+              // JobDropdown(
+              //   value: _clientregistrationPageState.selectedJob,
+              //   onChanged: (newValue) {
+              //     setState(() {
+              //       _clientregistrationPageState.selectedJob = newValue;
+              //     });
+              //   },
+              // ),
               SizedBox(height: 16.0),
-              JobDropdown(
-                value: _clientregistrationPageState.selectedJob,
-                onChanged: (newValue) {
+              ClientAddressField(
+                controller: TextEditingController(text: address),
+                onTap: () async {
+                  final result = await Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => ClientAddressPage(),
+                    ),
+                  );
                   setState(() {
-                    _clientregistrationPageState.selectedJob = newValue;
+                    if (result != null) {
+                      address = result;
+                    }
                   });
                 },
-              ),
-              SizedBox(height: 16.0),
-              AddressField(
-                controller: _clientregistrationPageState.addressController,
               ),
               SizedBox(height: 16.0),
               PhoneNumberField(
@@ -97,12 +112,11 @@ class _ClientRegistrationPageState extends State<ClientRegistrationPage> {
     String surname = _clientregistrationPageState.surnameController.text.trim();
     String name = _clientregistrationPageState.nameController.text.trim();
     String patronymic = _clientregistrationPageState.patronymicController.text.trim();
-    String job = _clientregistrationPageState.selectedJob ?? 'Не выбрано';
-    String address = _clientregistrationPageState.addressController.text.trim();
+    //String job = _clientregistrationPageState.selectedJob ?? 'Не выбрано';
+    //String address = _clientregistrationPageState.addressController.text.trim();
     String phoneNumber = _clientregistrationPageState.phoneNumberController.text.trim();
 
-    if (surname.isNotEmpty && name.isNotEmpty && patronymic.isNotEmpty &&
-        job != 'Не выбрано' && address.isNotEmpty && phoneNumber.isNotEmpty) {
+    if (surname.isNotEmpty && name.isNotEmpty && patronymic.isNotEmpty && address.isNotEmpty && phoneNumber.isNotEmpty) {
       // Все поля заполнены, выполняем регистрацию и переход на страницу входа
       Navigator.of(context).push(MaterialPageRoute(builder: (context) => LoginClientPage()));
     } else {
@@ -120,11 +134,11 @@ class _ClientRegistrationPageState extends State<ClientRegistrationPage> {
       return 'Фамилия';
     } else if (_clientregistrationPageState.nameController.text.trim().isEmpty) {
       return 'Имя';
-    } else if (_clientregistrationPageState.selectedJob == null ||
-        _clientregistrationPageState.selectedJob == 'Не выбрано') {
-      return 'Тип работы';
-    } else if (_clientregistrationPageState.addressController.text.trim().isEmpty) {
-      return 'Адрес';
+    // } else if (_clientregistrationPageState.selectedJob == null ||
+    //     _clientregistrationPageState.selectedJob == 'Не выбрано') {
+    //   return 'Тип работы';
+    } else if (address.isEmpty) {
+       return 'Адрес';
     } else if (_clientregistrationPageState.phoneNumberController.text.trim().isEmpty) {
       return 'Номер телефона';
     } else {
