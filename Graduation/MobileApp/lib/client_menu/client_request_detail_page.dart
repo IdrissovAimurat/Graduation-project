@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'dart:io';
-import 'client_models.dart';
+import '../models/client_models.dart';
 
 class ClientRequestDetailPage extends StatefulWidget {
   final ClientRequest request;

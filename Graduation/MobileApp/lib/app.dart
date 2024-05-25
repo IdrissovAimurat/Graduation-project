@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:graduation/authorization_page.dart';
+import 'package:graduation/auth_worker/authorization_page.dart';
 import 'package:graduation/Worker_menu/main_menu_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'dart:io';
-import 'client_models.dart';
+import '../models/client_models.dart';
 
 class CreateRequestPage extends StatefulWidget {
   @override

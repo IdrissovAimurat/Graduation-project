@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'client_models.dart';
+import '../models/client_models.dart';
 import 'client_new_requests_page.dart';
 import 'client_request_detail_page.dart';
 

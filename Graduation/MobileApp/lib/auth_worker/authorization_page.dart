@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:graduation/rounded_button.dart';
 import 'package:graduation/choose_action_page.dart';
-import 'auth_client/choose_action_client_page.dart';
+import '../auth_client/choose_action_client_page.dart';
 
 class AuthorizationPage extends StatelessWidget {
   void _navigateToChooseActionWorker(BuildContext context) {
