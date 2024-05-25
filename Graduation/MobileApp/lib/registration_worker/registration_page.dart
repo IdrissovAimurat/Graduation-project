@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:graduation/Registration/text_form_fields.dart';
-import 'package:graduation/Registration/dropdown_field.dart';
-import 'package:graduation/Registration/phone_number_field.dart';
-import 'package:graduation/Registration/register_button.dart';
+import 'package:graduation/registration_worker/text_form_fields.dart';
+import 'package:graduation/registration_worker/dropdown_field.dart';
+import 'package:graduation/registration_worker/phone_number_field.dart';
+import 'package:graduation/registration_worker/register_button.dart';
 import 'package:graduation/Authorization/login_page.dart';
+import 'package:graduation/registration_worker/text_form_fields.dart';
 
 // Класс для хранения состояния страницы регистрации
 class RegistrationPageState extends ChangeNotifier {

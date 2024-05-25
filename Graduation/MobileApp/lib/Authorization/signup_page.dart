@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:graduation/rounded_button.dart';
-import '../Registration/registration_page.dart';
+import '../registration_worker/registration_page.dart';
 
 class SignupPage extends StatefulWidget {
   @override

@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:graduation/registration_client/client_text_form_fields.dart';
-import 'package:graduation/Registration/dropdown_field.dart';
-import 'package:graduation/Registration/phone_number_field.dart';
-import 'package:graduation/Registration/register_button.dart';
+import 'package:graduation/registration_client/client_register_button.dart';
 import '../Authorization/login_client_page.dart';
 import 'client_address_page.dart';
+import 'client_phone_number_field.dart';
 
 // Класс для хранения состояния страницы регистрации
 class ClientRegistrationPageState extends ChangeNotifier {
@@ -94,11 +93,11 @@ class _ClientRegistrationPageState extends State<ClientRegistrationPage> {
                 },
               ),
               SizedBox(height: 16.0),
-              PhoneNumberField(
+              ClientPhoneNumberField(
                 controller: _clientregistrationPageState.phoneNumberController,
               ),
               SizedBox(height: 16.0),
-              RegisterButton(
+              ClientRegisterButton(
                 onPressed: _registerWorker,
               ),
             ],
