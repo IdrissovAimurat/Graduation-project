@@ -5,9 +5,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 class SettingsPage extends StatelessWidget {
   void _logout(BuildContext context) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    await prefs.clear(); // Очистка сохраненных данных
+    await prefs.clear();
 
-    // Используем Future.delayed, чтобы дать время для очистки данных
     Future.delayed(Duration(milliseconds: 500), () {
       Navigator.of(context).pushAndRemoveUntil(
         MaterialPageRoute(builder: (context) => AuthorizationPage()),
@@ -35,7 +34,7 @@ class SettingsPage extends StatelessWidget {
               onPressed: () => _logout(context),
               child: Text('Выйти из аккаунта'),
               style: ElevatedButton.styleFrom(
-                primary: Colors.red,  // Красный цвет для кнопки выхода
+                primary: Colors.red,
                 onPrimary: Colors.white,
               ),
             ),

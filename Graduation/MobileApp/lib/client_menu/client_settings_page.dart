@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:graduation/authorization_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-class SettingsPage extends StatelessWidget {
+class ClientSettingsPage extends StatelessWidget {
   void _logout(BuildContext context) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     await prefs.clear(); // Очистка сохраненных данных

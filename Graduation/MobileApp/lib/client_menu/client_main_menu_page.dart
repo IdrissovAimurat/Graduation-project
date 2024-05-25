@@ -53,7 +53,7 @@ class _ClientMainMenuPageState extends State<ClientMainMenuPage> {
             child: ListTile(
               title: Text('Настройки'),
               leading: Icon(Icons.settings),
-              onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => SettingsPage())),
+              onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => ClientSettingsPage())),
             ),
           ),
         ],

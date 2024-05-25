@@ -27,7 +27,7 @@ com.example.graduation.app-packaged_res-25 C:\tests2\Graduation-project\Graduati
 com.example.graduation.app-packaged_res-26 C:\tests2\Graduation-project\Graduation\MobileApp\build\flutter_plugin_android_lifecycle\intermediates\packaged_res\debug
 com.example.graduation.app-packaged_res-27 C:\tests2\Graduation-project\Graduation\MobileApp\build\flutter_sms\intermediates\packaged_res\debug
 com.example.graduation.app-packaged_res-28 C:\tests2\Graduation-project\Graduation\MobileApp\build\image_picker_android\intermediates\packaged_res\debug
-com.example.graduation.app-packaged_res-29 C:\tests2\Graduation-project\Graduation\MobileApp\build\permission_handler\intermediates\packaged_res\debug
+com.example.graduation.app-packaged_res-29 C:\tests2\Graduation-project\Graduation\MobileApp\build\permission_handler_android\intermediates\packaged_res\debug
 com.example.graduation.app-packaged_res-30 C:\tests2\Graduation-project\Graduation\MobileApp\build\shared_preferences_android\intermediates\packaged_res\debug
 com.example.graduation.app-packaged_res-31 C:\tests2\Graduation-project\Graduation\MobileApp\build\url_launcher_android\intermediates\packaged_res\debug
 com.example.graduation.app-packaged_res-32 C:\tests2\Graduation-project\Graduation\MobileApp\build\video_player_android\intermediates\packaged_res\debug
