@@ -1,21 +1,94 @@
-HEAD
-# graduation
+# Graduation Project: Автоматизация процессов ЖКХ
 
-A new Flutter project.
+## Описание проекта
 
-## Getting Started
+Данный проект направлен на автоматизацию процессов управления жилищно-коммунального хозяйства (ЖКХ). Он включает в себя три основные компоненты:
 
-This project is a starting point for a Flutter application.
+1. **Мобильное приложение** - разработано на **Flutter**, предоставляющее пользователям удобный интерфейс для взаимодействия с сервисами ЖКХ.
+2. **Веб-приложение** - создано с использованием **React**, предназначенное для администраторов и управляющих компаний, обеспечивающее управление и мониторинг.
+3. **Серверная часть** - написана на **C#**, обеспечивающая надежное и эффективное взаимодействие между мобильным и веб-приложениями, а также управление базой данных.
 
-A few resources to get you started if this is your first Flutter project:
+## Основные функции
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Для жильцов**:
+  - Подать заявки на ремонт и обслуживание.
+  - Просмотр текущих и завершенных заявок.
+  - Получение уведомлений о важных событиях и изменениях.
+  - Онлайн-оплата коммунальных услуг.
+  
+- **Для управляющих компаний**:
+  - Управление заявками и их распределение по сотрудникам.
+  - Мониторинг состояния зданий и инфраструктуры.
+  - Генерация отчетов и статистики.
+  - Управление пользователями и их правами доступа.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Технологии
 
-# Graduation-project
-Дипломная работа.
-8aff7bc3ba76efceb2392362e7f18af1cbecd220
+### Мобильное приложение
+- **Flutter** - кросс-платформенный фреймворк для создания высокопроизводительных мобильных приложений.
+
+### Веб-приложение
+- **React** - популярная JavaScript библиотека для создания пользовательских интерфейсов.
+
+### Серверная часть
+- **C#** - мощный язык программирования, используемый для разработки серверных приложений и служб.
+
+## Установка и запуск
+
+### Мобильное приложение (Flutter)
+1. Установите Flutter SDK с [официального сайта](https://flutter.dev).
+2. Клонируйте репозиторий:
+   ```bash
+   git clone https://github.com/your-repo/graduation-project.git
+   ```
+3. Перейдите в директорию мобильного приложения:
+   ```bash
+   cd graduation-project/Graduation/MobileApp
+   ```
+4. Установите зависимости и запустите приложение:
+   ```bash
+   flutter pub get
+   flutter run
+   ```
+
+### Веб-приложение (React)
+1. Убедитесь, что у вас установлен Node.js и npm.
+2. Клонируйте репозиторий:
+   ```bash
+   git clone https://github.com/your-repo/graduation-project.git
+   ```
+3. Перейдите в директорию веб-приложения:
+   ```bash
+   cd graduation-project/Graduation/Web
+   ```
+4. Установите зависимости и запустите приложение:
+   ```bash
+   npm install
+   npm start
+   ```
+
+### Серверная часть (C#)
+1. Убедитесь, что у вас установлен .NET SDK.
+2. Клонируйте репозиторий:
+   ```bash
+   git clone https://github.com/your-repo/graduation-project.git
+   ```
+3. Перейдите в директорию серверного приложения:
+   ```bash
+   cd graduation-project/Graduation/Backend
+   ```
+4. Установите зависимости и запустите приложение:
+   ```bash
+   dotnet restore
+   dotnet run
+   ```
+
+## Вклад
+
+Автоматизация ЖКХ услуг упростит связь между жильцами и их работниками.
+
+## Лицензия
+
+Этот проект лицензирован под лицензией Satbayev University.
+
+---
