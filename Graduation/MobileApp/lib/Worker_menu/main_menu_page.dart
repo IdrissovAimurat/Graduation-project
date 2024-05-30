@@ -16,6 +16,7 @@ class _MainMenuPageState extends State<MainMenuPage> {
       appBar: AppBar(
         title: Text('Главное меню'),
         centerTitle: true,
+        automaticallyImplyLeading: false, // Убирает кнопку назад
       ),
       body: ListView(
         padding: EdgeInsets.all(20.0),
@@ -53,42 +54,3 @@ class _MainMenuPageState extends State<MainMenuPage> {
     );
   }
 }
-
-// Примерные классы для страниц, на которые будут осуществляться переходы
-// class IncomingRequestsPage extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         title: Text("Входящие заявки"),
-//       ),
-//       body: Center(child: Text("Здесь будут отображаться входящие заявки")),
-//     );
-//   }
-// }
-
-// class RequestsPage extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         title: Text("Мои заявки"),
-//       ),
-//       body: Center(child: Text("Здесь будут отображаться мои заявки")),
-//     );
-//   }
-// }
-
-// class SupportPage extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         title: Text("Поддержка"),
-//       ),
-//       body: Center(child: Text("Здесь будет информация о поддержке")),
-//     );
-//   }
-// }
-
-

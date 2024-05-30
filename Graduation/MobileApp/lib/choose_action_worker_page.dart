@@ -2,17 +2,29 @@ import 'package:flutter/material.dart';
 import 'package:graduation/rounded_button.dart';
 import 'Authorization/login_page.dart';
 import 'Authorization/signup_page.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'auth_worker/authorization_page.dart';
 
-class ChooseActionPage extends StatelessWidget {
-  void _navigateToSignupPage(BuildContext context){
+
+class ChooseActionWorkerPage extends StatelessWidget {
+  void _navigateToSignupPage(BuildContext context) {
     Navigator.of(context).push(
       MaterialPageRoute(builder: (context) => SignupPage()),
     );
   }
 
-  void _navigateToLoginPage(BuildContext context){
+  void _navigateToLoginPage(BuildContext context) {
     Navigator.of(context).push(
       MaterialPageRoute(builder: (context) => LoginPage()),
+    );
+  }
+
+  void _logout(BuildContext context) async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.remove('isWorkerLoggedIn');
+    Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(builder: (context) => AuthorizationPage()),
     );
   }
 
@@ -22,6 +34,12 @@ class ChooseActionPage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Выберите действие'),
         centerTitle: true,
+        actions: [
+          IconButton(
+            icon: Icon(Icons.logout),
+            onPressed: () => _logout(context),
+          ),
+        ],
       ),
       body: Center(
         child: Column(

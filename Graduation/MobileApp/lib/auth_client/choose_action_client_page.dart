@@ -4,7 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:graduation/rounded_button.dart';
 import 'package:graduation/Authorization/signup_client_page.dart';
 import 'package:graduation/Authorization/login_client_page.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
+import '../auth_worker/authorization_page.dart';
 import '../registration_client/client_registration_page.dart';
 
 class ClientChooseActionPage extends StatelessWidget {
@@ -25,8 +27,14 @@ class ClientChooseActionPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Выберите действие, пожалуйста'),
+        title: Text('Выберите действие'),
         centerTitle: true,
+        actions: [
+          IconButton(
+            icon: Icon(Icons.logout),
+            onPressed: () => _logout(context),
+          ),
+        ],
       ),
       body: Center(
         child: Column(
@@ -56,4 +64,12 @@ class ClientChooseActionPage extends StatelessWidget {
       ),
     );
   }
+}
+void _logout(BuildContext context) async {
+  SharedPreferences prefs = await SharedPreferences.getInstance();
+  await prefs.remove('isWorkerLoggedIn');
+  Navigator.pushReplacement(
+    context,
+    MaterialPageRoute(builder: (context) => AuthorizationPage()),
+  );
 }
