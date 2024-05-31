@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:graduation/Api/http_client.dart';
+import 'package:graduation/Api/token_storage.dart';
 import 'package:intl/intl.dart';
+import 'package:jwt_decoder/jwt_decoder.dart';
+import '../Api/endpoints.dart';
 import 'client_consider_request_detail_page.dart';
 import '../models/client_models.dart';
 import 'client_requests_page.dart';
@@ -7,12 +11,38 @@ import 'client_requests_page.dart';
 class ClientConsiderRequestPage extends StatefulWidget {
   static List<ClientRequest> requests = [];
 
+
+
   @override
   _ClientConsiderRequestPageState createState() => _ClientConsiderRequestPageState();
 }
 
 class _ClientConsiderRequestPageState extends State<ClientConsiderRequestPage> {
   bool isSorted = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadRequests();
+  }
+
+  Future<void> _loadRequests() async {
+    var client = HttpService();
+    var tokenStorage = TokenStorage();
+    var token = await tokenStorage.getAccessToken();
+    Map<String, dynamic> decodedToken = JwtDecoder.decode(token!);
+
+    var userGuid = decodedToken['UserGuid'];
+    var userRole = decodedToken['UserRole'];
+
+    var requestsJson = await client.get(Endpoints.getByUserGuid.replaceFirst("{userGuid}", userGuid)
+        .replaceFirst("{UserRoleName}", userRole));
+    if (requestsJson != null) {
+      setState(() {
+        ClientConsiderRequestPage.requests = requestsJson.map((json) => ClientRequest.fromJson(json)).toList();
+      });
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -32,10 +62,10 @@ class _ClientConsiderRequestPageState extends State<ClientConsiderRequestPage> {
           return GestureDetector(
             onLongPress: () => _showTransferDialog(context, ClientConsiderRequestPage.requests[index]),
             child: ListTile(
-              leading: Icon(Icons.work),
-              title: Text(ClientConsiderRequestPage.requests[index].type),
+              leading: const Icon(Icons.work),
+                title: Text(ClientConsiderRequestPage.requests[index].title!),
               subtitle: Text(
-                "${ClientConsiderRequestPage.requests[index].address} - ${DateFormat('yyyy-MM-dd – kk:mm').format(ClientConsiderRequestPage.requests[index].dateTime)}",
+                "${ClientConsiderRequestPage.requests[index].description} - ${DateFormat('yyyy-MM-dd – kk:mm').format(ClientConsiderRequestPage.requests[index].createdAt!)}",
               ),
               onTap: () => _navigateToDetailPage(ClientConsiderRequestPage.requests[index]),
             ),
@@ -48,9 +78,9 @@ class _ClientConsiderRequestPageState extends State<ClientConsiderRequestPage> {
   void _toggleSort() {
     setState(() {
       if (isSorted) {
-        ClientConsiderRequestPage.requests.sort((a, b) => a.dateTime.compareTo(b.dateTime));
+        ClientConsiderRequestPage.requests.sort((a, b) => a.createdAt!.compareTo(b.createdAt!));
       } else {
-        ClientConsiderRequestPage.requests.sort((a, b) => b.dateTime.compareTo(a.dateTime));
+        ClientConsiderRequestPage.requests.sort((a, b) => b.createdAt!.compareTo(a.createdAt!));
       }
       isSorted = !isSorted;
     });

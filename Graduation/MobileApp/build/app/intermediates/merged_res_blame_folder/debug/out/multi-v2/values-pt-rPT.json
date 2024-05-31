@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.graduation.app-mergeDebugResources-22:/values-pt-rPT/values-pt-rPT.xml",
+            "outputFile": "com.example.graduation.app-mergeDebugResources-23:/values-pt-rPT/values-pt-rPT.xml",
             "map": [
                 {
                     "source": "C:\\Users\\aimur\\.gradle\\caches\\transforms-3\\ef2321c8ef384bd7d821c1ecf44a36ab\\transformed\\jetified-exoplayer-core-2.18.7\\res\\values-pt-rPT\\values-pt-rPT.xml",

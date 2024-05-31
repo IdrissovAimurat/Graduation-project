@@ -1,8 +1,11 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
+import 'package:graduation/Api/http_client.dart';
 import 'package:graduation/rounded_button.dart';
-import 'package:graduation/Worker_menu/main_menu_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../Api/endpoints.dart';
 import '../client_menu/client_main_menu_page.dart';
 
 class LoginClientPage extends StatefulWidget {
@@ -37,9 +40,16 @@ class _LoginClientPageState extends State<LoginClientPage> {
     prefs.setBool('isLoggedIn', true);
   }
 
-  void _login() {
+    Future<void> _login() async {
     if (_formKey.currentState!.validate()) {
-      bool loginSuccess = true;  // Предположим, что данные корректны
+      bool loginSuccess = false;
+      var client = HttpService();
+      var data = {
+        'email' : _emailController.text,
+        'password': _passwordController.text
+      };
+      loginSuccess = await client.authorization(data);
+
       if (loginSuccess) {
         _saveUserData(_emailController.text, _passwordController.text);
         Navigator.of(context).pushReplacement(

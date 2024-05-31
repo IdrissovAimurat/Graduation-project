@@ -116,6 +116,42 @@
       "languageVersion": "2.19"
     },
     {
+      "name": "flutter_secure_storage",
+      "rootUri": "file:///C:/Users/aimur/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_secure_storage-8.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "flutter_secure_storage_linux",
+      "rootUri": "file:///C:/Users/aimur/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_secure_storage_linux-1.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "flutter_secure_storage_macos",
+      "rootUri": "file:///C:/Users/aimur/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_secure_storage_macos-3.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "flutter_secure_storage_platform_interface",
+      "rootUri": "file:///C:/Users/aimur/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_secure_storage_platform_interface-1.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "flutter_secure_storage_web",
+      "rootUri": "file:///C:/Users/aimur/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_secure_storage_web-1.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "flutter_secure_storage_windows",
+      "rootUri": "file:///C:/Users/aimur/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_secure_storage_windows-2.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "flutter_sms",
       "rootUri": "file:///C:/Users/aimur/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_sms-2.3.3",
       "packageUri": "lib/",
@@ -216,6 +252,12 @@
       "rootUri": "file:///C:/Users/aimur/AppData/Local/Pub/Cache/hosted/pub.dev/js-0.6.5",
       "packageUri": "lib/",
       "languageVersion": "2.16"
+    },
+    {
+      "name": "jwt_decoder",
+      "rootUri": "file:///C:/Users/aimur/AppData/Local/Pub/Cache/hosted/pub.dev/jwt_decoder-2.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "lints",
@@ -506,7 +548,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2024-05-25T11:48:42.705363Z",
+  "generated": "2024-05-30T18:49:24.604583Z",
   "generator": "pub",
   "generatorVersion": "2.19.6"
 }

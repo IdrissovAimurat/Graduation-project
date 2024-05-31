@@ -42,23 +42,19 @@ class _AuthorizationPageState extends State<AuthorizationPage> {
         padding: EdgeInsets.all(16.0),
         child: Column(
           children: [
-            TextField(
-              controller: _usernameController,
-              decoration: InputDecoration(labelText: 'Username'),
-            ),
-            TextField(
-              controller: _passwordController,
-              decoration: InputDecoration(labelText: 'Password'),
-              obscureText: true,
-            ),
             SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: _loginAsWorker,
-              child: Text('Login as Worker'),
-            ),
-            ElevatedButton(
-              onPressed: _loginAsClient,
-              child: Text('Login as Client'),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                ElevatedButton(
+                  onPressed: _loginAsWorker,
+                  child: Text('Сотрудник'),
+                ),
+                ElevatedButton(
+                  onPressed: _loginAsClient,
+                  child: Text('Клиент'),
+                ),
+              ],
             ),
           ],
         ),

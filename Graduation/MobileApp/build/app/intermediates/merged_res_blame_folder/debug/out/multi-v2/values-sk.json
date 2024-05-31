@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.graduation.app-mergeDebugResources-22:/values-sk/values-sk.xml",
+            "outputFile": "com.example.graduation.app-mergeDebugResources-23:/values-sk/values-sk.xml",
             "map": [
                 {
                     "source": "C:\\Users\\aimur\\.gradle\\caches\\transforms-3\\771fe64efcfbbf39a8b9ff2c8e0c6eec\\transformed\\browser-1.5.0\\res\\values-sk\\values-sk.xml",

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:graduation/Api/http_client.dart';
 import 'package:image_picker/image_picker.dart';
 import 'dart:io';
 import '../models/client_models.dart';
@@ -33,15 +34,16 @@ class _ClientNewRequestsPageState extends State<ClientNewRequestsPage> {
     }
   }
 
-  void _submitRequest() {
+  Future<void> _submitRequest() async {
     if (descriptionController.text.isNotEmpty) {
       final newRequest = ClientRequest(
-        type: descriptionController.text,
-        address: '${selectedCountry ?? ''}, ${selectedRegion ?? ''}, ${selectedCity ?? ''}, ${selectedDistrict ?? ''}, ${selectedMicrodistrict ?? ''}, ${selectedStreet ?? ''}, ${houseNumberController.text}, ${apartmentNumberController.text}',
-        dateTime: DateTime.now(),
-        comment: commentController.text,
-        image: _image,
+        title: descriptionController.text,
+        description: '${selectedCountry ?? ''}, ${selectedRegion ?? ''}, ${selectedCity ?? ''}, ${selectedDistrict ?? ''}, ${selectedMicrodistrict ?? ''}, ${selectedStreet ?? ''}, ${houseNumberController.text}, ${apartmentNumberController.text}',
+        createdAt: DateTime.now(),
       );
+
+      var client = HttpService();
+      final createRequest = await client.createRequest(descriptionController.text, commentController.text, _image);
 
       setState(() {
         ClientConsiderRequestPage.requests.add(newRequest);

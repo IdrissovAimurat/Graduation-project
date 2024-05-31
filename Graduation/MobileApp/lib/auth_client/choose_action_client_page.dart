@@ -13,7 +13,6 @@ class ClientChooseActionPage extends StatelessWidget {
   void _navigateToClientRegistrationPage(BuildContext context){
     Navigator.of(context).push(
       MaterialPageRoute(builder: (context) => ClientRegistrationPage()),
-
     );
   }//
 

@@ -98,7 +98,7 @@ class _ClientRegistrationPageState extends State<ClientRegistrationPage> {
               ),
               SizedBox(height: 16.0),
               ClientRegisterButton(
-                onPressed: _registerWorker,
+                onPressed: _registerClient,
               ),
             ],
           ),
@@ -107,7 +107,7 @@ class _ClientRegistrationPageState extends State<ClientRegistrationPage> {
     );
   }
 
-  void _registerWorker() {
+  Future<void> _registerClient() async {
     String surname = _clientregistrationPageState.surnameController.text.trim();
     String name = _clientregistrationPageState.nameController.text.trim();
     String patronymic = _clientregistrationPageState.patronymicController.text.trim();
@@ -116,7 +116,12 @@ class _ClientRegistrationPageState extends State<ClientRegistrationPage> {
     String phoneNumber = _clientregistrationPageState.phoneNumberController.text.trim();
 
     if (surname.isNotEmpty && name.isNotEmpty && patronymic.isNotEmpty && address.isNotEmpty && phoneNumber.isNotEmpty) {
-      // Все поля заполнены, выполняем регистрацию и переход на страницу входа
+      // var client = HttpService();
+      // var data = {
+      //   'email' : _emailController.text,
+      //   'password': _passwordController.text
+      // };
+      //var loginSuccess = await client.authorization(data);
       Navigator.of(context).push(MaterialPageRoute(builder: (context) => LoginClientPage()));
     } else {
       // Если какое-то поле пустое, показываем уведомление

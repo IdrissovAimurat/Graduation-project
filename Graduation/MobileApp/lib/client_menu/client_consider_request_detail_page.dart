@@ -25,7 +25,7 @@ class _ClientConsiderRequestDetailPage extends State<ClientConsiderRequestDetail
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.request.type),
+        title: Text(widget.request.title!),
         actions: [
           IconButton(
             icon: Icon(Icons.delete),
@@ -39,14 +39,14 @@ class _ClientConsiderRequestDetailPage extends State<ClientConsiderRequestDetail
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              Text("Тип услуги: ${widget.request.type}", style: TextStyle(fontSize: 18)),
-              Text("Адрес: ${widget.request.address}", style: TextStyle(fontSize: 18)),
-              Text("Дата и время: ${DateFormat('yyyy-MM-dd – kk:mm').format(widget.request.dateTime)}", style: TextStyle(fontSize: 18)),
+              Text("Тип услуги: ${widget.request.title!}", style: TextStyle(fontSize: 18)),
+              Text("Адрес: ${widget.request.description!}", style: TextStyle(fontSize: 18)),
+              Text("Дата и время: ${DateFormat('yyyy-MM-dd – kk:mm').format(widget.request.createdAt!)}", style: TextStyle(fontSize: 18)),
               SizedBox(height: 20),
-              if (widget.request.image != null)
-                Image.file(widget.request.image!),
-              if (widget.request.comment != null)
-                Text("Комментарий: ${widget.request.comment}", style: TextStyle(fontSize: 18)),
+              if (widget.request.imagePaths![0] != null)
+                Image.network(widget.request.imagePaths![0]),
+              if (widget.request.description != null)
+                Text("Комментарий: ${widget.request.description}", style: TextStyle(fontSize: 18)),
             ],
           ),
         ),

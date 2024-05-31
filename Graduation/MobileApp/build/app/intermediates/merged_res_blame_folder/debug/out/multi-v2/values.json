@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.graduation.app-mergeDebugResources-22:/values/values.xml",
+            "outputFile": "com.example.graduation.app-mergeDebugResources-23:/values/values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\aimur\\.gradle\\caches\\transforms-3\\ff5f5b0a71e9b3e49766bc82725fe9a1\\transformed\\jetified-startup-runtime-1.1.1\\res\\values\\values.xml",

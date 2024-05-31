@@ -26,11 +26,9 @@ class _CreateRequestPageState extends State<CreateRequestPage> {
   void _submitRequest() {
     if (descriptionController.text.isNotEmpty) {
       final newRequest = ClientRequest(
-        type: descriptionController.text,
-        address: "ул. Неизвестная, 0", // Placeholder address
-        dateTime: DateTime.now(),
-        comment: commentController.text,
-        image: _image,
+        title: descriptionController.text,
+        description: "ул. Неизвестная, 0", // Placeholder address
+        createdAt: DateTime.now(),
       );
 
       Navigator.of(context).pop(newRequest);
