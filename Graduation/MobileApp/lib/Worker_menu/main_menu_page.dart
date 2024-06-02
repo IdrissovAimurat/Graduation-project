@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'settings_page.dart';
 import 'support_page.dart';
-import 'package:graduation/Worker_menu/requests_page.dart' as requests_page;
-import 'package:graduation/Worker_menu/new_requests_page.dart' as new_requests_page;
+import 'requests_page.dart';
+import 'new_requests_page.dart'; // Убедитесь, что вы импортируете правильный файл
 
 class MainMenuPage extends StatefulWidget {
   @override
@@ -16,40 +16,56 @@ class _MainMenuPageState extends State<MainMenuPage> {
       appBar: AppBar(
         title: Text('Главное меню'),
         centerTitle: true,
+        backgroundColor: Colors.teal,
         automaticallyImplyLeading: false, // Убирает кнопку назад
       ),
       body: ListView(
         padding: EdgeInsets.all(20.0),
         children: <Widget>[
-          Card(
-            child: ListTile(
-              title: Text('Входящие заявки'),
-              leading: Icon(Icons.input),
-              onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => new_requests_page.NewRequestsPage())),
-            ),
+          _buildMenuCard(
+            title: 'Входящие заявки',
+            icon: Icons.input,
+            onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => NewRequestsPage())), // Убедитесь, что используете правильный класс
           ),
-          Card(
-            child: ListTile(
-              title: Text('Мои заявки'),
-              leading: Icon(Icons.work),
-              onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => requests_page.RequestsPage())),
-            ),
+          _buildMenuCard(
+            title: 'Мои заявки',
+            icon: Icons.work,
+            onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => RequestsPage())),
           ),
-          Card(
-            child: ListTile(
-              title: Text('Поддержка'),
-              leading: Icon(Icons.support_agent),
-              onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => SupportPage())),
-            ),
+          _buildMenuCard(
+            title: 'Поддержка',
+            icon: Icons.support_agent,
+            onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => SupportPage())),
           ),
-          Card(
-            child: ListTile(
-              title: Text('Настройки'),
-              leading: Icon(Icons.settings),
-              onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => SettingsPage())),
-            ),
+          _buildMenuCard(
+            title: 'Настройки',
+            icon: Icons.settings,
+            onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => SettingsPage())),
           ),
         ],
+      ),
+    );
+  }
+
+  Widget _buildMenuCard({required String title, required IconData icon, required VoidCallback onTap}) {
+    return Card(
+      elevation: 5,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(12),
+      ),
+      margin: const EdgeInsets.symmetric(vertical: 10.0),
+      child: ListTile(
+        leading: Icon(icon, color: Colors.teal, size: 30),
+        title: Text(
+          title,
+          style: TextStyle(
+            fontSize: 18,
+            fontWeight: FontWeight.bold,
+            color: Colors.teal,
+          ),
+        ),
+        trailing: Icon(Icons.arrow_forward, color: Colors.teal),
+        onTap: onTap,
       ),
     );
   }

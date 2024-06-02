@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+
 class Request {
   String type;
   String address;

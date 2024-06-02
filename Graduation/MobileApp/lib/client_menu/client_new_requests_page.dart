@@ -11,6 +11,7 @@ class ClientNewRequestsPage extends StatefulWidget {
 }
 
 class _ClientNewRequestsPageState extends State<ClientNewRequestsPage> {
+  final TextEditingController titleController = TextEditingController();
   final TextEditingController descriptionController = TextEditingController();
   final TextEditingController commentController = TextEditingController();
   final TextEditingController houseNumberController = TextEditingController();
@@ -37,13 +38,13 @@ class _ClientNewRequestsPageState extends State<ClientNewRequestsPage> {
   Future<void> _submitRequest() async {
     if (descriptionController.text.isNotEmpty) {
       final newRequest = ClientRequest(
-        title: descriptionController.text,
-        description: '${selectedCountry ?? ''}, ${selectedRegion ?? ''}, ${selectedCity ?? ''}, ${selectedDistrict ?? ''}, ${selectedMicrodistrict ?? ''}, ${selectedStreet ?? ''}, ${houseNumberController.text}, ${apartmentNumberController.text}',
+        title: titleController.text,
+        description: descriptionController.text,
         createdAt: DateTime.now(),
       );
 
       var client = HttpService();
-      final createRequest = await client.createRequest(descriptionController.text, commentController.text, _image);
+      final createRequest = await client.createRequest(titleController.text, descriptionController.text, _image);
 
       setState(() {
         ClientConsiderRequestPage.requests.add(newRequest);
@@ -95,6 +96,26 @@ class _ClientNewRequestsPageState extends State<ClientNewRequestsPage> {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
                   Text(
+                    "Тема вашей заявки",
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.teal,
+                    ),
+                  ),
+                  SizedBox(height: 8.0),
+                  TextFormField(
+                    controller: titleController,
+                    decoration: InputDecoration(
+                      hintText: "Введите тему заявки",
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                    ),
+                    maxLines: 1,
+                  ),
+                  SizedBox(height: 16.0),
+                  Text(
                     "Описание вашей заявки",
                     style: TextStyle(
                       fontSize: 18,
@@ -113,55 +134,6 @@ class _ClientNewRequestsPageState extends State<ClientNewRequestsPage> {
                     ),
                     maxLines: 3,
                   ),
-                  SizedBox(height: 16.0),
-                  Text(
-                    "Адрес",
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.teal,
-                    ),
-                  ),
-                  SizedBox(height: 8.0),
-                  _buildDropdown("Страна", selectedCountry, (newValue) {
-                    setState(() {
-                      selectedCountry = newValue;
-                    });
-                  }, ['Казахстан', 'Кыргызстан']),
-                  SizedBox(height: 16.0),
-                  _buildDropdown("Область", selectedRegion, (newValue) {
-                    setState(() {
-                      selectedRegion = newValue;
-                    });
-                  }, ['Алматинская']),
-                  SizedBox(height: 16.0),
-                  _buildDropdown("Город", selectedCity, (newValue) {
-                    setState(() {
-                      selectedCity = newValue;
-                    });
-                  }, ['Алматы']),
-                  SizedBox(height: 16.0),
-                  _buildDropdown("Район", selectedDistrict, (newValue) {
-                    setState(() {
-                      selectedDistrict = newValue;
-                    });
-                  }, ['Бостандыкский', 'Алмалинский']),
-                  SizedBox(height: 16.0),
-                  _buildDropdown("Микрорайон", selectedMicrodistrict, (newValue) {
-                    setState(() {
-                      selectedMicrodistrict = newValue;
-                    });
-                  }, ['Таугуль', 'Аксай']),
-                  SizedBox(height: 16.0),
-                  _buildDropdown("Улица", selectedStreet, (newValue) {
-                    setState(() {
-                      selectedStreet = newValue;
-                    });
-                  }, ['Сейфуллина', 'Байтурсынов']),
-                  SizedBox(height: 16.0),
-                  _buildTextField("Номер дома", houseNumberController),
-                  SizedBox(height: 16.0),
-                  _buildTextField("Номер квартиры", apartmentNumberController),
                   SizedBox(height: 16.0),
                   Text(
                     "Прикрепить фото",
@@ -189,16 +161,6 @@ class _ClientNewRequestsPageState extends State<ClientNewRequestsPage> {
                     ],
                   ),
                   SizedBox(height: 16.0),
-                  TextFormField(
-                    controller: commentController,
-                    decoration: InputDecoration(
-                      hintText: "Введите комментарий к заявке",
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                    ),
-                    maxLines: 3,
-                  ),
                   SizedBox(height: 24.0),
                   ElevatedButton(
                     onPressed: _submitRequest,

@@ -13,14 +13,14 @@ class ClientMainMenuPage extends StatefulWidget {
 }
 
 class _ClientMainMenuPageState extends State<ClientMainMenuPage> {
-  // void _logout(BuildContext context) async {
-  //   SharedPreferences prefs = await SharedPreferences.getInstance();
-  //   await prefs.remove('isClientLoggedIn');
-  //   Navigator.pushReplacement(
-  //     context,
-  //     MaterialPageRoute(builder: (context) => AuthorizationPage()),
-  //   );
-  // }
+  void _logout(BuildContext context) async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.remove('isClientLoggedIn');
+    Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(builder: (context) => AuthorizationPage()),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -28,53 +28,67 @@ class _ClientMainMenuPageState extends State<ClientMainMenuPage> {
       appBar: AppBar(
         title: Text('Главное меню'),
         centerTitle: true,
+        backgroundColor: Colors.teal,
         automaticallyImplyLeading: false, // Убирает кнопку назад
         actions: [
-          // IconButton(
-          //   icon: Icon(Icons.logout),
-          //   onPressed: () => _logout(context),
-          // ),
+          IconButton(
+            icon: Icon(Icons.logout),
+            onPressed: () => _logout(context),
+          ),
         ],
       ),
       body: ListView(
         padding: EdgeInsets.all(20.0),
         children: <Widget>[
-          Card(
-            child: ListTile(
-              title: Text('Создать заявку'),
-              leading: Icon(Icons.input),
-              onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => client_new_requests_page.ClientNewRequestsPage())),
-            ),
+          _buildMenuCard(
+            title: 'Создать заявку',
+            icon: Icons.input,
+            onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => client_new_requests_page.ClientNewRequestsPage())),
           ),
-          Card(
-            child: ListTile(
-              title: Text('Мои заявки'),
-              leading: Icon(Icons.work),
-              onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => client_requests_page.ClientRequestsPage())),
-            ),
+          _buildMenuCard(
+            title: 'Мои заявки',
+            icon: Icons.work,
+            onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => client_requests_page.ClientRequestsPage())),
           ),
-          Card(
-            child: ListTile(
-              title: Text('Заявки на рассмотрении'),
-              leading: Icon(Icons.work),
-              onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => client_consider_request_page.ClientConsiderRequestPage())),
-            ),
+          _buildMenuCard(
+            title: 'Заявки на рассмотрении',
+            icon: Icons.pending,
+            onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => client_consider_request_page.ClientConsiderRequestPage())),
           ),
-          Card(
-            child: ListTile(
-              title: Text('Поддержка'),
-              leading: Icon(Icons.support_agent),
-              onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => ClientSupportPage())),
-            ),
+          _buildMenuCard(
+            title: 'Поддержка',
+            icon: Icons.support_agent,
+            onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => ClientSupportPage())),
           ),
-          Card(
-            child: ListTile(
-              title: Text('Настройки'),
-              leading: Icon(Icons.settings),
-              onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => ClientSettingsPage())),
-            ),
+          _buildMenuCard(
+            title: 'Настройки',
+            icon: Icons.settings,
+            onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => ClientSettingsPage())),
           ),
         ],
+      ),
+    );
+  }
+
+  Widget _buildMenuCard({required String title, required IconData icon, required VoidCallback onTap}) {
+    return Card(
+      elevation: 5,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(12),
+      ),
+      margin: const EdgeInsets.symmetric(vertical: 10.0),
+      child: ListTile(
+        leading: Icon(icon, color: Colors.teal, size: 30),
+        title: Text(
+          title,
+          style: TextStyle(
+            fontSize: 18,
+            fontWeight: FontWeight.bold,
+            color: Colors.teal,
+          ),
+        ),
+        trailing: Icon(Icons.arrow_forward, color: Colors.teal),
+        onTap: onTap,
       ),
     );
   }

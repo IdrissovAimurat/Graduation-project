@@ -7,49 +7,74 @@ class SupportPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Поддержка"),
+        backgroundColor: Colors.teal,
       ),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(20.0),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start, // Остальной текст выровнен по левому краю
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              Center( // Виджет Center для центрирования текста
+              Center(
                 child: Text(
                   'Нашли проблему или есть предложения?',
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                  textAlign: TextAlign.center, // Центрирование текста
+                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.teal),
+                  textAlign: TextAlign.center,
                 ),
               ),
               SizedBox(height: 20),
               Text(
                 'Обратная связь:',
-                style: TextStyle(fontSize: 16),
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.teal),
                 textAlign: TextAlign.left,
               ),
-              ListTile(
-                leading: Icon(Icons.phone),
-                title: Text('+7-(778)-322-38-83'),
+              SizedBox(height: 10),
+              _buildContactTile(
+                context,
+                icon: Icons.phone,
+                title: '+7-(778)-322-38-83',
                 onTap: () => _makePhoneCall('+77783223883'),
               ),
-              ListTile(
-                leading: Icon(Icons.message),
-                title: Text('+7-(778)-322-38-83'),
+              _buildContactTile(
+                context,
+                icon: Icons.message,
+                title: '+7-(778)-322-38-83',
                 onTap: () => _sendWhatsApp('+77783223883'),
               ),
-              ListTile(
-                leading: Icon(Icons.phone),
-                title: Text('+7-(776)-952-50-50'),
+              _buildContactTile(
+                context,
+                icon: Icons.phone,
+                title: '+7-(776)-952-50-50',
                 onTap: () => _makePhoneCall('+77769525050'),
               ),
-              ListTile(
-                leading: Icon(Icons.message),
-                title: Text('+7-(776)-952-50-50'),
+              _buildContactTile(
+                context,
+                icon: Icons.message,
+                title: '+7-(776)-952-50-50',
                 onTap: () => _sendWhatsApp('+77769525050'),
               ),
             ],
           ),
         ),
+      ),
+    );
+  }
+
+  Widget _buildContactTile(BuildContext context, {required IconData icon, required String title, required VoidCallback onTap}) {
+    return Card(
+      elevation: 5,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(12),
+      ),
+      margin: const EdgeInsets.symmetric(vertical: 8.0),
+      child: ListTile(
+        leading: Icon(icon, color: Colors.teal, size: 30),
+        title: Text(
+          title,
+          style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+        ),
+        trailing: Icon(Icons.arrow_forward, color: Colors.teal),
+        onTap: onTap,
       ),
     );
   }

@@ -1,74 +1,56 @@
 import 'package:flutter/material.dart';
-import 'package:graduation/Worker_menu/request_detail_page.dart';
 import 'package:intl/intl.dart';
-import 'package:url_launcher/url_launcher.dart';
-
-import 'models.dart';
+import '../models/request.dart'; // Убедитесь, что импорт указывает на правильный файл
 
 class RequestsPage extends StatefulWidget {
-  static List<Request> requests = [
-    Request(type: "Уборка", address: "ул. Ленина, 12", dateTime: DateTime.now().subtract(Duration(days: 50))),
-    Request(type: "Ремонт", address: "ул. Байтурсынова, 8", dateTime: DateTime.now().subtract(Duration(days: 45))),
-    Request(type: "Лампу поменять", address: "ул. Сейфуллина, 12", dateTime: DateTime.now().subtract(Duration(days: 47))),
-    Request(type: "Убрать мусор", address: "ул. Сатпаева, 8", dateTime: DateTime.now().subtract(Duration(days: 52))),
-    Request(type: "Почистить двор", address: "ул. Макатаева, 12", dateTime: DateTime.now().subtract(Duration(days: 60))),
-    Request(type: "Починить домофон", address: "ул. Гоголя, 8", dateTime: DateTime.now().subtract(Duration(days: 60))),
-  ];  // Используйте этот список для работы с данными
+  static List<Request> requests = [];
+
   @override
   _RequestsPageState createState() => _RequestsPageState();
 }
 
 class _RequestsPageState extends State<RequestsPage> {
-  bool isSorted = false;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Мои заявки"),
-        actions: [
-          IconButton(
-            icon: Icon(isSorted ? Icons.undo : Icons.sort),
-            onPressed: _toggleSort,
-          ),
-        ],
+        title: Text("Заявки"),
+        backgroundColor: Colors.teal,
       ),
-      body: ListView.builder(
+      body: RequestsPage.requests.isEmpty
+          ? Center(child: Text('Нет заявок'))
+          : ListView.builder(
         itemCount: RequestsPage.requests.length,
         itemBuilder: (context, index) {
-          return ListTile(
-            leading: Icon(Icons.work),
-            title: Text(RequestsPage.requests[index].type),
-            subtitle: Text(
-                "${RequestsPage.requests[index].address} - ${DateFormat(
-                    'yyyy-MM-dd – kk:mm').format(
-                    RequestsPage.requests[index].dateTime)}"),
-            onTap: () => _navigateToDetailPage(RequestsPage.requests[index]),
-          );
+          return _buildRequestCard(RequestsPage.requests[index]);
         },
       ),
     );
   }
 
-  void _toggleSort() {
-    setState(() {
-      if (isSorted) {
-        RequestsPage.requests.sort((a, b) => a.dateTime.compareTo(b.dateTime));
-      } else {
-        RequestsPage.requests.sort((a, b) => b.dateTime.compareTo(a.dateTime));
-      }
-      isSorted = !isSorted;
-    });
-  }
-
-  void _navigateToDetailPage(Request request) {
-    Navigator.of(context).push(MaterialPageRoute(
-      builder: (context) => RequestDetailPage(request: request),
-    )).then((value) {
-      // Проверяем, вернулась ли страница с изменениями
-      if (value == true) {
-        setState(() {}); // Принудительное обновление состояния для отображения изменений
-      }
-    });
+  Widget _buildRequestCard(Request request) {
+    return Card(
+      elevation: 5,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(12),
+      ),
+      margin: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 16.0),
+      child: ListTile(
+        leading: Icon(Icons.assignment, color: Colors.teal, size: 30),
+        title: Text(
+          request.type,
+          style: TextStyle(
+            fontSize: 18,
+            fontWeight: FontWeight.bold,
+            color: Colors.teal,
+          ),
+        ),
+        subtitle: Text(
+          "${request.address} - ${DateFormat('yyyy-MM-dd – kk:mm').format(request.dateTime)}",
+          style: TextStyle(fontSize: 16),
+        ),
+        trailing: Icon(Icons.arrow_forward, color: Colors.teal),
+      ),
+    );
   }
 }

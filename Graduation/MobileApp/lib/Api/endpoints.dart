@@ -1,7 +1,7 @@
 
 
 class Endpoints {
-  static const baseUrl = 'http://192.168.189.2:5066';
+  static const baseUrl = 'http://192.168.227.2:5066';
 
   static const addressOfHouses = '/api/addressOfHouses';
   static const getAll = '/api/application/getall';
@@ -12,7 +12,7 @@ class Endpoints {
 
   static const cities = '/cities/{regionId}';
   static const getCountries = '/api/countries';
-  static const createCountry= '/api/updatestate';
+  static const takeApplication = '/api/updatestate';
 
 
   static const register = '/register';

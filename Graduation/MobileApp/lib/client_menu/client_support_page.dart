@@ -7,6 +7,7 @@ class ClientSupportPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Поддержка"),
+        backgroundColor: Colors.teal,
       ),
       body: Center(
         child: Padding(
@@ -17,7 +18,7 @@ class ClientSupportPage extends StatelessWidget {
               Center( // Виджет Center для центрирования текста
                 child: Text(
                   'Нашли проблему или есть предложения?',
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.teal),
                   textAlign: TextAlign.center, // Центрирование текста
                 ),
               ),
@@ -54,6 +55,24 @@ class ClientSupportPage extends StatelessWidget {
     );
   }
 
+  Widget _buildContactTile(BuildContext context, {required IconData icon, required String title, required VoidCallback onTap}) {
+    return Card(
+      elevation: 5,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(12),
+      ),
+      margin: const EdgeInsets.symmetric(vertical: 8.0),
+      child: ListTile(
+        leading: Icon(icon, color: Colors.teal, size: 30),
+        title: Text(
+          title,
+          style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+        ),
+        trailing: Icon(Icons.arrow_forward, color: Colors.teal),
+        onTap: onTap,
+      ),
+    );
+  }
   void _makePhoneCall(String phoneNumber) async {
     Uri uri = Uri.parse('tel:$phoneNumber');
     if (!await launchUrl(uri)) {
