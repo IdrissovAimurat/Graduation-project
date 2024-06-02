@@ -127,37 +127,37 @@ class _ClientNewRequestsPageState extends State<ClientNewRequestsPage> {
                     setState(() {
                       selectedCountry = newValue;
                     });
-                  }, ['Страна 1', 'Страна 2']),
+                  }, ['Казахстан', 'Кыргызстан']),
                   SizedBox(height: 16.0),
                   _buildDropdown("Область", selectedRegion, (newValue) {
                     setState(() {
                       selectedRegion = newValue;
                     });
-                  }, ['Область 1', 'Область 2']),
+                  }, ['Алматинская']),
                   SizedBox(height: 16.0),
                   _buildDropdown("Город", selectedCity, (newValue) {
                     setState(() {
                       selectedCity = newValue;
                     });
-                  }, ['Город 1', 'Город 2']),
+                  }, ['Алматы']),
                   SizedBox(height: 16.0),
                   _buildDropdown("Район", selectedDistrict, (newValue) {
                     setState(() {
                       selectedDistrict = newValue;
                     });
-                  }, ['Район 1', 'Район 2']),
+                  }, ['Бостандыкский', 'Алмалинский']),
                   SizedBox(height: 16.0),
                   _buildDropdown("Микрорайон", selectedMicrodistrict, (newValue) {
                     setState(() {
                       selectedMicrodistrict = newValue;
                     });
-                  }, ['Микрорайон 1', 'Микрорайон 2']),
+                  }, ['Таугуль', 'Аксай']),
                   SizedBox(height: 16.0),
                   _buildDropdown("Улица", selectedStreet, (newValue) {
                     setState(() {
                       selectedStreet = newValue;
                     });
-                  }, ['Улица 1', 'Улица 2']),
+                  }, ['Сейфуллина', 'Байтурсынов']),
                   SizedBox(height: 16.0),
                   _buildTextField("Номер дома", houseNumberController),
                   SizedBox(height: 16.0),
