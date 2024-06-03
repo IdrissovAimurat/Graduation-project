@@ -4,7 +4,6 @@ import 'package:graduation/registration_worker/dropdown_field.dart';
 import 'package:graduation/registration_worker/phone_number_field.dart';
 import 'package:graduation/registration_worker/register_button.dart';
 import 'package:graduation/Authorization/login_page.dart';
-import 'package:graduation/registration_worker/text_form_fields.dart';
 
 // Класс для хранения состояния страницы регистрации
 class RegistrationPageState extends ChangeNotifier {
@@ -17,6 +16,7 @@ class RegistrationPageState extends ChangeNotifier {
   final TextEditingController phoneNumberController = TextEditingController();
 
   // Метод для очистки контроллеров при диспозе страницы
+  @override
   void dispose() {
     surnameController.dispose();
     nameController.dispose();
@@ -42,6 +42,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
       appBar: AppBar(
         title: Text('Заполните данные'),
         centerTitle: true,
+        backgroundColor: Color(0xFFA40606), // Цвет AppBar
       ),
       body: Center(
         child: SingleChildScrollView(
@@ -55,15 +56,24 @@ class _RegistrationPageState extends State<RegistrationPage> {
                 height: 120,
               ),
               SizedBox(height: 16.0),
-              SurnameField(
+              _buildTextField(
+                context,
+                icon: Icons.person,
+                label: 'Фамилия',
                 controller: _registrationPageState.surnameController,
               ),
               SizedBox(height: 16.0),
-              NameField(
+              _buildTextField(
+                context,
+                icon: Icons.person_outline,
+                label: 'Имя',
                 controller: _registrationPageState.nameController,
               ),
               SizedBox(height: 16.0),
-              PatronymicField(
+              _buildTextField(
+                context,
+                icon: Icons.person_pin,
+                label: 'Отчество',
                 controller: _registrationPageState.patronymicController,
               ),
               SizedBox(height: 16.0),
@@ -76,19 +86,62 @@ class _RegistrationPageState extends State<RegistrationPage> {
                 },
               ),
               SizedBox(height: 16.0),
-              AddressField(
+              _buildTextField(
+                context,
+                icon: Icons.home,
+                label: 'Адрес',
                 controller: _registrationPageState.addressController,
               ),
               SizedBox(height: 16.0),
-              PhoneNumberField(
+              _buildTextField(
+                context,
+                icon: Icons.phone,
+                label: 'Номер телефона',
                 controller: _registrationPageState.phoneNumberController,
               ),
               SizedBox(height: 16.0),
-              RegisterButton(
+              _buildRegisterButton(
+                context,
+                title: 'Зарегистрироваться',
                 onPressed: _registerWorker,
               ),
             ],
           ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildTextField(BuildContext context, {required IconData icon, required String label, required TextEditingController controller}) {
+    return TextFormField(
+      controller: controller,
+      decoration: InputDecoration(
+        labelText: label,
+        prefixIcon: Icon(icon, color: Color(0xFFA40606)),
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(10.0),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildRegisterButton(BuildContext context, {required String title, required VoidCallback onPressed}) {
+    return ElevatedButton(
+      onPressed: onPressed,
+      style: ElevatedButton.styleFrom(
+        primary: Color(0xFFA40606), // Цвет кнопки
+        onPrimary: Colors.white, // Цвет текста
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(30.0), // Закругленные углы
+        ),
+        elevation: 5, // Тень кнопки
+        padding: EdgeInsets.symmetric(horizontal: 40, vertical: 15), // Размеры кнопки
+      ),
+      child: Text(
+        title,
+        style: TextStyle(
+          fontSize: 18,
+          fontWeight: FontWeight.bold,
         ),
       ),
     );
@@ -132,5 +185,4 @@ class _RegistrationPageState extends State<RegistrationPage> {
       return ''; // Если все поля заполнены, возвращаем пустую строку
     }
   }
-
 }

@@ -11,8 +11,6 @@ import 'client_requests_page.dart';
 class ClientConsiderRequestPage extends StatefulWidget {
   static List<ClientRequest> requests = [];
 
-
-
   @override
   _ClientConsiderRequestPageState createState() => _ClientConsiderRequestPageState();
 }
@@ -37,11 +35,27 @@ class _ClientConsiderRequestPageState extends State<ClientConsiderRequestPage> {
 
     var requestsJson = await client.get(Endpoints.getByUserGuid.replaceFirst("{userGuid}", userGuid)
         .replaceFirst("{UserRoleName}", userRole));
-    if (requestsJson != null) {
-      setState(() {
-        ClientConsiderRequestPage.requests = requestsJson.map((json) => ClientRequest.fromJson(json)).toList();
-      });
-    }
+
+    setState(() {
+      // Добавляем тестовые заявки
+      ClientConsiderRequestPage.requests = [
+        ClientRequest(
+          title: 'Тестовая заявка 1',
+          description: 'Описание тестовой заявки 1',
+          createdAt: DateTime.now().subtract(Duration(days: 1)),
+        ),
+        ClientRequest(
+          title: 'Тестовая заявка 2',
+          description: 'Описание тестовой заявки 2',
+          createdAt: DateTime.now().subtract(Duration(days: 2)),
+        ),
+      ];
+
+      // Добавляем реальные заявки
+      if (requestsJson != null) {
+        ClientConsiderRequestPage.requests.addAll(requestsJson.map((json) => ClientRequest.fromJson(json)).toList());
+      }
+    });
   }
 
   @override
@@ -49,6 +63,7 @@ class _ClientConsiderRequestPageState extends State<ClientConsiderRequestPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Мои заявки, которые на рассмотрении"),
+        backgroundColor: Colors.teal.shade900,
         actions: [
           IconButton(
             icon: Icon(isSorted ? Icons.undo : Icons.sort),
@@ -56,21 +71,37 @@ class _ClientConsiderRequestPageState extends State<ClientConsiderRequestPage> {
           ),
         ],
       ),
-      body: ListView.builder(
-        itemCount: ClientConsiderRequestPage.requests.length,
-        itemBuilder: (context, index) {
-          return GestureDetector(
-            onLongPress: () => _showTransferDialog(context, ClientConsiderRequestPage.requests[index]),
-            child: ListTile(
-              leading: const Icon(Icons.work),
-                title: Text(ClientConsiderRequestPage.requests[index].title!),
-              subtitle: Text(
-                "${ClientConsiderRequestPage.requests[index].description} - ${DateFormat('yyyy-MM-dd – kk:mm').format(ClientConsiderRequestPage.requests[index].createdAt!)}",
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: ListView.builder(
+          itemCount: ClientConsiderRequestPage.requests.length,
+          itemBuilder: (context, index) {
+            return GestureDetector(
+              onLongPress: () => _showTransferDialog(context, ClientConsiderRequestPage.requests[index]),
+              child: Card(
+                elevation: 5,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: ListTile(
+                  leading: const Icon(Icons.work, color: Colors.teal),
+                  title: Text(
+                    ClientConsiderRequestPage.requests[index].title!,
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.teal.shade900,
+                    ),
+                  ),
+                  subtitle: Text(
+                    "${ClientConsiderRequestPage.requests[index].description} - ${DateFormat('yyyy-MM-dd – kk:mm').format(ClientConsiderRequestPage.requests[index].createdAt!)}",
+                  ),
+                  onTap: () => _navigateToDetailPage(ClientConsiderRequestPage.requests[index]),
+                ),
               ),
-              onTap: () => _navigateToDetailPage(ClientConsiderRequestPage.requests[index]),
-            ),
-          );
-        },
+            );
+          },
+        ),
       ),
     );
   }

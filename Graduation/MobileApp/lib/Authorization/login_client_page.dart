@@ -40,12 +40,12 @@ class _LoginClientPageState extends State<LoginClientPage> {
     prefs.setBool('isLoggedIn', true);
   }
 
-    Future<void> _login() async {
+  Future<void> _login() async {
     if (_formKey.currentState!.validate()) {
       bool loginSuccess = false;
       var client = HttpService();
       var data = {
-        'email' : _emailController.text,
+        'email': _emailController.text,
         'password': _passwordController.text
       };
       loginSuccess = await client.authorization(data);
@@ -73,81 +73,113 @@ class _LoginClientPageState extends State<LoginClientPage> {
       appBar: AppBar(
         title: Text('Вход'),
         centerTitle: true,
+        backgroundColor: Colors.green.shade900, // Цвет AppBar
       ),
       body: Center(
-        child: Form(
-          key: _formKey,
-          child: SingleChildScrollView(
-            padding: EdgeInsets.all(20.0),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: <Widget>[
-                SizedBox(height: 80),
-                Image.asset('assets/images/registrationIcon.png', height: 120),
-                SizedBox(height: 40),
-                Text(
-                  'Добро пожаловать!',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+        child: SingleChildScrollView(
+          padding: EdgeInsets.all(20.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Image.asset('assets/images/registrationIcon.png', height: 120),
+              SizedBox(height: 40),
+              Text(
+                'Добро пожаловать!',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.green.shade900,
                 ),
-                SizedBox(height: 40),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 20.0),
-                  child: TextFormField(
-                    controller: _emailController,
-                    decoration: InputDecoration(
-                      labelText: 'Почта',
-                      border: OutlineInputBorder(),
-                      prefixIcon: Icon(Icons.email),
-                    ),
-                    validator: (value) {
-                      if (value == null || value.isEmpty) {
-                        return 'Введите вашу почту';
-                      } else if (!RegExp(r"^[a-zA-Z0-9.]+@[a-zA-Z0-9]+\.[a-zA-Z]+").hasMatch(value)) {
-                        return 'Введите корректный адрес электронной почты';
-                      }
-                      return null;
-                    },
-                  ),
-                ),
-                SizedBox(height: 20),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 20.0),
-                  child: TextFormField(
-                    controller: _passwordController,
-                    obscureText: _obscureText,
-                    decoration: InputDecoration(
-                      labelText: 'Пароль',
-                      border: OutlineInputBorder(),
-                      prefixIcon: Icon(Icons.lock),
-                      suffixIcon: IconButton(
-                        icon: Icon(_obscureText ? Icons.visibility_off : Icons.visibility),
-                        onPressed: () {
-                          setState(() {
-                            _obscureText = !_obscureText;
-                          });
+              ),
+              SizedBox(height: 40),
+              Form(
+                key: _formKey,
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: <Widget>[
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                      child: TextFormField(
+                        controller: _emailController,
+                        decoration: InputDecoration(
+                          labelText: 'Почта',
+                          border: OutlineInputBorder(),
+                          prefixIcon: Icon(Icons.email, color: Colors.green.shade900),
+                        ),
+                        validator: (value) {
+                          if (value == null || value.isEmpty) {
+                            return 'Введите вашу почту';
+                          } else if (!RegExp(r"^[a-zA-Z0-9.]+@[a-zA-Z0-9]+\.[a-zA-Z]+").hasMatch(value)) {
+                            return 'Введите корректный адрес электронной почты';
+                          }
+                          return null;
                         },
                       ),
                     ),
-                    validator: (value) {
-                      if (value == null || value.isEmpty) {
-                        return 'Введите ваш пароль';
-                      }
-                      return null;
-                    },
-                  ),
+                    SizedBox(height: 20),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                      child: TextFormField(
+                        controller: _passwordController,
+                        obscureText: _obscureText,
+                        decoration: InputDecoration(
+                          labelText: 'Пароль',
+                          border: OutlineInputBorder(),
+                          prefixIcon: Icon(Icons.lock, color: Colors.green.shade900),
+                          suffixIcon: IconButton(
+                            icon: Icon(_obscureText ? Icons.visibility_off : Icons.visibility, color: Colors.green.shade900),
+                            onPressed: () {
+                              setState(() {
+                                _obscureText = !_obscureText;
+                              });
+                            },
+                          ),
+                        ),
+                        validator: (value) {
+                          if (value == null || value.isEmpty) {
+                            return 'Введите ваш пароль';
+                          }
+                          return null;
+                        },
+                      ),
+                    ),
+                    SizedBox(height: 30),
+                    _buildLoginButton(
+                      context,
+                      title: 'ВОЙТИ',
+                      onPressed: _login,
+                    ),
+                    SizedBox(height: 150),
+                  ],
                 ),
-                SizedBox(height: 40),
-                RoundedButton(
-                  title: 'ВОЙТИ',
-                  color: Theme.of(context).primaryColor,
-                  onPressed: _login,
-                ),
-                SizedBox(height: 20),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
+      ),
+    );
+  }
+
+  Widget _buildLoginButton(BuildContext context, {required String title, required VoidCallback onPressed}) {
+    return ElevatedButton.icon(
+      onPressed: onPressed,
+      icon: Icon(Icons.login, color: Colors.white), // Иконка
+      label: Text(
+        title,
+        style: TextStyle(
+          fontSize: 18,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+      style: ElevatedButton.styleFrom(
+        primary: Colors.green.shade900, // Цвет кнопки
+        onPrimary: Colors.white, // Цвет текста
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(30.0), // Закругленные углы
+        ),
+        elevation: 5, // Тень кнопки
+        padding: EdgeInsets.symmetric(horizontal: 40, vertical: 15), // Размеры кнопки
       ),
     );
   }
