@@ -1,7 +1,7 @@
 
 
 class Endpoints {
-  static const baseUrl = 'http://192.168.227.2:5066';
+  static const baseUrl = 'http://192.168.227.214 :5066';
 
   static const addressOfHouses = '/api/addressOfHouses';
   static const getAll = '/api/application/getall';

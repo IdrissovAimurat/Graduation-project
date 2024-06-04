@@ -1,8 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:graduation/rounded_button.dart';
-import 'package:graduation/Authorization/signup_client_page.dart';
 import 'package:graduation/Authorization/login_client_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
