@@ -1,5 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:jwt_decoder/jwt_decoder.dart';
+import '../Api/endpoints.dart';
+import '../Api/http_client.dart';
+import '../Api/token_storage.dart';
+import '../client_menu/client_request_detail_page.dart';
+import '../client_menu/client_requests_page.dart';
+import '../models/client_models.dart';
 import '../models/request.dart'; // Убедитесь, что импорт указывает на правильный файл
 
 class RequestsPage extends StatefulWidget {
@@ -10,47 +17,102 @@ class RequestsPage extends StatefulWidget {
 }
 
 class _RequestsPageState extends State<RequestsPage> {
+
+  @override
+  void initState() {
+    super.initState();
+    _loadRequests();
+  }
+
+  Future<void> _loadRequests() async {
+    var client = HttpService();
+    var tokenStorage = TokenStorage();
+    var token = await tokenStorage.getAccessToken();
+    Map<String, dynamic> decodedToken = JwtDecoder.decode(token!);
+
+    var userGuid = decodedToken['UserGuid'];
+    var userRole = decodedToken['UserRole'];
+
+    var requestsJson = await client.get(Endpoints.getByUserGuid
+        .replaceFirst("{userGuid}", userGuid)
+        .replaceFirst("{UserRoleName}", userRole));
+
+    if (requestsJson != null) {
+      setState(() {
+        ClientRequestsPage.requests = requestsJson
+            .map<ClientRequest>((json) => ClientRequest.fromJson(json))
+            .toList();
+      });
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Заявки"),
+        title: Text("Мои заявки"),
         backgroundColor: Colors.teal,
       ),
-      body: RequestsPage.requests.isEmpty
-          ? Center(child: Text('Нет заявок'))
-          : ListView.builder(
-        itemCount: RequestsPage.requests.length,
+      body: ListView.builder(
+        itemCount: ClientRequestsPage.requests.length,
         itemBuilder: (context, index) {
-          return _buildRequestCard(RequestsPage.requests[index]);
+          return _buildRequestCard(ClientRequestsPage.requests[index]);
         },
       ),
     );
   }
 
-  Widget _buildRequestCard(Request request) {
+  Widget _buildRequestCard(ClientRequest request) {
     return Card(
       elevation: 5,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(12),
       ),
-      margin: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 16.0),
-      child: ListTile(
-        leading: Icon(Icons.assignment, color: Colors.teal, size: 30),
-        title: Text(
-          request.type,
-          style: TextStyle(
-            fontSize: 18,
-            fontWeight: FontWeight.bold,
-            color: Colors.teal,
+      margin: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
+      child: InkWell(
+        onTap: () => _navigateToDetailPage(request),
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Icon(Icons.work, color: Colors.teal, size: 40),
+              SizedBox(width: 16),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      request.title!,
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.teal,
+                      ),
+                    ),
+                    SizedBox(height: 8),
+                    Text(
+                      request.description!,
+                      style: TextStyle(fontSize: 16),
+                    ),
+                    SizedBox(height: 8),
+                    Text(
+                      DateFormat('yyyy-MM-dd – kk:mm')
+                          .format(request.createdAt!),
+                      style: TextStyle(color: Colors.grey),
+                    ),
+                  ],
+                ),
+              ),
+            ],
           ),
         ),
-        subtitle: Text(
-          "${request.address} - ${DateFormat('yyyy-MM-dd – kk:mm').format(request.dateTime)}",
-          style: TextStyle(fontSize: 16),
-        ),
-        trailing: Icon(Icons.arrow_forward, color: Colors.teal),
       ),
     );
+  }
+  void _navigateToDetailPage(ClientRequest request) {
+    Navigator.of(context).push(MaterialPageRoute(
+      builder: (context) => ClientRequestDetailPage(request: request),
+    ));
   }
 }

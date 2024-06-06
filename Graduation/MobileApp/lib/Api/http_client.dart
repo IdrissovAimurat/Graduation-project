@@ -10,6 +10,7 @@ import 'package:path/path.dart';
 import 'package:jwt_decoder/jwt_decoder.dart';
 
 import '../models/address_models.dart';
+import '../models/client_registration_models.dart';
 import '../models/request.dart';
 
 class HttpService {
@@ -28,6 +29,75 @@ class HttpService {
       return false;
     }
   }
+
+  Future<dynamic> createUser(dynamic data) async {
+    var url = Uri.parse('${Endpoints.baseUrl}${Endpoints.register}');
+    var response = await http.post(
+      url,
+      headers: <String, String>{
+        'Content-Type': 'application/json; charset=UTF-8',
+      },
+      body: jsonEncode({
+        'userName': data.userName,
+        'email': data.email,
+        'password': data.password,
+        'userRoleName': data.userRoleName,
+      }),
+    );
+
+    if (response.statusCode == 200) {
+      return json.decode(response.body);
+    } else {
+      throw Exception('Failed to create user: ${response.body}');
+    }
+  }
+  Future<dynamic> insertUserInfo(dynamic data) async {
+    var url = Uri.parse('${Endpoints.baseUrl}${Endpoints.createUserInfo}');
+    var response = await http.post(
+      url,
+      headers: <String, String>{
+        'Content-Type': 'application/json; charset=UTF-8',
+      },
+      body: jsonEncode({
+        'userId': data.userId,
+        'surname': data.surname,
+        'name': data.name,
+        'birthDate': data.birthDate,
+        'phoneNumber': data.phoneNumber,
+        'identityNumberKZT': data.identityNumberKZT,
+      }),
+    );
+
+    if (response.statusCode == 200) {
+      return json.decode(response.body);
+    } else {
+      throw Exception('Failed to create user: ${response.body}');
+    }
+  }
+  Future<dynamic> insertAddressInfo(dynamic data) async {
+    var url = Uri.parse('${Endpoints.baseUrl}${Endpoints.addressOfHouses}');
+    var response = await http.post(
+      url,
+      headers: <String, String>{
+        'Content-Type': 'application/json; charset=UTF-8',
+      },
+      body: jsonEncode({
+        'userId': data.userId,
+        'microDistrictsId': data.microDistrictsId,
+        'streetsId': data.streetsId,
+        'houseNumber': data.houseNumber,
+        'apartmentNumber': data.apartmentNumber,
+      }),
+    );
+
+    if (response.statusCode == 200) {
+      return json.decode(response.body);
+    } else {
+      throw Exception('Failed to create user: ${response.body}');
+    }
+  }
+
+
 
   Future<bool> createRequest(String title, String description,
       File? file) async {
@@ -67,6 +137,36 @@ class HttpService {
       return false;
     }
   }
+  Future<void> updateRequestStatus(int applicationId, int statusesId, int clientId, String RoleName) async {
+    var token = await _tokenStorage.getAccessToken();
+    var uri = Uri.parse('$baseUrl${Endpoints.updateState}');
+    var request = http.MultipartRequest('POST', uri);
+
+    Map<String, dynamic> decodedToken = JwtDecoder.decode(token!);
+    var body = jsonEncode({
+      'applicationId': applicationId,
+      'statusesId': statusesId,
+      'clientId': clientId,
+      'handlerPersonGuid': decodedToken['UserGuid'],
+      'handlerPersonRoleName': RoleName,
+    });
+
+    var response = await http.post(
+      uri,
+      headers: {
+        'Authorization': 'Bearer $token',
+        'Content-Type': 'application/json',
+      },
+      body: body,
+    );
+
+    if (response.statusCode == 200) {
+      print("Успешно отправлено");
+    } else {
+      print("Ошибка: ${response.statusCode}");
+      print("Причина: ${response.body}");
+    }
+  }
 
   Future<List<Country>> fetchCountries() async {
     final response = await http.get(Uri.parse('$baseUrl/api/countries'));
@@ -90,33 +190,6 @@ class HttpService {
       throw Exception('Ошибка при получении списка областей');
     }
   }
-  Future<void> updateRequestStatus(int applicationId, int statusesId) async {
-    final uri = Uri.parse('$baseUrl/api/application/updatestate');
-    var token = await _tokenStorage.getAccessToken();
-    if (token == null) {
-      throw Exception('Token not found');
-    }
-
-    Map<String, dynamic> decodedToken = JwtDecoder.decode(token);
-
-    final response = await http.post(
-      uri,
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': 'Bearer $token', // Добавляем токен в заголовок
-      },
-      body: json.encode({
-        'applicationId': applicationId,
-        'statusesId': statusesId,
-        'HandlerPersonGuid': decodedToken['UserGuid'],
-        'handlerPersonRoleName': decodedToken['UserRoleName'], // Обновлено для корректного значения
-      }),
-    );
-
-    if (response.statusCode != 200) {
-      throw Exception('Ошибка при обновлении статуса заявки');
-    }
-  }
 
   Future<List<City>> fetchCities(int regionId) async {
     final response = await http.get(Uri.parse('$baseUrl/api/cities/$regionId'));
@@ -124,6 +197,39 @@ class HttpService {
     if (response.statusCode == 200) {
       final List<dynamic> data = json.decode(response.body);
       return data.map((item) => City.fromJson(item)).toList();
+    } else {
+      throw Exception('Ошибка при получении списка городов');
+    }
+  }
+
+  Future<List<Districts>> fetchDistricts(int cityId) async {
+    final response = await http.get(Uri.parse('$baseUrl/api/district/$cityId'));
+
+    if (response.statusCode == 200) {
+      final List<dynamic> data = json.decode(response.body);
+      return data.map((item) => Districts.fromJson(item)).toList();
+    } else {
+      throw Exception('Ошибка при получении списка городов');
+    }
+  }
+
+  Future<List<MicroDistricts>> fetchMicroDistricts(int DistrictId) async {
+    final response = await http.get(Uri.parse('$baseUrl/api/microDistrict/$DistrictId'));
+
+    if (response.statusCode == 200) {
+      final List<dynamic> data = json.decode(response.body);
+      return data.map((item) => MicroDistricts.fromJson(item)).toList();
+    } else {
+      throw Exception('Ошибка при получении списка городов');
+    }
+  }
+
+  Future<List<Streets>> fetchStreets(int DistrictId) async {
+    final response = await http.get(Uri.parse('$baseUrl/api/streets/$DistrictId'));
+
+    if (response.statusCode == 200) {
+      final List<dynamic> data = json.decode(response.body);
+      return data.map((item) => Streets.fromJson(item)).toList();
     } else {
       throw Exception('Ошибка при получении списка городов');
     }

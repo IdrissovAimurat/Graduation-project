@@ -16,7 +16,7 @@ dependencies:
   url_launcher:
   permission_handler:
   flutter_sms:
-  intl:
+  intl: ^0.17.0
   http:
   image_picker:
   file_picker:

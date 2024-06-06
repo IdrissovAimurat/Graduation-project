@@ -6,7 +6,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../Api/http_client.dart';
 import '../models/address_models.dart';
 import '../models/worker_models.dart';
-import 'requests_page.dart';  // Убедитесь, что импорт указывает на правильный файл
 
 class NewRequestsPage extends StatefulWidget {
   @override
@@ -221,62 +220,74 @@ class _CitySelectorDialogState extends State<CitySelectorDialog> {
           : Column(
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
-          DropdownButton<int>(
-            hint: Text("Выберите страну"),
-            value: selectedCountry,
-            items: countries.map((country) {
-              return DropdownMenuItem<int>(
-                value: country.id,
-                child: Text(country.countriesName),
-              );
-            }).toList(),
-            onChanged: (value) {
-              setState(() {
-                selectedCountry = value;
-                selectedRegion = null;
-                selectedCity = null;
-                regions = [];
-                cities = [];
-              });
-              if (value != null) {
-                _fetchRegions(value);
-              }
-            },
+          Container(
+            width: double.infinity,
+            child: DropdownButton<int>(
+              hint: Text("Выберите страну"),
+              value: selectedCountry,
+              isExpanded: true, // Обеспечивает полную ширину выпадающего списка
+              items: countries.map((country) {
+                return DropdownMenuItem<int>(
+                  value: country.id,
+                  child: Text(country.countriesName),
+                );
+              }).toList(),
+              onChanged: (value) {
+                setState(() {
+                  selectedCountry = value;
+                  selectedRegion = null;
+                  selectedCity = null;
+                  regions = [];
+                  cities = [];
+                });
+                if (value != null) {
+                  _fetchRegions(value);
+                }
+              },
+            ),
           ),
-          DropdownButton<int>(
-            hint: Text("Выберите область"),
-            value: selectedRegion,
-            items: regions.map((region) {
-              return DropdownMenuItem<int>(
-                value: region.id,
-                child: Text(region.regionsName),
-              );
-            }).toList(),
-            onChanged: (value) {
-              setState(() {
-                selectedRegion = value;
-                selectedCity = null;
-                cities = [];
-              });
-              if (value != null) {
-                _fetchCities(value);
-              }
-            },
+          Container(
+            width: double.infinity,
+            child: DropdownButton<int>(
+              hint: Text("Выберите область"),
+              value: selectedRegion,
+              isExpanded: true, // Обеспечивает полную ширину выпадающего списка
+              items: regions.map((region) {
+                return DropdownMenuItem<int>(
+                  value: region.id,
+                  child: Text(region.regionsName),
+                );
+              }).toList(),
+              onChanged: (value) {
+                setState(() {
+                  selectedRegion = value;
+                  selectedCity = null;
+                  cities = [];
+                });
+                if (value != null) {
+                  _fetchCities(value);
+                }
+              },
+            ),
           ),
-          DropdownButton<int>(
-            hint: Text("Выберите город"),
-            value: selectedCity,
-            items: cities.map((city) {
-              return DropdownMenuItem<int>(
-                value: city.id,
-                child: Text(city.citiesName),
-              );
-            }).toList(),
-            onChanged: (value) {
-              setState(() {
-                selectedCity = value;
-              });
-            },
+          Container(
+            width: double.infinity,
+            child: DropdownButton<int>(
+              hint: Text("Выберите город"),
+              value: selectedCity,
+              isExpanded: true, // Обеспечивает полную ширину выпадающего списка
+              items: cities.map((city) {
+                return DropdownMenuItem<int>(
+                  value: city.id,
+                  child: Text(city.citiesName),
+                );
+              }).toList(),
+              onChanged: (value) {
+                setState(() {
+                  selectedCity = value;
+                });
+              },
+            ),
           ),
         ],
       ),

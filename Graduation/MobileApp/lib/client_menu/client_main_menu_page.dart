@@ -50,11 +50,11 @@ class _ClientMainMenuPageState extends State<ClientMainMenuPage> {
             icon: Icons.work,
             onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => client_requests_page.ClientRequestsPage())),
           ),
-          _buildMenuCard(
-            title: 'Заявки на рассмотрении',
-            icon: Icons.pending,
-            onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => client_consider_request_page.ClientConsiderRequestPage())),
-          ),
+          // _buildMenuCard(
+          //   title: 'Заявки на рассмотрении',
+          //   icon: Icons.pending,
+          //   onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => client_consider_request_page.ClientConsiderRequestPage())),
+          // ),
           _buildMenuCard(
             title: 'Поддержка',
             icon: Icons.support_agent,

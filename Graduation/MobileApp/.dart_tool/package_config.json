@@ -237,7 +237,7 @@
     },
     {
       "name": "intl",
-      "rootUri": "file:///C:/Users/aimur/AppData/Local/Pub/Cache/hosted/pub.dev/intl-0.18.1",
+      "rootUri": "file:///C:/Users/aimur/AppData/Local/Pub/Cache/hosted/pub.dev/intl-0.17.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -548,7 +548,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2024-05-30T18:49:24.604583Z",
+  "generated": "2024-06-05T18:24:05.334Z",
   "generator": "pub",
   "generatorVersion": "2.19.6"
 }

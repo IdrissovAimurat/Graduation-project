@@ -49,3 +49,51 @@ class City {
     );
   }
 }
+class Districts {
+  final int id;
+  final String districtsName;
+
+  Districts({
+    required this.id,
+    required this.districtsName,
+  });
+
+  factory Districts.fromJson(Map<String, dynamic> json) {
+    return Districts(
+      id: json['id'],
+      districtsName: json['districtsName'],
+    );
+  }
+}
+class MicroDistricts {
+  final int id;
+  final String microDistrictsName;
+
+  MicroDistricts({
+    required this.id,
+    required this.microDistrictsName,
+  });
+
+  factory MicroDistricts.fromJson(Map<String, dynamic> json) {
+    return MicroDistricts(
+      id: json['id'],
+      microDistrictsName: json['microDistrictsName'],
+    );
+  }
+}
+class Streets {
+  final int id;
+  final String streetsName;
+
+  Streets({
+    required this.id,
+    required this.streetsName,
+  });
+
+  factory Streets.fromJson(Map<String, dynamic> json) {
+    return Streets(
+      id: json['id'],
+      streetsName: json['streetsName'],
+    );
+  }
+}

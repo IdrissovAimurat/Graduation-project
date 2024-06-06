@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'dart:io';
-import 'package:image_picker/image_picker.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-import '../Api/http_client.dart'; // Импортируем http_client для работы с HTTP-запросами
+import '../Api/http_client.dart';
 import '../models/worker_models.dart';
 
 class RequestDetailPage extends StatefulWidget {
@@ -17,47 +14,21 @@ class RequestDetailPage extends StatefulWidget {
 }
 
 class _RequestDetailPageState extends State<RequestDetailPage> {
-  File? _image;
-  File? _video;
-  final ImagePicker _picker = ImagePicker();
   bool isLoading = false; // Добавляем индикатор загрузки
-
-  Future<void> _pickImage() async {
-    final pickedFile = await _picker.pickImage(source: ImageSource.gallery);
-    if (pickedFile != null) {
-      setState(() {
-        _image = File(pickedFile.path);
-      });
-    }
-  }
-
-  Future<void> _takePhoto() async {
-    final pickedFile = await _picker.pickImage(source: ImageSource.camera);
-    if (pickedFile != null) {
-      setState(() {
-        _image = File(pickedFile.path);
-      });
-    }
-  }
-
-  Future<void> _pickVideo() async {
-    final pickedFile = await _picker.pickVideo(source: ImageSource.gallery);
-    if (pickedFile != null) {
-      setState(() {
-        _video = File(pickedFile.path);
-      });
-    }
-  }
 
   Future<void> _takeJob() async {
     setState(() {
       isLoading = true;
     });
-
     try {
+
+
+      print(widget.request.clientId);
+      print(widget.request.employeeId);
+      print(widget.request.statusesId);
       HttpService httpService = HttpService();
-      await httpService.updateRequestStatus(
-          widget.request.id!, 4);
+      await httpService.updateRequestStatus(widget.request.id!, 4, widget.request.clientId!, 'worker');
+
       Navigator.pop(context, true);
 
     } catch (e) {
@@ -82,13 +53,6 @@ class _RequestDetailPageState extends State<RequestDetailPage> {
     }
   }
 
-  Future<void> _submitWork() async {
-    if (_image != null || _video != null) {
-      setState(() {
-        Navigator.pop(context, true);  // Возвращает true, если изменения были сделаны
-      });
-    }
-  }
 
   @override
   Widget build(BuildContext context) {

@@ -3,6 +3,7 @@ class WorkerRequest {
   String? title;
   String? description;
   int? statusesId;
+  int? clientId;
   int? workerId;
   int? citiesId;
   int? moderatorId;
@@ -17,6 +18,7 @@ class WorkerRequest {
     this.title,
     this.description,
     this.statusesId,
+    this.clientId,
     this.workerId,
     this.citiesId,
     this.moderatorId,
@@ -33,6 +35,7 @@ class WorkerRequest {
       title: json['title'],
       description: json['description'],
       statusesId: json['statusesId'],
+      clientId: json['clientId'],
       workerId: json['workerId'],
       citiesId: json['citiesId'],
       moderatorId: json['moderatorId'],

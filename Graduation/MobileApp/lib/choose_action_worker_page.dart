@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:graduation/registration_worker/worker_registration_page.dart';
 import 'package:graduation/rounded_button.dart';
-import 'Authorization/login_page.dart';
+import 'Authorization/login_worker_page.dart';
 import 'Authorization/signup_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'auth_worker/authorization_page.dart';
@@ -8,7 +9,7 @@ import 'auth_worker/authorization_page.dart';
 class ChooseActionWorkerPage extends StatelessWidget {
   void _navigateToSignupPage(BuildContext context) {
     Navigator.of(context).push(
-      MaterialPageRoute(builder: (context) => SignupPage()),
+      MaterialPageRoute(builder: (context) => WorkerRegistrationPage()),
     );
   }
 
@@ -33,7 +34,7 @@ class ChooseActionWorkerPage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Выберите действие'),
         centerTitle: true,
-        backgroundColor: Color(0xFFA40606), // Цвет AppBar
+        backgroundColor: Colors.green.shade900, // Цвет AppBar
         actions: [
           IconButton(
             icon: Icon(Icons.logout, color: Colors.white),
@@ -54,7 +55,7 @@ class ChooseActionWorkerPage extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 22.0,
                     fontWeight: FontWeight.bold,
-                    color: Color(0xFFA40606),
+                    color: Colors.green.shade900,
                   ),
                   textAlign: TextAlign.center,
                 ),
@@ -91,7 +92,7 @@ class ChooseActionWorkerPage extends StatelessWidget {
         ),
       ),
       style: ElevatedButton.styleFrom(
-        primary: Color(0xFFA40606), // Цвет кнопки
+        primary: Colors.green.shade900, // Цвет кнопки
         onPrimary: Colors.white, // Цвет текста
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(30.0), // Закругленные углы

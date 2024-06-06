@@ -1,11 +1,10 @@
+import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:graduation/registration_client/client_text_form_fields.dart';
-import 'package:graduation/registration_client/client_register_button.dart';
+import '../Api/http_client.dart';
 import '../Authorization/login_client_page.dart';
-import 'client_address_page.dart';
-import 'client_phone_number_field.dart';
+import '../models/client_registration_models.dart';
+import 'client_register_page_info.dart';
 
-// Класс для хранения состояния страницы регистрации
 class ClientRegistrationPageState extends ChangeNotifier {
   // Контроллеры для каждого текстового поля
   final TextEditingController surnameController = TextEditingController();
@@ -32,8 +31,49 @@ class ClientRegistrationPage extends StatefulWidget {
 class _ClientRegistrationPageState extends State<ClientRegistrationPage> {
   // Создаем экземпляр класса состояния
   final ClientRegistrationPageState _clientregistrationPageState = ClientRegistrationPageState();
-
+  final TextEditingController emailController = TextEditingController();
+  final TextEditingController passwordController = TextEditingController();
+  final TextEditingController userNameController = TextEditingController();
+  final TextEditingController userRoleNameController = TextEditingController();
   String address = "";
+  Future<void> _submitRequest() async {
+    if (emailController.text.isNotEmpty && passwordController.text.isNotEmpty) {
+      final newRequest = ClientRegistrationRequest(
+        userName: "test",
+        email: emailController.text,
+        password: passwordController.text,
+        userRoleName: "client",
+      );
+      try {
+        var client = HttpService();
+        final result = await client.createUser(newRequest);
+        print('User created: $result');
+        _navigateToConfirmationPage();
+        var userId = result['userId'];
+        print('userId $userId');
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => ClientRegistrationPageInfo(userId: userId)),
+        );
+      } catch (e) {
+        print('Failed to create user: $e');
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Ошибка при создании пользователя: $e')),
+        );
+      }
+    } else {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Пожалуйста, заполните все поля')),
+      );
+    }
+  }
+
+  void _navigateToConfirmationPage(){
+    Navigator.of(context).push(
+      MaterialPageRoute(builder: (context) => ClientRegistrationPage())
+    );
+  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -73,55 +113,22 @@ class _ClientRegistrationPageState extends State<ClientRegistrationPage> {
                 SizedBox(height: 16.0),
                 _buildTextField(
                   context,
-                  icon: Icons.person,
-                  label: 'Фамилия',
-                  controller: _clientregistrationPageState.surnameController,
+                  icon: Icons.g_mobiledata,
+                  label: 'email',
+                  controller: emailController,
                 ),
                 SizedBox(height: 16.0),
                 _buildTextField(
                   context,
-                  icon: Icons.person_outline,
-                  label: 'Имя',
-                  controller: _clientregistrationPageState.nameController,
-                ),
-                SizedBox(height: 16.0),
-                _buildTextField(
-                  context,
-                  icon: Icons.person_pin,
-                  label: 'Отчество',
-                  controller: _clientregistrationPageState.patronymicController,
-                ),
-                SizedBox(height: 16.0),
-                _buildTextField(
-                  context,
-                  icon: Icons.home,
-                  label: 'Адрес',
-                  controller: TextEditingController(text: address),
-                  onTap: () async {
-                    final result = await Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (context) => ClientAddressPage(),
-                      ),
-                    );
-                    setState(() {
-                      if (result != null) {
-                        address = result;
-                      }
-                    });
-                  },
-                ),
-                SizedBox(height: 16.0),
-                _buildTextField(
-                  context,
-                  icon: Icons.phone,
-                  label: 'Номер телефона',
-                  controller: _clientregistrationPageState.phoneNumberController,
+                  icon: Icons.password,
+                  label: 'Пароль',
+                  controller: passwordController,
                 ),
                 SizedBox(height: 16.0),
                 _buildRegisterButton(
                   context,
                   title: 'Регистрация',
-                  onPressed: _registerClient,
+                  onPressed: _submitRequest,
                 ),
               ],
             ),
@@ -197,3 +204,4 @@ class _ClientRegistrationPageState extends State<ClientRegistrationPage> {
     }
   }
 }
+

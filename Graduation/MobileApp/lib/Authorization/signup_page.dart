@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:graduation/rounded_button.dart';
-import '../registration_worker/registration_page.dart';
+import '../registration_worker/worker_registration_page.dart';
 
 class SignupPage extends StatefulWidget {
   @override
@@ -15,7 +15,7 @@ class _SignupPageState extends State<SignupPage> {
   void _navigateToRegistration(BuildContext context) {
     if (_formKey.currentState!.validate()) {
       Navigator.of(context).push(
-        MaterialPageRoute(builder: (context) => RegistrationPage()),
+        MaterialPageRoute(builder: (context) => WorkerRegistrationPage()),
       );
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
